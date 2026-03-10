@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="q_HiAm_6_0aVd0BWmLQ_gw" Reference="sobT6TSR0U6vO4EQCkoJVA/9Lrqiq_chEyMFpmgmmzbag" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/contacts/146214366/record/0-3/421037860076" DesignTimeRectangle="1023, 167, 11, 566" DesignTimeScaleFactor="0.75" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='record-page-middle-pane' tag='DIV' class='Overhang__StyledOverhang-dVyrkV fTXOsd' aaname='' /&gt;" Guid="10070241-d115-4375-afd9-4d8937d757fb" ScopeSelectorArgument="&lt;html app='msedge.exe' url='https://app-eu1.hubspot.com*' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4f6c7e162805e5b2be654881e94d129c.png" xmlns="">0pJWahSRJvU-hi9nB7r1Gow</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
