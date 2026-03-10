@@ -1,0 +1,285 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Xero_Login" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_XeroURL" Type="InArgument(x:String)" />
+    <x:Property Name="in_XeroOrganization" Type="InArgument(x:String)" />
+    <x:Property Name="in_XeroUsername" Type="InArgument(x:String)" />
+    <x:Property Name="in_XeroPassword" Type="InArgument(ss:SecureString)" />
+    <x:Property Name="in_XeroAuthCode" Type="InArgument(x:String)" />
+  </x:Members>
+  <this:Xero_Login.in_XeroUsername>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Xero_Login.in_XeroUsername>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Xero_Login_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Xero_Login" sap:VirtualizedContainerService.HintSize="1056,3560" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap2010:Annotation.AnnotationText="Task Description: To log into Xero website." DisplayName="Xero_Login" sap:VirtualizedContainerService.HintSize="1056,3537" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1022,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Xero_Login started...&quot;]" />
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge My Xero  Home" sap:VirtualizedContainerService.HintSize="1022,3086" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="a98c83da-8e31-4aaf-adc9-4ced1b24ed10" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="988,2837" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NCheckState DisplayName="Check App State Log in" sap:VirtualizedContainerService.HintSize="954,993" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="a98c83da-8e31-4aaf-adc9-4ced1b24ed10" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,744" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Username" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="a98c83da-8e31-4aaf-adc9-4ced1b24ed10" Text="[in_XeroUsername]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="login.xero.com/identity/user/login" CVScreenId="3512cb55-f45c-491e-ad41-24d6c65d3204" ContentHash="CtOCqbawRk-mHXabz-AV5w" CvTextArea="500, 341, 96, 14" CvTextArgument="Email address" CvType="Text" DesignTimeRectangle="485, 330, 398, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='xl-form-email' tag='INPUT' type='email' class='xui-textinput--input xl-form-username' placeholder='Email address' aaname='Please enter your email address' /&gt;" Guid="71ad7495-0bf4-45ca-bc2f-6b83955e0ada" InformativeScreenshot="abd3dbc221e92e9a1c1d0f591eb1482d.png" Reference="sobT6TSR0U6vO4EQCkoJVA/u-9TXOQQqEKYB5bq4qPeVA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Password" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="a98c83da-8e31-4aaf-adc9-4ced1b24ed10" SecureText="[in_XeroPassword]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="login.xero.com/identity/user/login" CVScreenId="3512cb55-f45c-491e-ad41-24d6c65d3204" ContentHash="-py5UtD8pE64YdEReWu9rA" CvTextArea="500, 379, 67, 14" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="485, 368, 398, 38" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FuzzySelectorArgument="&lt;webctrl id='xl-form-password' tag='INPUT' type='password' class='xui-textinput--input xl-form-password' placeholder='Password' aaname='Please enter your password' /&gt;" Guid="c27b2378-bae9-434b-952f-bce6b33ff9fd" InformativeScreenshot="78b0819299696d057add5ee4e152684b.png" Reference="sobT6TSR0U6vO4EQCkoJVA/XErhuswgvkSOK6yvSF15Ng" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Login | Xero Accounting Software' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Log in Button" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a98c83da-8e31-4aaf-adc9-4ced1b24ed10" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="login.xero.com/identity/user/login" CVScreenId="88b0c6d2-dd86-4689-8cb6-4e12db78d30a" ContentHash="IMtezPQAIUyoL5Ll0Mdnig" CvElementArea="482, 427, 403, 42" CvTextArea="660, 440, 47, 18" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="484, 428, 400, 40" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='xl-form-submit' tag='BUTTON' type='' class='xui-button xui-u-fullwidth xui-button-main xui-button-medium xui-margin-top-large' aaname='Log in' check:innerText='Log in' /&gt;" Guid="d059bd3b-3e1a-4926-8a68-606af742fa86" InformativeScreenshot="85ffdd61d5252b2087bc9beabbc8e662.png" Reference="sobT6TSR0U6vO4EQCkoJVA/DEaB4Ha86EGaT52frHBbmQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="login.xero.com/identity/user/login" CVScreenId="3512cb55-f45c-491e-ad41-24d6c65d3204" ContentHash="MBLq8cL1b06Q0MDORcdocA" CvElementArea="482, 427, 403, 42" CvTextArea="660, 440, 47, 18" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="484, 428, 400, 40" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='xl-form-submit' tag='BUTTON' type='' class='xui-button xui-u-fullwidth xui-button-main xui-button-medium xui-margin-top-large' aaname='Log in' check:innerText='Log in' /&gt;" Guid="5111bb9a-039b-4c26-9546-7688c9ce886f" InformativeScreenshot="5c46f6bde1835ade5c7eecedc8b0bb7f.png" Reference="sobT6TSR0U6vO4EQCkoJVA/8LAfI5TF2Uy4Th_luYLqLw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <uix:NCheckState DisplayName="Check App State Enter the 6-Digit Code" sap:VirtualizedContainerService.HintSize="954,932" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="a98c83da-8e31-4aaf-adc9-4ced1b24ed10" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,683" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Enter the 6-Digit Code" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="a98c83da-8e31-4aaf-adc9-4ced1b24ed10" Text="[in_XeroAuthCode]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="login.xero.com/identity/user/login/two-factor/authenticate" CVScreenId="f5e12f5a-8c7e-44ac-9a75-ac62c152c485" ContentHash="4KiUxF7w9kSjhMuiZWromw" CvElementArea="482, 489, 403, 42" CvType="InputBox" DesignTimeRectangle="485, 491, 398, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='' class='xui-textinput--input xui-textinput--input-medium' placeholder='123456' aaname='Authentication code' /&gt;" Guid="b870b38e-4df1-4b79-9294-a92e86046488" InformativeScreenshot="483b005b523569f27329d4192ebf141d.png" IsResponsive="True" Reference="sobT6TSR0U6vO4EQCkoJVA/-g67OegylE2EXq4tYNqHRw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='MFA Login | Xero Accounting Software' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="484, 410, 400, 64" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='xui-margin-top-x-large xui-margin-bottom-none xui-text-align-center xui-heading-xlarge undefined' aaname='Enter the 6-digit code found in your authenticator app' check:innerText='Enter the 6-digit code found in your authenticator app' /&gt;" Guid="020f471e-0030-4fc4-8e77-e8172f410928" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NCheck Action="Check" DisplayName="Check/Uncheck Trust This Device" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="a98c83da-8e31-4aaf-adc9-4ced1b24ed10" Version="V4">
+                      <uix:NCheck.Target>
+                        <uix:TargetAnchorable BrowserURL="login.xero.com/identity/user/login/two-factor/authenticate" CVScreenId="f5e12f5a-8c7e-44ac-9a75-ac62c152c485" ContentHash="28m_dBznDkeQI3HoSFqFQQ" CvElementArea="596, 617, 23, 23" CvType="CheckBox" DesignTimeRectangle="598, 618, 20, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='checkbox' class='xui-styledcheckboxradio--input xui-styledcheckboxradio--input-small' aaname='' /&gt;" Guid="5e7fc87a-3c8c-4cdb-92b9-9cd8e7d4734a" InformativeScreenshot="913f963b9b5e70424e35a46aea634534.png" Reference="sobT6TSR0U6vO4EQCkoJVA/DmhCPBzQvUWmYd8KkTEt2Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='MFA Login | Xero*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="f5e12f5a-8c7e-44ac-9a75-ac62c152c485" CvElementArea="596, 617, 23, 23" CvTextArea="625, 620, 104, 13" CvTextArgument="Trust this device" CvType="CheckBox" DesignTimeRectangle="598, 618, 131, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='xui-styledcheckboxradio' tag='LABEL' type='' aaname='' check:innerText='Trust this device' /&gt;" Guid="1e3ff39a-02df-4229-8e97-9ab69dcbeb0f" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NCheck.Target>
+                    </uix:NCheck>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Confirm" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a98c83da-8e31-4aaf-adc9-4ced1b24ed10" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="login.xero.com/identity/user/login/two-factor/authenticate" CVScreenId="f5e12f5a-8c7e-44ac-9a75-ac62c152c485" ContentHash="QG8M_pV_vky6-JQwXQD7ng" CvElementArea="482, 553, 404, 42" CvTextArea="653, 566, 60, 14" CvTextArgument="Confirm" CvType="Button" DesignTimeRectangle="484, 554, 400, 40" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='xui-button xui-button-main xui-button-medium xui-button-fullwidth' aaname='Confirm' check:innerText='Confirm' /&gt;" Guid="3d774dae-2412-4220-83e5-0fc34e0e03c7" InformativeScreenshot="f51e8e80ea62df3dc03ebb8190284903.png" Reference="sobT6TSR0U6vO4EQCkoJVA/syrYE4L_vE-57CGeTaOBRw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='MFA Login | Xero*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="login.xero.com/identity/user/login/two-factor/authenticate" ContentHash="3_Jv70VD4kWro2JA92-pIw" DesignTimeRectangle="484, 410, 400, 64" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='xui-margin-top-x-large xui-margin-bottom-none xui-text-align-center xui-heading-xlarge undefined' aaname='Enter the 6-digit code found in your authenticator app' check:innerText='Enter the 6-digit code found in your authenticator app' /&gt;" Guid="ac1b0e59-3fb8-40d8-a6c4-49219746fe36" InformativeScreenshot="4fa691ddf053952047d771ba139dbb99.png" Reference="sobT6TSR0U6vO4EQCkoJVA/lHEyYpoVwEigKma77HhIYg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='MFA Login | Xero*' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <uix:NCheckState DisplayName="Check App State My Xero" sap:VirtualizedContainerService.HintSize="954,850" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="a98c83da-8e31-4aaf-adc9-4ced1b24ed10" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,608" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Interacting with Xero Organization to choose &quot;+in_XeroOrganization]" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on My Xero Dropdown List" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a98c83da-8e31-4aaf-adc9-4ced1b24ed10" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="my.xero.com/!xkcD/Dashboard" ContentHash="sHmDn86QTkG8tl0KqB1vjA" DesignTimeRectangle="28, 151, 91, 34" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='xnav-appbutton--body' parentid='header' tag='DIV' type='' aaname='' check:innerText='My Xero' /&gt;" Guid="1f2a114a-9b19-43a3-959b-5d7f222133a5" InformativeScreenshot="8e7e592ac6b464939512a342ec1505d6.png" Reference="sobT6TSR0U6vO4EQCkoJVA/CsuFqXCPeUGaVuouKx-ouA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='My Xero | Home' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="99, 166, 10, 5" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl type='' tag='svg' class='xnav-appbutton--caret xnav-icon xnav-icon-svg' aaname='' /&gt;" Guid="9f7af43f-c739-481a-a83c-0b342d1d8e81" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Xero Organization" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a98c83da-8e31-4aaf-adc9-4ced1b24ed10" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="my.xero.com/!xkcD/Dashboard" CVScreenId="99b85726-59d3-474a-9c62-8d01799ed376" ContentHash="QgNRtUM-Cka5nU8w_VeBbA" CvTextArea="42, 306, 164, 14" CvTextArgument="JWP JA Wealth Pty Ltd" CvType="Text" DesignTimeRectangle="27, 294, 300, 41" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}' tag='A' /&gt;&quot;, in_XeroOrganization)]" FuzzySelectorArgument="&lt;webctrl aaname='JA Wealth Pty Ltd' tag='A' type='' class='xnav-verticalmenuitem--body xnav-menuitem-orgpractice' check:text='JA Wealth Pty Ltd' /&gt;" Guid="250eff0d-9576-443b-9ea4-05ed8e8d841b" InformativeScreenshot="6a80f0977bb8f51c3c15b52203bbbf6f.png" Reference="sobT6TSR0U6vO4EQCkoJVA/-AItx_ywOki6J3-PufNjPw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='My Xero*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="my.xero.com/!xkcD/Dashboard" CVScreenId="79fe6f43-89b6-4dfe-976d-2caacf69e73d" ContentHash="ytZGwTs8EUGe-cq84VoUiQ" CvElementArea="26, 148, 94, 38" CvType="Button" DesignTimeRectangle="38, 159, 56, 17" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='SPAN' aaname='My Xero' type='' class='xnav-appbutton--text' check:text='My Xero' /&gt;" Guid="b4615350-eb7f-4d1c-93e0-6c7c3dfc12f9" InformativeScreenshot="a4089fc3e3ef965f51086e286883718a.png" Reference="sobT6TSR0U6vO4EQCkoJVA/lvjhzRarMkaZJzutfeIZ4A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='My Xero*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="12, 138, 119, 60" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='xnav-header-button xnav-appbutton' aaname='My Xero' check:innerText='My Xero' /&gt;" Guid="64de46c3-f58a-4796-b283-0688a3faee40" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Edge" ContentHash="lqoeHX2s506sqidkNP-qWA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH2SURBVDhPnVNbL2NRFF5EIi4/gnciIgbxC4QHEh5kHsSzRMyfmHh16wxeEGnkBD09U3VJJIRMoiltpRjantPWtVVGacVlZpa1dncnLo1gJSvnO/t833f2WntteBHK7iew6v0wE3KDLRwRyVjTTTC1Vy1ZGUIJ54Ea6AWbcQ9z+wiz4acp1ow/oJKR5syXKhnKTxbbMwqfJ3M0YwHG3AVSTTHt63mTOJ3zxLX4vqXE5r1y2trfjMTX0mb8g4lflQAWf382O86EEOz0QTwpiZQzl36XIsK5aS7v2OIfAvgR9BQtHaH5KEmuQWxxxXAgdIVfdn6j5eQay1aPsYvw6EECO7bOUaW1VncMs9jUpnuBjymLHOucUXTF73AonMDuQByV4yS2b57h8tmNwG2ER8ikwRHF6ZMklpIxaMGoMMgmg6aNU1y7uMXPnhh+9cdx9DCBjeun2LwRw/HDpPjrGK3VOyJiZyUraQMqoZhKYAFhIeoLXooS1Mg1lhKxl94LF/axcztVApcp+iJKUH0m0RBujGzU88YJzEn4f2NZY9WHaYh2Kj50jGxk3q1KzQId5bsGiblTgcGUmGOQZls15t9kwhxNXwTFWyjVMviC8EXhcjIZ8RpPn0p/fiF+HIqvBqyB73RhNsVVnqWjshO20tRN+mslSwbAA2Z2Sv8z5CJZAAAAAElFTkSuQmCC" InformativeScreenshot="88fdf460e83eba7d883594b5926441e7.jpg" Reference="sobT6TSR0U6vO4EQCkoJVA/EgCHWbGSDkW9f9Gs6q3WDQ" Selector="&lt;html app='msedge.exe' title='*Xero*' /&gt;" Title="My Xero | Home" Url="[in_XeroURL]" Version="V1" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1022,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Xero_Login completed...&quot;]" />
+    </Sequence>
+  </Sequence>
+</Activity>

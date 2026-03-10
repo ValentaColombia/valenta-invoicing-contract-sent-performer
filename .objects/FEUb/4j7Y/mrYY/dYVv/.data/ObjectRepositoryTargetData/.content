@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MpazPpnNoU2RS8GaveO61Q" Reference="sobT6TSR0U6vO4EQCkoJVA/dYVvU7JbBECG3kxjTZpmlg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/login" CVScreenId="b59de339-f27e-4d6d-adc8-6da2913089c6" CvElementArea="821, 316, 278, 32" CvTextArea="935, 326, 49, 11" CvTextArgument="Continue" CvType="Button" DesignTimeRectangle="823, 318, 275, 30" DesignTimeScaleFactor="0.75" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='PrivateButton__StyledButton-eRHhiA gQDVtj' aaname='Continue' check:innerText='Continue' /&gt;" Guid="b5f2c7b1-6aa2-40d4-968e-1dae68ac3231" ScopeSelectorArgument="&lt;html app='msedge.exe' title='HubSpot*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3d3f2b20c844ff28362d0c6478ac4dc9.png" xmlns="">00q6isDGymEqEuo2t90VzWg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

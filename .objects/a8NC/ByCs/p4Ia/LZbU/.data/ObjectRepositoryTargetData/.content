@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4Or3mH2hykqOVHybaqrgig" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/tasks/146214366/view/all/task/393256084705" CVScreenId="d1d08534-30c5-4e86-8ca7-851a5a8d06a6" CvTextArea="1576, 652, 166, 14" CvTextArgument="Billing Company = Valenta AU" CvType="Text" DesignTimeRectangle="1577, 650, 287, 17" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Billing Company*' tag='P' type='' class='' check:text='Billing Company = Valenta AU' /&gt;" Guid="9d409c52-2423-4169-9800-01b3c18adb63" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Tasks' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="9e0d48582d5443fcef3a15a21ba98541.png" xmlns="">04wVNFur1mU2F67tL-fg35A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome HubSpot Login and Sign in",
+  "Type": "App",
+  "Id": "FEUbs5lC80OSxQkbkuZwSQ",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/FEUbs5lC80OSxQkbkuZwSQ",
+  "Created": "2025-12-15T20:27:27.8556585Z",
+  "Updated": "2025-12-15T20:27:27.8556585Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

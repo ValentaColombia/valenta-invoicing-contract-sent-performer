@@ -1,0 +1,14 @@
+﻿{
+  "Name": "INPUT xl-form-email",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "u-9TXOQQqEKYB5bq4qPeVA",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/u-9TXOQQqEKYB5bq4qPeVA",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/EgCHWbGSDkW9f9Gs6q3WDQ",
+  "Created": "2025-12-22T12:33:49.331517Z",
+  "Updated": "2025-12-22T12:33:49.331517Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="u2gRL4_l5U2vwEHRsj-CpQ" Reference="sobT6TSR0U6vO4EQCkoJVA/ZRop5QDEzk-Ze_uSlkXuVA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="go.xero.com/app/!67tTl/dashboard" CVScreenId="7e614381-c5d4-4dbb-b7ec-3d9f297677c2" CvTextArea="1195, 320, 52, 17" CvTextArgument="Log out" CvType="Text" DesignTimeRectangle="1143, 309, 200, 38" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Log outLog out' tag='A' type='' class='x-nav-xui-button x-nav-xui-button-borderless-standard x-nav-xui-button-small x-nav-xui-button-fullwidth' check:text='Log outLog out' /&gt;" Guid="3db8c6f9-aba5-4af4-9a1c-9b3e26e68574" ScopeSelectorArgument="&lt;html app='msedge.exe' url='*xero*' casesensitive:url='True' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="1569deec16436de7ccc8f8675c8cf797.png" xmlns="">0lVPCd0-u5EeEVDm0oKbT-Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="nBj39iQHY0OeeA0XTvmm5w" Reference="sobT6TSR0U6vO4EQCkoJVA/i5yg9_BaGE22_2O0jWiSeQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/user-guide/146214366" CVScreenId="351a8fdf-14e8-4ac2-a5b4-323a2c0b74cd" CvElementArea="26, 228, 19, 17" CvType="Icon" DesignTimeRectangle="12, 179, 48, 39" DesignTimeScaleFactor="0.75" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' aaname='CRM' type='' class='' check:text='CRM' /&gt;" Guid="e90585fe-2c37-4c72-be63-f3225b470d19" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADQAAAArCAYAAAA3+KulAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGNSURBVGhD7ZZbSwJBFID7Q0EFRUFZYUU9tFmsWGEqmnQjLZPsxhpJUlR0hRaC6IIQYRcoUgp8KAKf+w/+AgnCl5Mz4YKwEhgbZ+Q8fLDnnJmHjzNnZquy2SxkMhmoNlmE5vMrxyEhrJAQdkgIOySEHRLCDglhh4SwY7iQ7A7A0FioJBaHT3dfuRgqZJ9agvhjCqL7pyV5eH4HaWRad385GCpk9cyBZzZclOuQR6HWLGsxkxr0BovW/AXDhBp7hrUudMpenlvdUuHi+gmSqTSYJCfPsbpNBCGG26/A5Pw61LQP8DiRF6kzW0HZPIbxYITnhBNajh5pMevQZTwBb+kPaOtz8ZxQQi7fCixEDopybKaaex1azISEmKEWyQEbh2ewq8agNT8vbKau7l9APb+Bu8QrBJRtvk6YDtV32bS3piH/Hdk54bdeoR67TUJT98/FIc4MzSgQWtvTrRUQ5sgx7BOLlfWwMn779el3+nX3lYvhQv8NCWGHhLBDQtghIeyQEHZICDskhJ0KFcrBNyY2yIAL972xAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*HubSpot' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="87f43ab3aab99bc9b8af5079e1c285e6.png" xmlns="">06t7b_LfBj0qwmlVKuYzKLw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

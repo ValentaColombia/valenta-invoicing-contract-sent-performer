@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LFkUSUqmJEK30Qrw88O0Sg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/tasks/146214366/view/all/task/443744252146" DesignTimeRectangle="1589, 346, 12, 12" DesignTimeScaleFactor="1" Guid="a703cc13-c4d4-4f04-8df2-8d7554217f3e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADeSURBVChTY3j69cd/UjCdNdx7//l/afu0/6UdU/8fvnr7f3Jp6/89Zy9j17Dj5IX/mTXd/2MLGv6v2Xvsv5Vf0n9j92gwnrhk3f/dZyAawRrW7jsGl9x67Nx/l/Cs/2v3H/8fkl4BFwdhuIaVu4/ABdMqOv6v3nv0v1tkzv+l2/b/D0gpxa8BGYNs2nDo1H+fhEIwH67h5M37/7vnrvzfMGnef0vfhP8zVm397xqR/X/9gRNgm07devC/Z95KhAZkvOv0JXBozduw6//c9Tv/X3/xBkUeQwMhTKKGH/8BF8zZxNCYb/QAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Tasks' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="0d5ce00b0c7449318ea708687eccc971.png" xmlns="">01-ALhi1qS0WDPujtAiOkTg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

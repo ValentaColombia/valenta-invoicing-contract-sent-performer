@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="fTrZQRUyEkOaV6gCdAusaA" Reference="sobT6TSR0U6vO4EQCkoJVA/2FBaWYyz502-b2NWaDBNbQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="go.xero.com/app/!67tTl/dashboard" CVScreenId="89f7c2ca-a0ac-4ebc-9328-bdbca66464f5" CvTextArea="1565, 333, 54, 14" CvTextArgument="Contact" CvType="Text" DesignTimeRectangle="1545, 322, 200, 38" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Contact' aria-role='link' omit:parentid='create-menu-list' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Contact' aria-role='link' parentid='create-menu-list' tag='A' type='' class='x-nav-xui-button x-nav-xui-button-borderless-standard x-nav-xui-button-small x-nav-xui-button-fullwidth' check:innerText='Contact' /&gt;" Guid="ac111f73-2aa0-4aa5-97bf-03673a4140ef" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="e409fc1902b44730f9a343ccf68f4ffa.png" xmlns="">0eZSg0qiWSU-J6ogQ0lBwuA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

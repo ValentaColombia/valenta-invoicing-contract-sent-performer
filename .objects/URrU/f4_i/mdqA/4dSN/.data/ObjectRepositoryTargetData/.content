@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="h5jupPyQ80KJmsZyqgY49Q" Reference="sobT6TSR0U6vO4EQCkoJVA/4dSNJWkjakSK8VwhV3o4QA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="go.xero.com/app/!67tTl/dashboard" DesignTimeRectangle="1529, 338, 276, 17" DesignTimeScaleFactor="1" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='A' aaname='{0}*' casesensitive:aaname='false' /&gt;&quot;, in_CompanyName)]" FuzzySelectorArgument="&lt;webctrl aaname='Valenta Virtual Assistants Outsourcing' tag='MARK' type='' class='global-search-mfe-highlighted ' check:text='Valenta Virtual Assistants Outsourcing' /&gt;" Guid="84d7c03f-0f46-43f4-97d1-d19c7d3877c8" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="1521, 330, 305, 53" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='A' aaname='Valenta Virtual Assistants Outsourcing*' type='' class='global-search-mfe-button global-search-mfe-document-container-button global-search-mfe-button-borderless-muted global-search-mfe-button-medium global-search-mfe-button-fullwidth' check:text='Valenta Virtual Assistants OutsourcingJuan Posada' /&gt;" Guid="41d56f85-cbd6-4a32-afc4-5458ae24e1ec" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e67242c6da6a0ca37389a7b7d23489eb.png" xmlns="">0Ehk-QsmPYEmFgUrFjMtq3g</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="in_CompanyName" />
+    </scg:List>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

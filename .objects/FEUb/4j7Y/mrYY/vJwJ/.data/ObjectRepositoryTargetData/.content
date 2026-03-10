@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ikzZs2VPyEmgsDqu3qt06A" Reference="sobT6TSR0U6vO4EQCkoJVA/vJwJ_TheNECKCngksm1KIg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="login.microsoftonline.com/common/oauth2/v2.0/authorize" CVScreenId="bd83bd47-8823-45f2-b3fb-78d0a0288ad4" CvTextArea="792, 439, 172, 21" CvTextArgument="Pick an account" CvType="Text" DesignTimeRectangle="792, 435, 352, 28" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='heading' tag='DIV' type='' class='' aaname='Pick an account' check:innerText='Pick an account' /&gt;" Guid="00a889ef-8fe1-41ca-ac4d-3693dfe5b142" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Sign in to your account' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="2453ac9ef07c9f2de0fae7f9a45802c8.png" xmlns="">0A4BofUsvn063IyBy719JWA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

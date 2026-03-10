@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="QG8M_pV_vky6-JQwXQD7ng" Reference="sobT6TSR0U6vO4EQCkoJVA/syrYE4L_vE-57CGeTaOBRw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="login.xero.com/identity/user/login/two-factor/authenticate" CVScreenId="f5e12f5a-8c7e-44ac-9a75-ac62c152c485" CvElementArea="482, 553, 404, 42" CvTextArea="653, 566, 60, 14" CvTextArgument="Confirm" CvType="Button" DesignTimeRectangle="484, 554, 400, 40" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='xui-button xui-button-main xui-button-medium xui-button-fullwidth' aaname='Confirm' check:innerText='Confirm' /&gt;" Guid="3d774dae-2412-4220-83e5-0fc34e0e03c7" ScopeSelectorArgument="&lt;html app='msedge.exe' title='MFA Login | Xero*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f51e8e80ea62df3dc03ebb8190284903.png" xmlns="">0XPBdEtDjLkiF3TO0hHUafA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

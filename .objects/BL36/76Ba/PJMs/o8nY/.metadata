@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Franchise Bot",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "o8nYS9MFdkylb0amAjXU9A",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/o8nYS9MFdkylb0amAjXU9A",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/PJMsm3GEDUesuENeZ2xcCw",
+  "Created": "2025-12-21T19:58:38.5131734Z",
+  "Updated": "2025-12-21T19:58:38.5131734Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

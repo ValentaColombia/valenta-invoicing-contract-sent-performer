@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Open your authenticator…",
+  "Type": "Element",
+  "Id": "xgDYbe-FcU66ahk2ACzpnQ",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/xgDYbe-FcU66ahk2ACzpnQ",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/mrYYb0dlC0ewQxOuv8ARtw",
+  "Created": "2026-01-06T14:34:20.8028026Z",
+  "Updated": "2026-01-06T14:34:20.8028026Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Pg7PUy31FEyRllPYjLV9og" Reference="sobT6TSR0U6vO4EQCkoJVA/xnl2rq49d0i0DsS3lFioBw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/tasks/146214366/view/all/task/395857523946" CVScreenId="839257b1-30f2-405b-85ee-3d03c33bd9ba" CvElementArea="1025, 338, 225, 27" CvType="Button" DesignTimeRectangle="1036, 347, 10, 10" DesignTimeScaleFactor="0.75" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl parentid='tag-34' tag='svg' type='' class='StyledIcon-jibXlG eXbnwa' aaname='' /&gt;" Guid="b27353d8-8cad-4a2c-bd92-3e13039e56b8" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Tasks' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="839257b1-30f2-405b-85ee-3d03c33bd9ba" CvElementArea="1025, 338, 225, 27" CvType="Button" DesignTimeRectangle="1233, 346, 8, 12" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Close' aria-role='button' parentid='tag-34' tag='DIV' type='' class='sc-AxjAm hgggII sc-AxirZ XcqnC' aaname='' /&gt;" Guid="e759dbde-e583-41b1-9d79-59dd05edb95e" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d25a528d8a73502c6de0e7109da6f166.png" xmlns="">092XntsDSZ0q_MxI8JeJsPw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

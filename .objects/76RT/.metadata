@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge User Guide  HubSpot",
+  "Type": "App",
+  "Id": "76RTpckyVU66yM64bstMZg",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/76RTpckyVU66yM64bstMZg",
+  "Created": "2025-12-16T02:30:57.0071711Z",
+  "Updated": "2025-12-16T02:30:57.0071711Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

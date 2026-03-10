@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Valenta Virtual Assista…(1)",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "wLQRyOJabUqCCqseiu2gOA",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/wLQRyOJabUqCCqseiu2gOA",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/mdqALtkQtU67zvSMbDjcvQ",
+  "Created": "2025-12-17T16:03:38.5240528Z",
+  "Updated": "2025-12-17T16:03:38.5240528Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

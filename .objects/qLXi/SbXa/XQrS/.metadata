@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Tasks",
+  "Type": "Screen",
+  "Id": "XQrSod8cNEiWLen2iMQBQw",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/XQrSod8cNEiWLen2iMQBQw",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/SbXa-qb9okusOVs8k8A8DA",
+  "Created": "2026-01-04T20:45:54.0109637Z",
+  "Updated": "2026-01-04T20:45:54.0109637Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

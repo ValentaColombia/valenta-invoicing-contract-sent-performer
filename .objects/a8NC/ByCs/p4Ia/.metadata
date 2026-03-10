@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Tasks",
+  "Type": "Screen",
+  "Id": "p4Ia1FuPRE6JWEEQV6TlMw",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/p4Ia1FuPRE6JWEEQV6TlMw",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/ByCsFa3tVE6rax3rTiuWVg",
+  "Created": "2025-12-16T14:00:04.0853349Z",
+  "Updated": "2025-12-16T14:00:04.0853349Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

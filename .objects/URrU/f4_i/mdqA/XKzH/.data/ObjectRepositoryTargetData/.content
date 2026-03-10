@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="RZ08iJTGQkuQGRaGhei7mA" Reference="sobT6TSR0U6vO4EQCkoJVA/XKzHUVsgyEmJtH5Q6S6OGg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="go.xero.com/app/!67tTl/contacts/add" DesignTimeRectangle="789, 482, 358, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='addressLine2' tag='INPUT' type='' class='xui-textinput--input xui-textinput--input-medium' aaname='Address line 2' /&gt;" Guid="eb27efb3-7266-4842-a067-322634b45689" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="53cee51eeb67f0a0582897a7bf11ce13.png" xmlns="">08R7PFY4F102d_CiV4OAvVQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

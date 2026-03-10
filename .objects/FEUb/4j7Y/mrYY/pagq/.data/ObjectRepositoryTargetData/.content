@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Uy9Uro6ivU-6weNllaAICQ" Reference="sobT6TSR0U6vO4EQCkoJVA/pagqTI6woUqytI3GP8XN8A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/login/two-factor" CVScreenId="83a4ae4f-4dc2-4346-bfd1-8c4b76a973ae" CvElementArea="563, 412, 242, 32" CvType="InputBox" DesignTimeRectangle="564, 413, 240, 30" DesignTimeScaleFactor="0.75" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='codeEntry' tag='INPUT' type='text' class='TextInput__StyledInput-dZxQPg eaGEy' placeholder='Enter 6-digit code' aaname='Code' /&gt;" Guid="ee1bbc13-81ef-44fd-82ce-e63f982c26b1" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='HubSpot*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="83a4ae4f-4dc2-4346-bfd1-8c4b76a973ae" CvTextArea="562, 395, 29, 11" CvTextArgument="Code" CvType="Text" DesignTimeRectangle="564, 389, 240, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='FormControl-label2' tag='LABEL' type='' class='FormLabel__StyledLabel-fnFDWb bDdNpC' aaname='' check:innerText='Code' /&gt;" Guid="ca9fe138-6985-49bf-a5ea-19414d4a6026" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ea09c4577c7b8db7bc8c5299012ae409.png" xmlns="">0IXuwyBxDYEOniykdWnV3Bg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

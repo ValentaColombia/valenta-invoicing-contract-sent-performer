@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Remember me",
+  "Type": "Element",
+  "Id": "fKp-RKtSKkqLN-CWho5npA",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/fKp-RKtSKkqLN-CWho5npA",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/mrYYb0dlC0ewQxOuv8ARtw",
+  "Created": "2026-01-06T14:38:59.0833204Z",
+  "Updated": "2026-01-06T14:38:59.0833204Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

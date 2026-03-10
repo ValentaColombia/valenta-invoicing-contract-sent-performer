@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Use as delivery address(1)",
+  "Type": "Element",
+  "TaxonomyType": "Checkbox",
+  "Id": "mba6xsUHJ0ajfPUFK34oKQ",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/mba6xsUHJ0ajfPUFK34oKQ",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/mdqALtkQtU67zvSMbDjcvQ",
+  "Created": "2025-12-19T21:12:09.0338209Z",
+  "Updated": "2025-12-19T21:12:09.0338209Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

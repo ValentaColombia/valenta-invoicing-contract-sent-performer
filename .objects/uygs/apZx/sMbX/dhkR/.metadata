@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Authenticator",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "dhkRLMfPvkKfa6I7zZSBFQ",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/dhkRLMfPvkKfa6I7zZSBFQ",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/sMbXg8HykUei43-_kQ-2Ug",
+  "Created": "2026-01-06T19:51:30.8428614Z",
+  "Updated": "2026-01-06T19:51:30.8428614Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MRg04ZiawUylaVRQdMv3TQ" Reference="sobT6TSR0U6vO4EQCkoJVA/DfgGsvbKq0qvMkYMxy1tTQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/contacts/146214366/record/0-3/413523111148" CVScreenId="2f05b66d-5f39-4722-931a-a09597883396" CvElementArea="672, 184, 281, 40" CvTextArea="788, 198, 49, 11" CvTextArgument="Activities" CvType="Button" DesignTimeRectangle="674, 186, 277, 36" DesignTimeScaleFactor="0.75" ElementType="Text" FullSelectorArgument="&lt;html app='msedge.exe' url='https://app-eu1.hubspot.com*' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Activities' aria-role='button' parentid='record-page-middle-pane' tag='A' type='' class='Link__StyledLink-gGnXeN igrisU' check:innerText='Activities' /&gt;" Guid="71ee7b45-b353-4077-850f-c3dcda4122f6" ScopeSelectorArgument="&lt;html app='msedge.exe' url='https://app-eu1.hubspot.com*' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="13af845297bd9642d3ae08e47c0b4b20.png" xmlns="">0EszE7jIYt0OpKawm172KlQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Included in emails",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "aN9oLKHgqUy9o7c6sbGXNw",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/aN9oLKHgqUy9o7c6sbGXNw",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/ndZn9ETpLUSnWaF6bs0iFQ",
+  "Created": "2025-12-17T16:29:45.9877722Z",
+  "Updated": "2025-12-17T16:29:45.9877722Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="OojoxdkLg0eQWngZJhbK1A" Reference="sobT6TSR0U6vO4EQCkoJVA/xgDYbe-FcU66ahk2ACzpnQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/login/two-factor" CVScreenId="900fdf4e-33f9-4c88-baee-3dd4f710054c" CvTextArea="572, 340, 222, 17" CvTextArgument="Open your authenticator app" CvType="Text" DesignTimeRectangle="573, 338, 221, 19" DesignTimeScaleFactor="0.75" FuzzySelectorArgument="&lt;webctrl type='' tag='I18N-STRING' class='' aaname='Open your authenticator app' check:innerText='Open your authenticator app' /&gt;" Guid="6c53dfd1-9861-4b5f-8f41-b7164c39dc03" ScopeSelectorArgument="&lt;html app='msedge.exe' title='HubSpot*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="fc4cedd51beee07ed6efba4aaa50aab4.png" xmlns="">07MTOJI_A5kGPm0YliC9XjA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

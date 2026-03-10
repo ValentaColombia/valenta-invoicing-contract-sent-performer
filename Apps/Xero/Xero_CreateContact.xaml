@@ -1,0 +1,411 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Xero_CreateContact" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_TaskDetailsDict" Type="InArgument(scg:Dictionary(x:String, x:String))" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Xero_CreateContact_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Xero_CreateContact" sap:VirtualizedContainerService.HintSize="1530,5492" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap2010:Annotation.AnnotationText="Task Description: To create new contact in Xero." DisplayName="Xero_CreateContact" sap:VirtualizedContainerService.HintSize="1056,5469" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1022,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Xero_CreateContact started...&quot;]" />
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge Dashboard – Xero" sap:VirtualizedContainerService.HintSize="1022,5018" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="005b2215-7518-488e-9d46-0a96e81fc3f3" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="988,4769" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="954,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Click on new icon button:  &quot;]" />
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on New Icon Button" sap:VirtualizedContainerService.HintSize="954,189" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="005b2215-7518-488e-9d46-0a96e81fc3f3" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/dashboard" CVScreenId="7cf13b43-1f13-45b5-83cc-6a367d42d5ae" ContentHash="vcCQztxzFUWzDxIXRUqKvg" CvElementArea="1544, 99, 42, 39" CvTextArea="1554, 110, 21, 19" CvType="Icon" DesignTimeRectangle="1545, 100, 40, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Create new' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Create new' tag='BUTTON' type='button' class='x-nav-xui-button x-nav--create-menu-button x-nav-xui-button-icon-medium x-nav-xui-button-icon' aaname='' /&gt;" Guid="d041e885-39ad-46e9-825f-4f7ba09a93b7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJASURBVFhH1ZlLTsMwFEWzIRADNsAYJDZCP/xahoxAYsYIlYWUPwjaQiXKChjRFcAKTC6VI8e5wbH16jaDI9k3zvPFPH/iJsnRWNUKKi4zVPSh+6qSgxeV7D6qpH2vkuaNSnauZqAMDc/QpvvGY/hARRcwCRN/5vp+NG9n7yIGi+2CimVoo8xICCHGqWgjbdTGxzgVbeZpVoM+WN82VNTgr26lOcc6mAfoyzXSVNTENKtp3XEvGiqC9gMPGAP0zTwBKu4/80AxgQfmrSAghxpY+EmQmMADy+eCsMhUsGErR67SkRnd1ZOBWklhz7xgo5yrYN9nL3pyOZqq3nBKn3ljT8BcpXHNX/JE1DA8mR6zQmfIXwhA1DCAt4LhvSfeOABxw/BWMCyUv0DccNvY/bICzqmscQDihs3tOisITTggbticeFmBNSxh7XSgjvufpXxMf9Tk65s+06yfjWhsTroeFw1X3zA2zsfUhKaK4a2LdxqbwwzXLiWQ2KxxAHEmHZYO1jiAOMta7TaO2m3NQGjiiRo2JxzIVYQ+50UN24f4XEXoAL/dm6hNr3W2BOcBHsS4NKmK8xMJ4IZRcBMJBh7YbWdBALgaZUFiAg/MGxXBIlODpYKGihrB7boy+JBgXjRU1GCGNiPmM/py3dJT0SZGevyXBiZUZOCuS2CNLoCYZfdoDCqWgT1d8ioL+WqeE6pARRfI7WDj6Yji388u+qpARR8O0xGCAXx141clc9NBGZr+5QhtWQwfqLjMUHFpGatfZWCtC8OwBUcAAAAASUVORK5CYII=" InformativeScreenshot="50541af93840618884cfdaf3194a1c2d.png" Reference="sobT6TSR0U6vO4EQCkoJVA/Ryt7eLGx00aSI9lCOfXc3Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NCheckState DisplayName="Check App State Create New Button" sap:VirtualizedContainerService.HintSize="954,493" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="005b2215-7518-488e-9d46-0a96e81fc3f3" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,244" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Contact Option" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="005b2215-7518-488e-9d46-0a96e81fc3f3" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/dashboard" CVScreenId="89f7c2ca-a0ac-4ebc-9328-bdbca66464f5" ContentHash="fTrZQRUyEkOaV6gCdAusaA" CvTextArea="1565, 333, 54, 14" CvTextArgument="Contact" CvType="Text" DesignTimeRectangle="1545, 322, 200, 38" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Contact' aria-role='link' omit:parentid='create-menu-list' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Contact' aria-role='link' parentid='create-menu-list' tag='A' type='' class='x-nav-xui-button x-nav-xui-button-borderless-standard x-nav-xui-button-small x-nav-xui-button-fullwidth' check:innerText='Contact' /&gt;" Guid="ac111f73-2aa0-4aa5-97bf-03673a4140ef" InformativeScreenshot="e409fc1902b44730f9a343ccf68f4ffa.png" Reference="sobT6TSR0U6vO4EQCkoJVA/2FBaWYyz502-b2NWaDBNbQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/dashboard" CVScreenId="290d2db5-cdd6-405a-8ef6-32d3e106ac0f" ContentHash="bsAsFZhCX0qPqSSDwHrkuA" CvTextArea="1563, 184, 76, 11" CvTextArgument="CREATE NEW" CvType="Text" DesignTimeRectangle="1545, 172, 200, 36" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='create-menu-list' tag='H2' type='' class='x-nav--nav-item-heading' aaname='' check:innerText='CREATE NEW' /&gt;" Guid="5a5e2a3f-2ca3-402a-8420-5c4a20431351" InformativeScreenshot="399886d37d07a54d8319de3fde57657e.png" Reference="sobT6TSR0U6vO4EQCkoJVA/MKN-RFSUoUuoVjd_2SBHQw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Dashboard – Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NCheckState.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NCheckState>
+              <uix:NCheckState DisplayName="Check App State Contact Details Label" sap:VirtualizedContainerService.HintSize="954,1304" sap2010:WorkflowViewState.IdRef="NCheckState_2" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,1055" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Contact Name Required Textbox" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="005b2215-7518-488e-9d46-0a96e81fc3f3" Text="[in_TaskDetailsDict(&quot;Company Name&quot;).Trim]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/contacts/add" CVScreenId="790b399b-90d6-487a-b10f-833d9afb3df9" ContentHash="qhGSUd9yY0GTujf8ELVfFg" CvElementArea="905, 360, 402, 42" CvType="InputBox" DesignTimeRectangle="907, 362, 398, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='contactName' tag='INPUT' type='' class='xui-textinput--input xui-textinput--input-medium' placeholder='A business or person&amp;apos;s name' aaname='Contact name (required)' /&gt;" Guid="6bf8c034-0c77-4d9d-b8dd-00aae0b45d94" InformativeScreenshot="f0c4797f59f8d73fa4688b0a8cf11667.png" IsResponsive="True" Reference="sobT6TSR0U6vO4EQCkoJVA/86dNufhVwE6KXWwxewnWlQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contacts – Add contact – Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="790b399b-90d6-487a-b10f-833d9afb3df9" CvTextArea="905, 341, 147, 16" CvTextArgument="Contact name (required)" CvType="Text" DesignTimeRectangle="906, 340, 145, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='xui-text-label xui-fieldlabel-layout' aaname='Contact name' check:innerText='Contact name (required)' /&gt;" Guid="dedd321f-7e0a-4d39-8893-9eef5e675366" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into First Name Textbox" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="005b2215-7518-488e-9d46-0a96e81fc3f3" Text="[in_TaskDetailsDict(&quot;Billing Contact First Name&quot;).Trim]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/contacts/add" CVScreenId="a0152b60-cfe8-45f2-bfcd-3610ac84a890" ContentHash="4SYb8kMIYkaRwJED7tXJvg" CvElementArea="904, 630, 201, 42" CvType="InputBox" DesignTimeRectangle="907, 632, 198, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='first-name' tag='INPUT' type='' class='xui-textinput--input xui-textinput--input-medium' aaname='First name' /&gt;" Guid="306b765b-0622-40c7-b86c-07710a925164" InformativeScreenshot="245fa5570456dcf5bd3d55a7f7206d87.png" IsResponsive="True" Reference="sobT6TSR0U6vO4EQCkoJVA/uge2mo99MEa4TOAq0glNgA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contacts – Add contact – Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="a0152b60-cfe8-45f2-bfcd-3610ac84a890" CvTextArea="904, 611, 68, 13" CvTextArgument="First name" CvType="Text" DesignTimeRectangle="906, 606, 200, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='First name' tag='LABEL' type='' class='xui-text-label xui-fieldlabel-layout' check:innerText='First name' /&gt;" Guid="24eef6e4-be48-4f70-9f9e-4ba1bf4a9eae" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Last Name Textbox" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="005b2215-7518-488e-9d46-0a96e81fc3f3" Text="[in_TaskDetailsDict(&quot;Billing Contact Last Name&quot;).Trim]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/contacts/add" CVScreenId="a0152b60-cfe8-45f2-bfcd-3610ac84a890" ContentHash="KJJoKFHeLUCcqB10G6THCw" CvElementArea="1103, 630, 204, 42" CvType="InputBox" DesignTimeRectangle="1106, 632, 199, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='last-name' tag='INPUT' type='' class='xui-textinput--input xui-textinput--input-medium' aaname='Last name' /&gt;" Guid="2b849b6c-b0c6-4f9a-8ef5-f315c89d9f2d" InformativeScreenshot="8a19d7c5c1c4e7d0a43146e4d176eeef.png" IsResponsive="True" Reference="sobT6TSR0U6vO4EQCkoJVA/T5UOYJ3aik-rzY3uuUoHVA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contacts – Add contact – Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="a0152b60-cfe8-45f2-bfcd-3610ac84a890" CvTextArea="1104, 611, 66, 13" CvTextArgument="Last name" CvType="Text" DesignTimeRectangle="1106, 606, 200, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Last name' tag='LABEL' type='' class='xui-text-label xui-fieldlabel-layout' check:innerText='Last name' /&gt;" Guid="e899580e-1bba-4e86-bc42-19a5e9a04403" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Email Textbox" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,243" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="005b2215-7518-488e-9d46-0a96e81fc3f3" Text="[in_TaskDetailsDict(&quot;Billing Contact Email&quot;).Trim]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/contacts/add" CVScreenId="a0152b60-cfe8-45f2-bfcd-3610ac84a890" ContentHash="TjKVZaWZlUS6jXZ2wnMSTA" CvElementArea="905, 727, 401, 42" CvType="InputBox" DesignTimeRectangle="954, 729, 351, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='xui-textinput--input xui-textinput--input-medium' placeholder='name@email.com' aaname='Email' /&gt;" Guid="f2e27b18-2783-439d-8699-ae6d2cfcf037" InformativeScreenshot="f5697f01a69f9a01ff0e662d496a0fa9.png" Reference="sobT6TSR0U6vO4EQCkoJVA/eVWI7zhr1U25vENHGliOwA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contacts – Add contact – Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="a0152b60-cfe8-45f2-bfcd-3610ac84a890" CvTextArea="905, 708, 35, 13" CvTextArgument="Email" CvType="Text" DesignTimeRectangle="906, 707, 34, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Email' tag='LABEL' type='' class='xui-text-label xui-fieldlabel-layout' check:innerText='Email' /&gt;" Guid="6d93ed64-3cde-417f-becb-78c7043ad4f3" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/contacts/add" CVScreenId="e08932ad-cfb0-4655-a993-5c640cc8df30" ContentHash="4iqkq38QkU2gfFPKIAHfkw" CvElementArea="628, 328, 402, 42" CvType="InputBox" DesignTimeRectangle="630, 330, 398, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='contactName' tag='INPUT' type='' class='xui-textinput--input xui-textinput--input-medium' placeholder='A business or person&amp;apos;s name' aaname='Contact name (required)' /&gt;" Guid="292d0f47-f3a7-4c97-8cf5-51cca06c89e7" InformativeScreenshot="354d03ae94819d9cefeb5b8f4b339888.png" IsResponsive="True" Reference="sobT6TSR0U6vO4EQCkoJVA/dbGnUYnfaUWJ1WHt6l8dcQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contacts – Add contact – Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="e08932ad-cfb0-4655-a993-5c640cc8df30" CvTextArea="627, 309, 148, 16" CvTextArgument="Contact name (required)" CvType="Text" DesignTimeRectangle="629, 308, 145, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='xui-text-label xui-fieldlabel-layout' aaname='Contact name' check:innerText='Contact name (required)' /&gt;" Guid="bcf5eedc-eb19-4478-b189-917202b92714" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NCheckState.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NCheckState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Addresses Option" sap:VirtualizedContainerService.HintSize="954,189" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="005b2215-7518-488e-9d46-0a96e81fc3f3" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/contacts/add" CVScreenId="a1bc25b3-d91d-4d69-b1d8-76e5bacedcba" ContentHash="soub5tjcp0WaieAQ-3U4HQ" CvTextArea="399, 312, 74, 14" CvType="AnyWordGroup" DesignTimeRectangle="394, 300, 265, 40" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='ADDRESS_PANEL_MENU_HEADER' tag='SPAN' type='' class='xui-pickitem--text' /&gt;" Guid="234962fe-0ebe-46e6-aba8-10514d47430f" InformativeScreenshot="3a2b2f5f986f86e98449d3d73889f00c.png" Reference="sobT6TSR0U6vO4EQCkoJVA/Alqdv8_Xj0WrLzxzrqiNLg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Enter Address Manually" sap:VirtualizedContainerService.HintSize="954,189" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="005b2215-7518-488e-9d46-0a96e81fc3f3" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/contacts/add" CVScreenId="23c952b5-b9ca-4743-97a9-5332b68274d3" ContentHash="GT89xhYQAU2EmdyYRRpbNw" CvElementArea="917, 242, 180, 40" CvTextArea="932, 254, 149, 16" CvTextArgument="Enter address manually" CvType="Button" DesignTimeRectangle="922, 246, 170, 32" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Enter address manually' parentid='shell-app-root' tag='BUTTON' type='button' class='xui-button xui-text-align-left xui-margin-top-xsmall xui-button-borderless-main xui-button-small' check:innerText='Enter address manually' /&gt;" Guid="7e78cc53-214d-42b4-8f61-e3721f206f12" InformativeScreenshot="33f12a18c17e701da7de5f0d0d5a365c.png" Reference="sobT6TSR0U6vO4EQCkoJVA/GUMdEPm0OUCY_2ktoYKjwg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="23c952b5-b9ca-4743-97a9-5332b68274d3" CvTextArea="942, 166, 109, 17" CvTextArgument="Billing address" CvType="Text" DesignTimeRectangle="944, 162, 107, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='label' tag='SPAN' type='' class='xui-margin-left-small' aaname='Billing address' check:innerText='Billing address' /&gt;" Guid="abdd0b1a-7a2d-48e9-9a73-2e9d7b321f46" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NCheckState DisplayName="Check App State Add Address Button" sap:VirtualizedContainerService.HintSize="954,1304" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="005b2215-7518-488e-9d46-0a96e81fc3f3" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,1055" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into City Textbox" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="005b2215-7518-488e-9d46-0a96e81fc3f3" Text="[in_TaskDetailsDict(&quot;Company City&quot;).Trim]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/contacts/add" CVScreenId="00e61740-8180-49bd-8b18-021429c454cd" ContentHash="QFgRmpbGCkOqzM-q9UclgQ" CvElementArea="787, 655, 181, 42" CvType="InputBox" DesignTimeRectangle="789, 657, 178, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='city' tag='INPUT' type='' class='xui-textinput--input xui-textinput--input-medium' aaname='City' /&gt;" Guid="c1be6f2e-2c33-4085-b198-2f99e8db0279" InformativeScreenshot="8f6066265d91a36e950ebdc78260938b.png" IsResponsive="True" Reference="sobT6TSR0U6vO4EQCkoJVA/p5sPLk9SuU2SmcG8QDkFMw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="00e61740-8180-49bd-8b18-021429c454cd" CvTextArea="787, 636, 26, 16" CvTextArgument="City" CvType="Text" DesignTimeRectangle="788, 631, 180, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='City' tag='LABEL' type='' class='xui-text-label xui-fieldlabel-layout' check:innerText='City' /&gt;" Guid="32b7b2de-e59b-44e6-80a7-43a17e8afccf" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into State Textbox" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="005b2215-7518-488e-9d46-0a96e81fc3f3" Text="[in_TaskDetailsDict(&quot;Company State&quot;).Trim]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/contacts/add" CVScreenId="00e61740-8180-49bd-8b18-021429c454cd" ContentHash="lMACKKDxxEG12oR4vOBxYA" CvElementArea="965, 655, 183, 42" CvType="InputBox" DesignTimeRectangle="968, 657, 179, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='state' tag='INPUT' type='' class='xui-textinput--input xui-textinput--input-medium' aaname='State' /&gt;" Guid="edf8d0de-2b86-4c27-ab60-121837557725" InformativeScreenshot="5f7f2fc4b1d691a1053afc418094c2de.png" IsResponsive="True" Reference="sobT6TSR0U6vO4EQCkoJVA/RMwFj5qtuUy1Mw0xiemyQw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="00e61740-8180-49bd-8b18-021429c454cd" CvTextArea="968, 636, 32, 13" CvTextArgument="State" CvType="Text" DesignTimeRectangle="968, 631, 180, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='State' tag='LABEL' type='' class='xui-text-label xui-fieldlabel-layout' check:innerText='State' /&gt;" Guid="647cbfc0-ee90-4210-b60a-5b8d1daa791f" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Zip Code Textbox" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="005b2215-7518-488e-9d46-0a96e81fc3f3" Text="[in_TaskDetailsDict(&quot;Company Postal Code&quot;).Trim]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/contacts/add" CVScreenId="00e61740-8180-49bd-8b18-021429c454cd" ContentHash="ZtcUooOmUUeeavkRdGNv-A" CvElementArea="786, 752, 182, 42" CvType="InputBox" DesignTimeRectangle="789, 754, 178, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='postalCode' tag='INPUT' type='' class='xui-textinput--input xui-textinput--input-medium' aaname='Zip code' /&gt;" Guid="0d52d721-f098-4dd1-af7d-08174084b5e2" InformativeScreenshot="b0f1932aa014ee5f619565f46148b98c.png" IsResponsive="True" Reference="sobT6TSR0U6vO4EQCkoJVA/qdrBqqYCHEONCFjTs3k0fw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="00e61740-8180-49bd-8b18-021429c454cd" CvTextArea="786, 733, 56, 16" CvTextArgument="Zip code" CvType="Text" DesignTimeRectangle="788, 728, 180, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Zip code' tag='LABEL' type='' class='xui-text-label xui-fieldlabel-layout' check:innerText='Zip code' /&gt;" Guid="54749454-c88e-4151-88e2-80771757eefd" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Country Textbox" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,243" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="005b2215-7518-488e-9d46-0a96e81fc3f3" Text="[in_TaskDetailsDict(&quot;Company Country&quot;).Trim]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/contacts/add" CVScreenId="00e61740-8180-49bd-8b18-021429c454cd" ContentHash="MUXDGaiCUEKdIOARYtElLg" CvElementArea="965, 753, 184, 41" CvType="InputBox" DesignTimeRectangle="968, 754, 179, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='country' tag='INPUT' type='' class='xui-textinput--input xui-textinput--input-medium' aaname='Country' /&gt;" Guid="1b374dad-4faa-4e9e-85ba-3dacac9ccb28" InformativeScreenshot="c0f80baa7403267bfdaaf0102a750f8e.png" IsResponsive="True" Reference="sobT6TSR0U6vO4EQCkoJVA/w8luou0P_kqJGA_kcOPdcA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="00e61740-8180-49bd-8b18-021429c454cd" CvTextArea="967, 733, 51, 16" CvTextArgument="Country" CvType="Text" DesignTimeRectangle="968, 728, 180, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Country' tag='LABEL' type='' class='xui-text-label xui-fieldlabel-layout' check:innerText='Country' /&gt;" Guid="3ab731e9-342d-4d89-9e1c-cb5f091e1ac2" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/contacts/add" CVScreenId="00e61740-8180-49bd-8b18-021429c454cd" ContentHash="xg38iMGHykGPpNJFLuGi_w" CvElementArea="1022, 891, 128, 44" CvTextArea="1038, 905, 94, 14" CvTextArgument="Add address" CvType="Button" DesignTimeRectangle="1023, 893, 125, 40" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Add address' tag='BUTTON' type='button' class='xui-button xui-button-main xui-button-medium' check:innerText='Add address' /&gt;" Guid="358bb7ea-c0b8-48f5-a355-38b78f4edd15" InformativeScreenshot="89779808880b3d3fca6c36e975038826.png" Reference="sobT6TSR0U6vO4EQCkoJVA/RLSQ5hMdSk60yaZd5FVwNQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NCheckState.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NCheckState>
+              <uix:NCheckState DisplayName="Check App State Use as Delivery Address" sap:VirtualizedContainerService.HintSize="954,493" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="005b2215-7518-488e-9d46-0a96e81fc3f3" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,244" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NCheck Action="Check" DisplayName="Check/Uncheck Use as delivery Address" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="005b2215-7518-488e-9d46-0a96e81fc3f3" Version="V4">
+                      <uix:NCheck.Target>
+                        <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/contacts/add" ContentHash="oxUKw1sSUUWWl13mdu01Ng" DesignTimeRectangle="798, 835, 20, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl aria-labelledby='useAsAddressCheckbox' tag='INPUT' type='checkbox' class='xui-styledcheckboxradio--input xui-styledcheckboxradio--input-small' aaname='' /&gt;" Guid="f3360e96-d64e-4f8b-b782-de32e02dec7d" InformativeScreenshot="0ea503ff00f01311b98f0e7ce9cac954.png" Reference="sobT6TSR0U6vO4EQCkoJVA/mba6xsUHJ0ajfPUFK34oKQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="5e3e2252-c43e-4615-bec9-a6098485a1e3" CvTextArea="825, 837, 162, 14" CvTextArgument="Use as delivery address" CvType="Text" DesignTimeRectangle="789, 826, 358, 38" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='xui-styledcheckboxradio' tag='LABEL' type='' aaname='' check:innerText='Use as delivery address' /&gt;" Guid="4c6ccda6-1cff-418c-a221-16fac4d282db" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NCheck.Target>
+                    </uix:NCheck>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/contacts/add" ContentHash="XpaR8SIyLUG65gbXPNN89A" DesignTimeRectangle="798, 835, 20, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl aria-labelledby='useAsAddressCheckbox' tag='INPUT' type='checkbox' class='xui-styledcheckboxradio--input xui-styledcheckboxradio--input-small' aaname='' /&gt;" Guid="e10352ae-5eb3-43dd-bb62-3b414c926449" InformativeScreenshot="0ea503ff00f01311b98f0e7ce9cac954.png" Reference="sobT6TSR0U6vO4EQCkoJVA/p5rkfVLkd0K1jAudc3WY4g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contacts – Add contact – Xero' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="5e3e2252-c43e-4615-bec9-a6098485a1e3" CvTextArea="825, 837, 162, 14" CvTextArgument="Use as delivery address" CvType="Text" DesignTimeRectangle="789, 826, 358, 38" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='xui-styledcheckboxradio' tag='LABEL' type='' aaname='' check:innerText='Use as delivery address' /&gt;" Guid="0d31068a-44c7-4534-8e09-6b17be854b23" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Add address Button" sap:VirtualizedContainerService.HintSize="954,189" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="005b2215-7518-488e-9d46-0a96e81fc3f3" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/contacts/add" CVScreenId="5e3e2252-c43e-4615-bec9-a6098485a1e3" ContentHash="bJeisHiraEKVcUWYMz0W9g" CvElementArea="1022, 891, 128, 44" CvTextArea="1038, 905, 94, 14" CvTextArgument="Add address" CvType="Button" DesignTimeRectangle="1023, 893, 125, 40" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Add address' tag='BUTTON' type='button' class='xui-button xui-button-main xui-button-medium' check:innerText='Add address' /&gt;" Guid="aa37a965-d34e-4119-8182-3df4cc355f4d" InformativeScreenshot="e90ef313a61ad12e2d18c224cca828a8.png" Reference="sobT6TSR0U6vO4EQCkoJVA/qU7mB7v-QECxs1xCiLFDwA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Save &amp; Close Button" sap:VirtualizedContainerService.HintSize="954,182" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="005b2215-7518-488e-9d46-0a96e81fc3f3" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/contacts/add" CVScreenId="6d72f00e-ba81-46da-83e4-c0430cc68a42" ContentHash="jAIcbDuDyEGGNt2bfUwCVw" CvElementArea="1417, 994, 110, 35" CvTextArea="1431, 1004, 82, 13" CvTextArgument="Save &amp; close" CvType="Button" DesignTimeRectangle="1418, 996, 107, 32" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='btnSave' tag='BUTTON' type='submit' class='xui-button xui-actions--primary xui-button-main xui-button-small' aaname='Save &amp;amp; close' check:innerText='Save &amp;amp; close' /&gt;" Guid="aa96fde8-4a50-41cb-8be2-9d7b37330f48" InformativeScreenshot="efbd1475eed7a058e1048a19fc1885eb.png" Reference="sobT6TSR0U6vO4EQCkoJVA/4bZIqACysUy_wqh8vJTBdQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Edge" ContentHash="nuPSQUqXPE24pLdk7oyyEA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH2SURBVDhPnVNbL2NRFF5EIi4/gnciIgbxC4QHEh5kHsSzRMyfmHh16wxeEGnkBD09U3VJJIRMoiltpRjantPWtVVGacVlZpa1dncnLo1gJSvnO/t833f2WntteBHK7iew6v0wE3KDLRwRyVjTTTC1Vy1ZGUIJ54Ea6AWbcQ9z+wiz4acp1ow/oJKR5syXKhnKTxbbMwqfJ3M0YwHG3AVSTTHt63mTOJ3zxLX4vqXE5r1y2trfjMTX0mb8g4lflQAWf382O86EEOz0QTwpiZQzl36XIsK5aS7v2OIfAvgR9BQtHaH5KEmuQWxxxXAgdIVfdn6j5eQay1aPsYvw6EECO7bOUaW1VncMs9jUpnuBjymLHOucUXTF73AonMDuQByV4yS2b57h8tmNwG2ER8ikwRHF6ZMklpIxaMGoMMgmg6aNU1y7uMXPnhh+9cdx9DCBjeun2LwRw/HDpPjrGK3VOyJiZyUraQMqoZhKYAFhIeoLXooS1Mg1lhKxl94LF/axcztVApcp+iJKUH0m0RBujGzU88YJzEn4f2NZY9WHaYh2Kj50jGxk3q1KzQId5bsGiblTgcGUmGOQZls15t9kwhxNXwTFWyjVMviC8EXhcjIZ8RpPn0p/fiF+HIqvBqyB73RhNsVVnqWjshO20tRN+mslSwbAA2Z2Sv8z5CJZAAAAAElFTkSuQmCC" InformativeScreenshot="46934c9685b00443b2f3b5caae07be52.jpg" Reference="sobT6TSR0U6vO4EQCkoJVA/mdqALtkQtU67zvSMbDjcvQ" Selector="&lt;html app='msedge.exe' title='*Xero' /&gt;" Title="Dashboard – Xero" Version="V1" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1022,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Xero_CreateContact completed...&quot;]" />
+    </Sequence>
+  </Sequence>
+</Activity>

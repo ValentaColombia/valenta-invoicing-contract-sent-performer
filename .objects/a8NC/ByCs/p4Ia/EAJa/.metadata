@@ -1,0 +1,13 @@
+﻿{
+  "Name": "msedge.exe Tasks(2)",
+  "Type": "Element",
+  "Id": "EAJaYEmv006VlzsynIxOsg",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/EAJaYEmv006VlzsynIxOsg",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/p4Ia1FuPRE6JWEEQV6TlMw",
+  "Created": "2026-02-18T13:48:08.7001054Z",
+  "Updated": "2026-02-18T13:48:08.7001054Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

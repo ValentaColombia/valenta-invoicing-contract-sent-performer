@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MBLq8cL1b06Q0MDORcdocA" Reference="sobT6TSR0U6vO4EQCkoJVA/8LAfI5TF2Uy4Th_luYLqLw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="login.xero.com/identity/user/login" CVScreenId="3512cb55-f45c-491e-ad41-24d6c65d3204" CvElementArea="482, 427, 403, 42" CvTextArea="660, 440, 47, 18" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="484, 428, 400, 40" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='xl-form-submit' tag='BUTTON' type='' class='xui-button xui-u-fullwidth xui-button-main xui-button-medium xui-margin-top-large' aaname='Log in' check:innerText='Log in' /&gt;" Guid="5111bb9a-039b-4c26-9546-7688c9ce886f" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="5c46f6bde1835ade5c7eecedc8b0bb7f.png" xmlns="">0hE5FYYjVg06cUB2SQhuCxA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GT89xhYQAU2EmdyYRRpbNw" Reference="sobT6TSR0U6vO4EQCkoJVA/GUMdEPm0OUCY_2ktoYKjwg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="go.xero.com/app/!67tTl/contacts/add" CVScreenId="23c952b5-b9ca-4743-97a9-5332b68274d3" CvElementArea="917, 242, 180, 40" CvTextArea="932, 254, 149, 16" CvTextArgument="Enter address manually" CvType="Button" DesignTimeRectangle="922, 246, 170, 32" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Enter address manually' parentid='shell-app-root' tag='BUTTON' type='button' class='xui-button xui-text-align-left xui-margin-top-xsmall xui-button-borderless-main xui-button-small' check:innerText='Enter address manually' /&gt;" Guid="7e78cc53-214d-42b4-8f61-e3721f206f12" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="23c952b5-b9ca-4743-97a9-5332b68274d3" CvTextArea="942, 166, 109, 17" CvTextArgument="Billing address" CvType="Text" DesignTimeRectangle="944, 162, 107, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='label' tag='SPAN' type='' class='xui-margin-left-small' aaname='Billing address' check:innerText='Billing address' /&gt;" Guid="abdd0b1a-7a2d-48e9-9a73-2e9d7b321f46" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="33f12a18c17e701da7de5f0d0d5a365c.png" xmlns="">0kP7NOvrTXUGln9TCTpBNzg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "INPUT addressLine2",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "XKzHUVsgyEmJtH5Q6S6OGg",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/XKzHUVsgyEmJtH5Q6S6OGg",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/mdqALtkQtU67zvSMbDjcvQ",
+  "Created": "2025-12-19T20:47:53.7745128Z",
+  "Updated": "2025-12-19T20:47:53.7745128Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

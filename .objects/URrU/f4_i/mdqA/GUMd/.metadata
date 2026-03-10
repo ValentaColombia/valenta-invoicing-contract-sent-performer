@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Enter address manually",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "GUMdEPm0OUCY_2ktoYKjwg",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/GUMdEPm0OUCY_2ktoYKjwg",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/mdqALtkQtU67zvSMbDjcvQ",
+  "Created": "2025-12-19T20:45:10.442456Z",
+  "Updated": "2025-12-19T20:45:10.442456Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

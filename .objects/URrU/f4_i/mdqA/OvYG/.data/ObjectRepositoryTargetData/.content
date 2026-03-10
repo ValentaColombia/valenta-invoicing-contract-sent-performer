@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="jztuIS0KGECIjDA2wyW3nA" Reference="sobT6TSR0U6vO4EQCkoJVA/OvYGzzDWk0WnKPyjHPGK9w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="go.xero.com/app/!67tTl/dashboard" CVScreenId="3267d270-5cd9-4470-8b70-bab5107346d9" CvElementArea="1525, 226, 322, 46" CvType="InputBox" DesignTimeRectangle="1566, 230, 280, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='MYsdlt_HJx' tag='INPUT' type='search' class='global-search-mfe-textinput--input global-search-mfe-textinput--input-medium' placeholder='Search contacts and transactions' aaname='' /&gt;" Guid="a9ad8607-de07-409b-883a-dbfd10ccdc59" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xer*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="1539, 240, 18, 18" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='svg' type='' class='' aaname='' /&gt;" Guid="4a034efb-5ee7-4b8e-a194-b0967ae21bb3" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4350770573d243ed180bdd0d66cea4e4.png" xmlns="">0ZfGssZD3H0G6IwGxtdmkgA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0Fp3rgFUU0uuxqmlp3jptQ" Reference="sobT6TSR0U6vO4EQCkoJVA/mBl2bqTBnUCdfK4X8Zyw_Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/contacts/146214366/record/0-3/412352088281" CVScreenId="16c6578a-012e-4b83-81e6-5fb2e1996819" CvTextArea="505, 748, 60, 10" CvTextArgument="1 comment" CvType="Text" DesignTimeRectangle="506, 748, 59, 10" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl aaname='1 comment' parentid='main-content' tag='I18N-STRING' type='' class='' check:innerText='1 comment' /&gt;" Guid="9d9dda5e-3afb-40b5-9a96-084d7e50ca57" ScopeSelectorArgument="&lt;html app='msedge.exe' url='https://app-eu1.hubspot.com*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="16c6578a-012e-4b83-81e6-5fb2e1996819" CvElementArea="487, 746, 16, 14" CvType="Icon" DesignTimeRectangle="507, 744, 58, 18" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl aaname='*omment' tag='I18N-STRING' type='' class='' /&gt;" Guid="5dffb4f1-271c-4d2c-a5a0-f1984cf3035f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD4AAAAWCAYAAACYPi8fAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKPSURBVFhH7VQ9ayJRFE1nuaXllpZb+hOm3NLScsuU/oSUEhAsAgqCBEFWYTCKMAwJAyKRESMisrIK4gcDQQwDKgmcvXfeGz+GZHfdtXI8MPDeuZ/nzX3vAj7FWbjfcBbuN5yF+w0e4WsMem0UhnO5P11shU9MKMnvuLimL9+T5AlgUkeINEWe5F5iR3gDSq7qOH0s3Eb3sYZoQUdUbaC2eJP8C5ouf9dC0+VHJnE1lPttxBxbG9NX19dAsv/iuE07vDeh9xu4JL/L+yHmrxbKmuHEF6y148eYj1oiF/HpkS3ITZ0fiKuyNzYxnyshQJo+Z3RcdbaT7Bn1HiIfCn9DTS06ExHK6lBuyC/VwADPSGd5UooI5zWEeWoSOspc+EkXE5QoQcmWxJr8ghlNxF9XkF4AA03akhUoGVGD/UJZypfg+AfUuIXeAz6RjeMjjl8J8QkdsluH4iP5CoK8Zg09A8GkzJdQoRgWZ3Hw98JXLShkC98/S8LGnMUNKTnxyqM8fVv4hbSZbEhFbMiGGeIpyn1TR5e3OyMohFdxu2KD7CHX5g3l0DYCCzmO15E26R0y6/hKhxxQf3rqAOU8+aXq9FMIfxx1B78RbjXwxUngjrdEZ7+om2PbEDfNvBT+TkNCOE0J894eNjksEU9/1blS7meMPXUOFb6aQTcNhLloxqATHWEqTQJjxHg86cQLozm6Hbp//FdX1CiNYyBTh25Z0O9YRBHfeu4IHks40K2qtFYRNceYLsYoVE00PT6Mw4RLB3G/+HMb2cHuy893ukqPENHzfn2PVzTBH1s46D25zbN4WStZRZr5/xJ+AJarpVztY2nbeN9ybKypB8+VOxD/JPwUcBbuN5yF+w0+FQ78ApZ4EUhLZwcIAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c452e4463d080b86c57c6cd07779f2f1.png" xmlns="">0SQ2UBuNZu0qxI7m_OA8smA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

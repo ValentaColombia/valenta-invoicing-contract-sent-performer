@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="e1ohx83Vx0mLPnxjQeOsqg" Reference="sobT6TSR0U6vO4EQCkoJVA/QMdareUcykWYpXD7Pw97nw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/tasks/146214366/view/all" CVScreenId="5b6aa85e-6c9d-4b6e-aa0f-3c70eb71bd9d" CvTextArea="1162, 622, 38, 12" CvTextArgument="Signout" CvType="Text" DesignTimeRectangle="1163, 621, 37, 13" DesignTimeScaleFactor="0.75" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='signout' tag='A' type='' class='MenuItem__StyledLink-jYtZbD kvrzCM' aaname=' Sign out' check:innerText='Sign out' /&gt;" Guid="df3de4ad-1bea-42bf-bde8-e091da38e4d1" ScopeSelectorArgument="&lt;html app='msedge.exe' url='*ubspot*' casesensitive:url='true' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="1169cfd35de688fa7dd6dcfda995e507.png" xmlns="">0vFJrGEZJAkqXIsjwa98txA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

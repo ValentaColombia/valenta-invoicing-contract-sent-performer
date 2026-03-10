@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Valenta",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "_nAh_lbELEq0CeRetrh5pg",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/_nAh_lbELEq0CeRetrh5pg",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/XQrSod8cNEiWLen2iMQBQw",
+  "Created": "2026-01-04T20:51:43.0418159Z",
+  "Updated": "2026-01-04T20:51:43.0418159Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

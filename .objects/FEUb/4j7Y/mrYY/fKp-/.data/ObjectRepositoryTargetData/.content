@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="BIPCx1bVxkeS4-6e3uW26g" Reference="sobT6TSR0U6vO4EQCkoJVA/fKp-RKtSKkqLN-CWho5npA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/login/two-factor" CVScreenId="1a532855-9c9f-4f5f-bc9a-a665bbc97ef1" CvElementArea="570, 243, 117, 33" CvTextArea="589, 253, 79, 11" CvTextArgument="Remember me" CvType="Button" DesignTimeRectangle="590, 253, 77, 14" DesignTimeScaleFactor="0.75" FuzzySelectorArgument="&lt;webctrl aaname='Remember me' tag='I18N-STRING' type='' class='' check:innerText='Remember me' /&gt;" Guid="221955bd-701d-45e0-be8a-4b94456e2ef9" ScopeSelectorArgument="&lt;html app='msedge.exe' title='HubSpot*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="9e6189c330289efa328c0320ac7c98bd.png" xmlns="">0xtPhGmi79EmK149jEaygRw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

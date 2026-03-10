@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="DWm-XqyNokOTRfEoiw7Vhw" Reference="sobT6TSR0U6vO4EQCkoJVA/SJtP5Oj-tU6N2z3YGekl5w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/login" CVScreenId="2a2b2a20-0c5a-4b97-8a6a-5a348b182870" CvElementArea="761, 224, 16, 16" CvType="Icon" DesignTimeRectangle="759, 223, 18, 18" DesignTimeScaleFactor="1" ElementType="Icon" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl tag='svg' type='' class='StyledIcon-jibXlG eXbnwa' aaname='' /&gt;" Guid="b4580877-4a60-402e-bda3-0cce8b3f0752" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADvSURBVDhPY/hPAaC95hU3H/9//e0nlIcABDWXHr78n2Hiuv/Sc7b9v//xK1QUAvBqrjp69f/0S/fAmkHYZd1hqAwE4NQcuf3Uf8uVB8A2r73z9D/HlA3/+8/fhspCAFbNvpuO/bdbffC//+bj/zP3nf9fePDS/4efvkFlEQBF85dff/7bAjXZrzn032PD0f9RO079D992EmwANoCiGaTYfMX+/+7rj4A1BQBtzjtwESqLCVA0i87aAg4YG6DtnkCb8WkEAbjma28/wUMVhHE5FRnANV9/9+m/z8Zj4OjZePcZVBQ/QHE2qWCgNP//DwBLmUnm63ycswAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='msedge.exe' title='HubSpot Login and Sign in' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="fec89bf75654b27af8b8b0939c22602a.png" xmlns="">0GBu63Z27Vk6d7Gtrb0EYoA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

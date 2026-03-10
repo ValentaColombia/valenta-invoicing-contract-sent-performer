@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="QgNRtUM-Cka5nU8w_VeBbA" Reference="sobT6TSR0U6vO4EQCkoJVA/-AItx_ywOki6J3-PufNjPw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="my.xero.com/!xkcD/Dashboard" CVScreenId="99b85726-59d3-474a-9c62-8d01799ed376" CvTextArea="42, 306, 164, 14" CvTextArgument="JWP JA Wealth Pty Ltd" CvType="Text" DesignTimeRectangle="27, 294, 300, 41" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}' tag='A' /&gt;&quot;, in_XeroOrganization)]" FuzzySelectorArgument="&lt;webctrl aaname='JA Wealth Pty Ltd' tag='A' type='' class='xnav-verticalmenuitem--body xnav-menuitem-orgpractice' check:text='JA Wealth Pty Ltd' /&gt;" Guid="250eff0d-9576-443b-9ea4-05ed8e8d841b" ScopeSelectorArgument="&lt;html app='msedge.exe' title='My Xero*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="6a80f0977bb8f51c3c15b52203bbbf6f.png" xmlns="">0Gm8G7AUSNECQC6A200nVJg</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="in_XeroOrganization" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

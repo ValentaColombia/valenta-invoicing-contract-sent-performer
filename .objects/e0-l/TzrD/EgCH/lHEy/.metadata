@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Enter the 6-digit code …",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "lHEyYpoVwEigKma77HhIYg",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/lHEyYpoVwEigKma77HhIYg",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/EgCHWbGSDkW9f9Gs6q3WDQ",
+  "Created": "2026-01-06T13:06:09.0579915Z",
+  "Updated": "2026-01-06T13:06:09.0579915Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

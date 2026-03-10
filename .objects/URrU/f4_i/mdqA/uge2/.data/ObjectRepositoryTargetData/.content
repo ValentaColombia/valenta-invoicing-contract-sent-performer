@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4SYb8kMIYkaRwJED7tXJvg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="go.xero.com/app/!67tTl/contacts/add" CVScreenId="a0152b60-cfe8-45f2-bfcd-3610ac84a890" CvElementArea="904, 630, 201, 42" CvType="InputBox" DesignTimeRectangle="907, 632, 198, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='first-name' tag='INPUT' type='' class='xui-textinput--input xui-textinput--input-medium' aaname='First name' /&gt;" Guid="306b765b-0622-40c7-b86c-07710a925164" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contacts – Add contact – Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a0152b60-cfe8-45f2-bfcd-3610ac84a890" CvTextArea="904, 611, 68, 13" CvTextArgument="First name" CvType="Text" DesignTimeRectangle="906, 606, 200, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='First name' tag='LABEL' type='' class='xui-text-label xui-fieldlabel-layout' check:innerText='First name' /&gt;" Guid="24eef6e4-be48-4f70-9f9e-4ba1bf4a9eae" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="245fa5570456dcf5bd3d55a7f7206d87.png" xmlns="">0JIBz3zb4Uk28xKi5dciJkw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

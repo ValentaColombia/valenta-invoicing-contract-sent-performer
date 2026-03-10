@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="2EK73WZ8ok-T2VOZL8aSRg" Reference="sobT6TSR0U6vO4EQCkoJVA/Trosjjm-IUGS6E51yVmMrQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/contacts/146214366/record/0-3/413524720830" CVScreenId="913d8fc8-6e63-4135-87a0-047b4ebc49dd" CvTextArea="434, 560, 26, 11" CvType="AnyWordGroup" DesignTimeRectangle="436, 559, 23, 14" DesignTimeScaleFactor="0.75" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='activity-title-1767963600000' tag='STRONG' type='' class='' /&gt;" Guid="63e55c7a-fe5f-47e8-87ba-159e46be2791" ScopeSelectorArgument="&lt;html app='msedge.exe' url='https://app-eu1.hubspot.com*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="913d8fc8-6e63-4135-87a0-047b4ebc49dd" CvTextArea="434, 560, 157, 11" CvTextArgument="Task assigned to Franchise Bot" CvType="Text" DesignTimeRectangle="436, 559, 155, 14" FuzzySelectorArgument="&lt;webctrl parentid='activity-title-1767963600000' tag='I18N-STRING' type='' class='' aaname=' assigned to Franchise Bot' check:innerText='Task assigned to Franchise Bot' /&gt;" Guid="d1906bf8-6c40-49cb-9c22-59c487be0139" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="be7333e9d9abe8df58ce418132504668.png" xmlns="">0A4MrNJZT6Em0Wfe985Bdvw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

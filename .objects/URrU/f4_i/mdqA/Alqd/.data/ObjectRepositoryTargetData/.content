@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="soub5tjcp0WaieAQ-3U4HQ" Reference="sobT6TSR0U6vO4EQCkoJVA/Alqdv8_Xj0WrLzxzrqiNLg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="go.xero.com/app/!67tTl/contacts/add" CVScreenId="a1bc25b3-d91d-4d69-b1d8-76e5bacedcba" CvTextArea="399, 312, 74, 14" CvType="AnyWordGroup" DesignTimeRectangle="394, 300, 265, 40" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='ADDRESS_PANEL_MENU_HEADER' tag='SPAN' type='' class='xui-pickitem--text' /&gt;" Guid="234962fe-0ebe-46e6-aba8-10514d47430f" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3a2b2f5f986f86e98449d3d73889f00c.png" xmlns="">0LvCuXtE9_EyzgCjtH__D7w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

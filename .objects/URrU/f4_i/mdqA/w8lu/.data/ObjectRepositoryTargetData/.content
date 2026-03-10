@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MUXDGaiCUEKdIOARYtElLg" Reference="sobT6TSR0U6vO4EQCkoJVA/w8luou0P_kqJGA_kcOPdcA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="go.xero.com/app/!67tTl/contacts/add" CVScreenId="00e61740-8180-49bd-8b18-021429c454cd" CvElementArea="965, 753, 184, 41" CvType="InputBox" DesignTimeRectangle="968, 754, 179, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='country' tag='INPUT' type='' class='xui-textinput--input xui-textinput--input-medium' aaname='Country' /&gt;" Guid="1b374dad-4faa-4e9e-85ba-3dacac9ccb28" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="00e61740-8180-49bd-8b18-021429c454cd" CvTextArea="967, 733, 51, 16" CvTextArgument="Country" CvType="Text" DesignTimeRectangle="968, 728, 180, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Country' tag='LABEL' type='' class='xui-text-label xui-fieldlabel-layout' check:innerText='Country' /&gt;" Guid="3ab731e9-342d-4d89-9e1c-cb5f091e1ac2" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c0f80baa7403267bfdaaf0102a750f8e.png" xmlns="">0f9Aa-wxYuESy-cWUruY2tg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="KLUoKDTrwkiL3gDYVXXlcQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/login" CVScreenId="b77433a2-2035-4e17-bfd2-a45df3235e94" CvElementArea="557, 414, 301, 40" CvTextArea="654, 428, 129, 15" CvTextArgument="Sign in with a Passkey" CvType="Button" DesignTimeRectangle="656, 428, 126, 14" DesignTimeScaleFactor="0.800000011920929" FuzzySelectorArgument="&lt;webctrl aaname='Sign in with a Passkey' tag='I18N-STRING' type='' class='' check:innerText='Sign in with a Passkey' /&gt;" Guid="ea0050f7-7f2a-452a-8f45-05f706089597" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HubSpot Login and Sign in' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="646f22d296e4320627779fdd3027661d.png" xmlns="">0KG0jQHdY2ku6xb22Wd5e4A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

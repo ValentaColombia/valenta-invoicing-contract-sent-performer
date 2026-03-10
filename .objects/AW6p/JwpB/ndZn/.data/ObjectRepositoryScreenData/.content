@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="4a6ZhtQvoUSJ6tlfKS6BCw" Reference="sobT6TSR0U6vO4EQCkoJVA/ndZn9ETpLUSnWaF6bs0iFQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-8, -8, 1936, 1056" BrowserType="Edge" ContentHash="YIhTHNjfhkO1Ounoi2dqqg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH2SURBVDhPnVNbL2NRFF5EIi4/gnciIgbxC4QHEh5kHsSzRMyfmHh16wxeEGnkBD09U3VJJIRMoiltpRjantPWtVVGacVlZpa1dncnLo1gJSvnO/t833f2WntteBHK7iew6v0wE3KDLRwRyVjTTTC1Vy1ZGUIJ54Ea6AWbcQ9z+wiz4acp1ow/oJKR5syXKhnKTxbbMwqfJ3M0YwHG3AVSTTHt63mTOJ3zxLX4vqXE5r1y2trfjMTX0mb8g4lflQAWf382O86EEOz0QTwpiZQzl36XIsK5aS7v2OIfAvgR9BQtHaH5KEmuQWxxxXAgdIVfdn6j5eQay1aPsYvw6EECO7bOUaW1VncMs9jUpnuBjymLHOucUXTF73AonMDuQByV4yS2b57h8tmNwG2ER8ikwRHF6ZMklpIxaMGoMMgmg6aNU1y7uMXPnhh+9cdx9DCBjeun2LwRw/HDpPjrGK3VOyJiZyUraQMqoZhKYAFhIeoLXooS1Mg1lhKxl94LF/axcztVApcp+iJKUH0m0RBujGzU88YJzEn4f2NZY9WHaYh2Kj50jGxk3q1KzQId5bsGiblTgcGUmGOQZls15t9kwhxNXwTFWyjVMviC8EXhcjIZ8RpPn0p/fiF+HIqvBqyB73RhNsVVnqWjshO20tRN+mslSwbAA2Z2Sv8z5CJZAAAAAElFTkSuQmCC" Reference="sobT6TSR0U6vO4EQCkoJVA/ndZn9ETpLUSnWaF6bs0iFQ" Selector="&lt;html app='msedge.exe' title='Contacts*' /&gt;" Title="Contacts – Valenta Virtual Assistants Outsourcing – Xero" Version="V1">
+      <imageRef attrName="InformativeScreenshot" originalValue="6c964fb7f70d2a74a052dd16dd9aa1d7.jpg" xmlns="">0YfIQs580G0mYNcjMnRGwAw</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

@@ -1,0 +1,243 @@
+{
+  "name": "FIN_Invoicing_ContractSent_Performer",
+  "projectId": "b269a6c6-2e13-4837-86d6-4bd93d5d7d92",
+  "description": "Robotic Enterprise Framework",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.24.4]",
+    "UiPath.Mail.Activities": "[2.5.10]",
+    "UiPath.MicrosoftOffice365.Activities": "[3.5.10]",
+    "UiPath.System.Activities": "[25.10.3]",
+    "UiPath.Testing.Activities": "[24.10.4]",
+    "UiPath.UIAutomation.Activities": "[24.10.12]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "24.10.11.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": [
+        "Tests/Apps/Xero/Xero_SearchOrganization_TestCase.xaml"
+      ]
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6330c233-e339-42fd-ae65-b1db2d1de81c",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\GetTransactionDataTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1326597e-4c58-4f7d-8101-f81dcfc26112",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\InitAllApplicationsTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "8b2266ba-fb31-4de1-a395-b1e9398bf5d9",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\InitAllSettingsTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "366f5af4-77da-401e-8e42-24b15d119328",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\MainTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6c3e3cbb-2dbb-47a5-8c7e-7c96a28b4cf5",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\ProcessTestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "3d27f94c-f1e0-4630-85d3-0dbb3bdb05c3",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ad0530e6-a1af-4961-ad1a-60de6c6bf444",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Apps\\HubSpot\\HubSpot_Login_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ff8867cd-caa7-43d7-9b62-e187abbe214f",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Apps\\HubSpot\\HubSpot_NavigateTheMenu_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "01997532-adce-45ec-bfbc-939c789f8d7b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Apps\\HubSpot\\HubSpot_ExtractAllTasks_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "dbd081a1-c813-499c-a47a-612bbfb4c4b3",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Apps\\HubSpot\\HubSpot_OpenTask_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5107db56-8458-4dd7-8e63-70dcd408157f",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Apps\\Xero\\Xero_Login_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "9232916c-52f9-42e2-89a9-b5cfb6d31345",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Apps\\Xero\\Xero_SearchCompany_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "841cef8e-ab94-4441-8840-1618b87566f9",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Apps\\Xero\\Xero_ExtractContactDetails_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e4be3472-47f3-4afa-850f-1219355e0f07",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Apps\\HubSpot\\HubSpot_UpdateTask_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "92bacbcd-6bd9-4978-a2c5-f9c7c211c392",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "fileName": "Tests\\End-to-End_Invoicing_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f9644dd6-f5a2-4b2a-8bc4-1abc30314d39",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Apps\\Xero\\Xero_CreateContact_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0dc03bd8-be8b-42a5-bcba-685d82a89522",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Apps\\HubSpot\\HubSpot_AddCommentToTask_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d4e549db-66b0-48b1-9442-9b8e7003f81e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Apps\\HubSpot\\HubSpot_Logout_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "8a72ea35-7f84-4bfe-a835-dceac9899587",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Apps\\Xero\\Xero_Logout_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "8d1ed707-5315-46f9-8037-fbab8de21219",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Apps\\Outlook\\Outlook_SendEmail_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "60d01747-0c8c-42b1-9f21-1f08d53f4417",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Apps\\Outlook\\Outlook_CreateHTMLBody_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d4aa3eb6-ffe5-4c17-b526-bf091c3ac434",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Apps\\Excel\\Excel_WriteInInvoicingExecutionReport_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "65d2e2bf-4ad8-4316-aa2d-1e5a7b6cf4ca",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Apps\\Excel\\Excel_ReadExecutionReportFile_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "8e259448-08fe-4323-88c1-f49c682d1911",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Apps\\Excel\\Excel_DeleteFolderFiles_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f42f381b-d86c-4294-aed7-b6a6bdf4f0fe",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Apps\\Excel\\Excel_CreateInvoicingExecutionReport_TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "90de51c1-6790-4dda-9304-834ad6394f58",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\Apps\\Excel\\Excel_ChooseXeroOrganization_TestCase.xaml"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "570ddc33-687e-4270-bc44-193216a5a060",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

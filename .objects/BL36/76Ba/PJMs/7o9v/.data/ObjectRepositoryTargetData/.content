@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PHqHAHkfmk2LKph1pa88XA" Reference="sobT6TSR0U6vO4EQCkoJVA/7o9vJu7NI0CJ6ZLzWDo7wQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/contacts/146214366/record/0-3/406329236685" CVScreenId="e6a42735-465a-4676-921a-4adf55af82fb" CvTextArea="458, 576, 75, 10" CvTextArgument="Add comment" CvType="Text" DesignTimeRectangle="459, 572, 73, 18" DesignTimeScaleFactor="0.75" FuzzySelectorArgument="&lt;webctrl aaname='Add comment' parentid='main-content' tag='I18N-STRING' type='' class='' check:innerText='Add comment' /&gt;" Guid="3b684e43-4076-41bc-bdb9-1a5e6bb2d248" ScopeSelectorArgument="&lt;html app='msedge.exe' url='https://app-eu1.hubspot.com*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="e6a42735-465a-4676-921a-4adf55af82fb" CvElementArea="439, 573, 16, 14" CvType="Icon" DesignTimeRectangle="443, 577, 9, 8" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl type='' parentid='main-content' tag='path' class='' aaname='' /&gt;" Guid="7db2eb0d-fff3-4291-b527-b55bbe3d792d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAYAAAC5tzfZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADDSURBVChTnYzLCoJQFEX78PqAGjVUaFAWNDOCMhpYNBHRRg4isoI0w7KHEYUYduKebqL4IFqwObDZ6xTgD0LJcq6wtk6ZeXg+XVLJ3LtQZITctAZTFAgoafoudRhNtT1BgRCTdNMBTlCh0VdgtT1iZ9gXqHXlbKnMiVBiBUylOcLuexPS0vx8zQvbkVAgoERQZgbwYy0cMbwEoroIYx1cuoxIhI19RqHeU8B/BrRNEpNudw+G8hyC4EWbdGLSr/whAbwBrBcu7UGcezIAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="cf8ba3649a43f00d7a7d04a8ce714229.png" xmlns="">0XL2qW3V2K0GRizzmY5JmNQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

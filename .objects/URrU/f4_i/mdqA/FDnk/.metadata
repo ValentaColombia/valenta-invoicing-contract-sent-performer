@@ -1,0 +1,14 @@
+﻿{
+  "Name": "BUTTON x-nav--global-to…",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "FDnkt2OmCUeW3Q159FdHQg",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/FDnkt2OmCUeW3Q159FdHQg",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/mdqALtkQtU67zvSMbDjcvQ",
+  "Created": "2025-12-17T15:39:16.9979348Z",
+  "Updated": "2025-12-17T15:39:16.9979348Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

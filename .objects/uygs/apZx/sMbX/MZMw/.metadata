@@ -1,0 +1,13 @@
+﻿{
+  "Name": "chrome.exe",
+  "Type": "Element",
+  "Id": "MZMwB04sg0Cuu9Gi1tPdBA",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/MZMwB04sg0Cuu9Gi1tPdBA",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/sMbXg8HykUei43-_kQ-2Ug",
+  "Created": "2026-01-06T20:05:05.5452589Z",
+  "Updated": "2026-01-06T20:05:05.5452589Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

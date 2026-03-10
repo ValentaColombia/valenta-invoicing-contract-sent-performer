@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="3_Jv70VD4kWro2JA92-pIw" Reference="sobT6TSR0U6vO4EQCkoJVA/lHEyYpoVwEigKma77HhIYg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="login.xero.com/identity/user/login/two-factor/authenticate" DesignTimeRectangle="484, 410, 400, 64" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='xui-margin-top-x-large xui-margin-bottom-none xui-text-align-center xui-heading-xlarge undefined' aaname='Enter the 6-digit code found in your authenticator app' check:innerText='Enter the 6-digit code found in your authenticator app' /&gt;" Guid="ac1b0e59-3fb8-40d8-a6c4-49219746fe36" ScopeSelectorArgument="&lt;html app='msedge.exe' title='MFA Login | Xero*' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4fa691ddf053952047d771ba139dbb99.png" xmlns="">0YRa5-X--d0GwJRJ7XkPXEA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

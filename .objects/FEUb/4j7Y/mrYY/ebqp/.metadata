@@ -1,0 +1,13 @@
+﻿{
+  "Name": "valentafranchisebot@val…",
+  "Type": "Element",
+  "Id": "ebqpyHKxekaC3fvmodvg2g",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/ebqpyHKxekaC3fvmodvg2g",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/mrYYb0dlC0ewQxOuv8ARtw",
+  "Created": "2025-12-16T02:06:43.6124959Z",
+  "Updated": "2025-12-16T02:06:43.6124959Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

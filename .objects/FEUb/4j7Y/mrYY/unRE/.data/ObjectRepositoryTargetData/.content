@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Tyf5VTQ5qk-8_5Uaop43Kg" Reference="sobT6TSR0U6vO4EQCkoJVA/unREwDB7pUqzm-v0bU4Mbw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/login" DesignTimeRectangle="578, 307, 278, 30" DesignTimeScaleFactor="0.75" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' type='email' class='TextInput__StyledInput-dZxQPg eaGEy' aaname='Email address' /&gt;" Guid="a3e4c0af-f538-442a-919b-7647aad6c9c1" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='HubSpot Login and Sign in' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="11d7f70b-b3d0-40c2-b5b1-b08899a4c58e" CvTextArea="577, 289, 76, 11" CvTextArgument="Email address" CvType="Text" DesignTimeRectangle="578, 283, 278, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='FormControl-label9' tag='LABEL' type='' class='FormLabel__StyledLabel-fnFDWb bDdNpC' aaname='' check:innerText='Email address' /&gt;" Guid="89923445-1a63-402c-be81-5723ac8adb31" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a53929bd3b0f3acae8ac3324208ffff0.png" xmlns="">0xn5rGlqyqUaIRfTWDto86w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

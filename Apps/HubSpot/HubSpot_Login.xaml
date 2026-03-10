@@ -1,0 +1,431 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="HubSpot_Connection" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_HubSpotUsername" Type="InArgument(x:String)" />
+    <x:Property Name="in_HubSpotPassword" Type="InArgument(ss:SecureString)" />
+    <x:Property Name="in_HubSpotURL" Type="InArgument(x:String)" />
+    <x:Property Name="out_IsLoggedIn" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="in_HubSpotAuthCode" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>HubSpot_Connection_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Web.Activities.Http.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Web.Activities.Http</x:String>
+      <x:String>UiPath.Sdk.Activities</x:String>
+      <x:String>UiPath.Sdk.Activities.DependencyInjection.Contracts</x:String>
+      <x:String>UiPath.Sdk.Activities.DependencyInjection</x:String>
+      <x:String>UiPath.Web</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.Web.Activities.JSON.Models</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Web</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="HubSpot_Connection" sap:VirtualizedContainerService.HintSize="1056,2743" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap2010:Annotation.AnnotationText="Task Description: To log into HubSpot website." DisplayName="HubSpot_Login" sap:VirtualizedContainerService.HintSize="1056,2720" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1022,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;HubSpot_Login started...&quot;]" />
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome HubSpot Login and Sign in" sap:VirtualizedContainerService.HintSize="1022,2269" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="7a784198-12d0-401e-b328-8238cad8eb4e" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="988,2020" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="954,219" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NCheckState DisplayName="Check App State Change Tag" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="7a784198-12d0-401e-b328-8238cad8eb4e" Version="V4">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,419" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Change tag appears in HubSpot window&quot;]" />
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Change Tag" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7a784198-12d0-401e-b328-8238cad8eb4e" Version="V4">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/login" CVScreenId="2a2b2a20-0c5a-4b97-8a6a-5a348b182870" ContentHash="DWm-XqyNokOTRfEoiw7Vhw" CvElementArea="761, 224, 16, 16" CvType="Icon" DesignTimeRectangle="759, 223, 18, 18" DesignTimeScaleFactor="1" ElementType="Icon" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl tag='svg' type='' class='StyledIcon-jibXlG eXbnwa' aaname='' /&gt;" Guid="b4580877-4a60-402e-bda3-0cce8b3f0752" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADvSURBVDhPY/hPAaC95hU3H/9//e0nlIcABDWXHr78n2Hiuv/Sc7b9v//xK1QUAvBqrjp69f/0S/fAmkHYZd1hqAwE4NQcuf3Uf8uVB8A2r73z9D/HlA3/+8/fhspCAFbNvpuO/bdbffC//+bj/zP3nf9fePDS/4efvkFlEQBF85dff/7bAjXZrzn032PD0f9RO079D992EmwANoCiGaTYfMX+/+7rj4A1BQBtzjtwESqLCVA0i87aAg4YG6DtnkCb8WkEAbjma28/wUMVhHE5FRnANV9/9+m/z8Zj4OjZePcZVBQ/QHE2qWCgNP//DwBLmUnm63ycswAAAABJRU5ErkJggg==" InformativeScreenshot="fec89bf75654b27af8b8b0939c22602a.png" Reference="sobT6TSR0U6vO4EQCkoJVA/SJtP5Oj-tU6N2z3YGekl5w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='HubSpot Login and Sign in' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/login" CVScreenId="d15d5db9-1590-4918-a053-79a9805d6bbd" ContentHash="IMYr7ovjw0-l09U0llx5Sw" CvElementArea="827, 295, 281, 33" CvTextArea="918, 305, 116, 13" CvTextArgument="Sign in with Microsoft" CvType="Button" DesignTimeRectangle="919, 305, 115, 13" DesignTimeScaleFactor="0.75" FuzzySelectorArgument="&lt;webctrl parentid='microsoftBtn' tag='I18N-STRING' type='' class='' aaname='Sign in with Microsoft' check:innerText='Sign in with Microsoft' /&gt;" Guid="f5a2cd39-09bc-4a13-816e-1afb91529e0a" InformativeScreenshot="25c6030ab499861b949245b9388d7a28.png" Reference="sobT6TSR0U6vO4EQCkoJVA/QzghZm7_Bk2HxVV6HDPECQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='HubSpot*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="d15d5db9-1590-4918-a053-79a9805d6bbd" CvTextArea="898, 125, 138, 42" CvTextArgument="HubSpbt" CvType="Text" DesignTimeRectangle="900, 127, 135, 38" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl tag='IMG' type='' class='Image__StyledImage-hdDToF bOtMrt' aaname='Hubspot Homepage' /&gt;" Guid="6a1484a6-b51e-42a4-9380-46fdb304a6a1" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NCheckState.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NCheckState>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="954,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NCheckState DisplayName="Check App State Email Address" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="NCheckState_2" Version="V4">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,480" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Typing into Email address textbox&quot;]" />
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Email address Textbox" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,243" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="7a784198-12d0-401e-b328-8238cad8eb4e" Text="[in_HubSpotUsername + &quot;[k(Enter)]&quot;]" Version="V4">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/login" ContentHash="Tyf5VTQ5qk-8_5Uaop43Kg" DesignTimeRectangle="578, 307, 278, 30" DesignTimeScaleFactor="0.75" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' type='email' class='TextInput__StyledInput-dZxQPg eaGEy' aaname='Email address' /&gt;" Guid="a3e4c0af-f538-442a-919b-7647aad6c9c1" InformativeScreenshot="a53929bd3b0f3acae8ac3324208ffff0.png" IsResponsive="True" Reference="sobT6TSR0U6vO4EQCkoJVA/unREwDB7pUqzm-v0bU4Mbw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='HubSpot Login and Sign in' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="11d7f70b-b3d0-40c2-b5b1-b08899a4c58e" CvTextArea="577, 289, 76, 11" CvTextArgument="Email address" CvType="Text" DesignTimeRectangle="578, 283, 278, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='FormControl-label9' tag='LABEL' type='' class='FormLabel__StyledLabel-fnFDWb bDdNpC' aaname='' check:innerText='Email address' /&gt;" Guid="89923445-1a63-402c-be81-5723ac8adb31" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/login" CVScreenId="ec3fc741-382b-424e-b4c2-cc3008655a72" ContentHash="GHnY7_ez70eYMmdSb3ADIQ" CvElementArea="545, 244, 277, 32" CvType="InputBox" DesignTimeRectangle="546, 246, 275, 30" DesignTimeScaleFactor="0.75" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' type='email' class='TextInput__StyledInput-dZxQPg eaGEy' placeholder='Enter your email' aaname='Email' /&gt;" Guid="75730401-8033-4530-a8f2-6afd3fdac46a" InformativeScreenshot="a80ccbd05ca56e85d01aa767ce1c0d93.png" IsResponsive="True" Reference="sobT6TSR0U6vO4EQCkoJVA/Uxw3-ZSx70y_5CS8zpSHUA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='HubSpot Login and Sign in' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="ec3fc741-382b-424e-b4c2-cc3008655a72" CvTextArea="545, 228, 31, 11" CvTextArgument="Email" CvType="Text" DesignTimeRectangle="546, 222, 275, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='FormControl-label3' tag='LABEL' type='' class='FormLabel__StyledLabel-fnFDWb bDdNpC' aaname='' check:innerText='Email' /&gt;" Guid="7ba7a071-8f23-42f4-8164-84787d3fe951" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NCheckState.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NCheckState>
+                  </Sequence>
+                </ui:CommentOut.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:CommentOut>
+              <uix:NCheckState DisplayName="Check App State Sign in with Microsoft" sap:VirtualizedContainerService.HintSize="954,668" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="7a784198-12d0-401e-b328-8238cad8eb4e" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,419" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Sign in with a Microsoft button&quot;]" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Sign in with Microsoft" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7a784198-12d0-401e-b328-8238cad8eb4e" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/login" CVScreenId="682625d8-2dfd-4061-ad05-1c5f5b36b0d2" ContentHash="p1UFeoqWGEy_1aarbNItCA" CvElementArea="551, 295, 279, 33" CvTextArea="641, 305, 116, 13" CvTextArgument="Sign in with Microsoft" CvType="Button" DesignTimeRectangle="553, 296, 276, 31" DesignTimeScaleFactor="0.75" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='microsoftBtn' tag='BUTTON' type='button' class='PrivateButton__StyledButton-eRHhiA iPQKvv' aaname='Sign in with Microsoft' check:innerText='Sign in with Microsoft' /&gt;" Guid="616ed792-295d-4e80-b3f6-e4841d19d1e3" InformativeScreenshot="a2190fd95dcf3b8bd9771c71ad88f7b9.png" Reference="sobT6TSR0U6vO4EQCkoJVA/owc1NxLfTUqjSpgwXMsV6w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='HubSpot Login and Sign in' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/login" CVScreenId="682625d8-2dfd-4061-ad05-1c5f5b36b0d2" ContentHash="3dbOXmv_zkWtWkaOZkSbGA" CvElementArea="551, 295, 279, 33" CvTextArea="641, 305, 116, 13" CvTextArgument="Sign in with Microsoft" CvType="Button" DesignTimeRectangle="553, 296, 276, 31" DesignTimeScaleFactor="0.75" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='microsoftBtn' tag='BUTTON' type='button' class='PrivateButton__StyledButton-eRHhiA iPQKvv' aaname='Sign in with Microsoft' check:innerText='Sign in with Microsoft' /&gt;" Guid="49791549-0ec4-4429-9256-624709217b08" InformativeScreenshot="a2190fd95dcf3b8bd9771c71ad88f7b9.png" Reference="sobT6TSR0U6vO4EQCkoJVA/JCDAt47lUUmfKnZl7HipWg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='HubSpot Login and Sign in' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NCheckState.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NCheckState>
+              <uix:NCheckState DisplayName="Check App State Pick an account Title" sap:VirtualizedContainerService.HintSize="954,57" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="7a784198-12d0-401e-b328-8238cad8eb4e" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="468,708" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,175" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;It will be selected the &quot;+in_HubSpotUsername+&quot; user account&quot;]" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Franchise Bot Account" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7a784198-12d0-401e-b328-8238cad8eb4e" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="login.microsoftonline.com/common/oauth2/v2.0/authorize" CVScreenId="bd83bd47-8823-45f2-b3fb-78d0a0288ad4" ContentHash="MlUD7qJ_PEKflgPEkghJAw" CvTextArea="850, 506, 169, 13" CvTextArgument="valentafranchisebot@valenta.io" CvType="Text" DesignTimeRectangle="852, 504, 166, 16" DesignTimeScaleFactor="1" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aaname='{0}' /&gt;&quot;, in_HubSpotUsername)]" FuzzySelectorArgument="&lt;webctrl tag='SMALL' type='' class='' aaname='valentafranchisebot@valenta.io' check:innerText='valentafranchisebot@valenta.io' /&gt;" Guid="e8cba682-b5a5-40a9-b6f2-89d764ccb811" InformativeScreenshot="7974e73c7875e7a9ee21b7f001c5dd2f.png" Reference="sobT6TSR0U6vO4EQCkoJVA/ebqpyHKxekaC3fvmodvg2g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Sign in to your account' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,175" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Trace" Message="[&quot;Log into HubSpot was successful&quot;]" />
+                    <Assign DisplayName="Assign to IsLoggedIs" sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Boolean">[out_IsLoggedIn]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="login.microsoftonline.com/common/oauth2/v2.0/authorize" CVScreenId="bd83bd47-8823-45f2-b3fb-78d0a0288ad4" ContentHash="ikzZs2VPyEmgsDqu3qt06A" CvTextArea="792, 439, 172, 21" CvTextArgument="Pick an account" CvType="Text" DesignTimeRectangle="792, 435, 352, 28" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='heading' tag='DIV' type='' class='' aaname='Pick an account' check:innerText='Pick an account' /&gt;" Guid="00a889ef-8fe1-41ca-ac4d-3693dfe5b142" InformativeScreenshot="2453ac9ef07c9f2de0fae7f9a45802c8.png" Reference="sobT6TSR0U6vO4EQCkoJVA/vJwJ_TheNECKCngksm1KIg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Sign in to your account' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NCheckState.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NCheckState>
+              <uix:NCheckState DisplayName="Check App State Open Your Authenticator App" sap:VirtualizedContainerService.HintSize="954,957" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="7a784198-12d0-401e-b328-8238cad8eb4e" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,717" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Code" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="7a784198-12d0-401e-b328-8238cad8eb4e" Text="[in_HubSpotAuthCode]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/login/two-factor" CVScreenId="83a4ae4f-4dc2-4346-bfd1-8c4b76a973ae" ContentHash="Uy9Uro6ivU-6weNllaAICQ" CvElementArea="563, 412, 242, 32" CvType="InputBox" DesignTimeRectangle="564, 413, 240, 30" DesignTimeScaleFactor="0.75" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='codeEntry' tag='INPUT' type='text' class='TextInput__StyledInput-dZxQPg eaGEy' placeholder='Enter 6-digit code' aaname='Code' /&gt;" Guid="ee1bbc13-81ef-44fd-82ce-e63f982c26b1" InformativeScreenshot="ea09c4577c7b8db7bc8c5299012ae409.png" IsResponsive="True" Reference="sobT6TSR0U6vO4EQCkoJVA/pagqTI6woUqytI3GP8XN8A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='HubSpot*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="83a4ae4f-4dc2-4346-bfd1-8c4b76a973ae" CvTextArea="562, 395, 29, 11" CvTextArgument="Code" CvType="Text" DesignTimeRectangle="564, 389, 240, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='FormControl-label2' tag='LABEL' type='' class='FormLabel__StyledLabel-fnFDWb bDdNpC' aaname='' check:innerText='Code' /&gt;" Guid="ca9fe138-6985-49bf-a5ea-19414d4a6026" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Continue Button" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7a784198-12d0-401e-b328-8238cad8eb4e" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/login/two-factor" CVScreenId="6223489d-d4fc-4f74-a1b0-7cad5ee5b8b5" ContentHash="hBctKi7T3kO9XOJil1hfpg" CvElementArea="562, 453, 244, 33" CvTextArea="658, 463, 49, 11" CvTextArgument="Continue" CvType="Button" DesignTimeRectangle="583, 463, 202, 14" DesignTimeScaleFactor="0.75" FuzzySelectorArgument="&lt;webctrl type='' tag='SPAN' class='PrivateButton__StyledButtonTextContainer-gKiNOa kXEbeH' aaname='' check:innerText='Continue' /&gt;" Guid="3eb00dfc-f62e-4889-98cd-f1aabedcb1f5" InformativeScreenshot="c27d574b43abd78cfa4253609fa80651.png" Reference="sobT6TSR0U6vO4EQCkoJVA/8T-JR_DQlkmnBi9qKq23zw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='HubSpot*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click on Remember Me Button" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7a784198-12d0-401e-b328-8238cad8eb4e" Timeout="3" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/login/two-factor" CVScreenId="1a532855-9c9f-4f5f-bc9a-a665bbc97ef1" ContentHash="BIPCx1bVxkeS4-6e3uW26g" CvElementArea="570, 243, 117, 33" CvTextArea="589, 253, 79, 11" CvTextArgument="Remember me" CvType="Button" DesignTimeRectangle="590, 253, 77, 14" DesignTimeScaleFactor="0.75" FuzzySelectorArgument="&lt;webctrl aaname='Remember me' tag='I18N-STRING' type='' class='' check:innerText='Remember me' /&gt;" Guid="221955bd-701d-45e0-be8a-4b94456e2ef9" InformativeScreenshot="9e6189c330289efa328c0320ac7c98bd.png" Reference="sobT6TSR0U6vO4EQCkoJVA/fKp-RKtSKkqLN-CWho5npA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='HubSpot*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/login/two-factor" CVScreenId="900fdf4e-33f9-4c88-baee-3dd4f710054c" ContentHash="OojoxdkLg0eQWngZJhbK1A" CvTextArea="572, 340, 222, 17" CvTextArgument="Open your authenticator app" CvType="Text" DesignTimeRectangle="573, 338, 221, 19" DesignTimeScaleFactor="0.75" FuzzySelectorArgument="&lt;webctrl type='' tag='I18N-STRING' class='' aaname='Open your authenticator app' check:innerText='Open your authenticator app' /&gt;" Guid="6c53dfd1-9861-4b5f-8f41-b7164c39dc03" InformativeScreenshot="fc4cedd51beee07ed6efba4aaa50aab4.png" Reference="sobT6TSR0U6vO4EQCkoJVA/xgDYbe-FcU66ahk2ACzpnQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='HubSpot*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Edge" ContentHash="8APtmWViIE28zrWPYjqusg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAC+UlEQVRYR82XS4iOURzGP8aM0RgMjcbUqJHLZlJqyEhZWSiUy8KXBcplpdSsTBaykEiyskJKFiT33GLhkizcVliQBZFbErkbv0fP0Zn53vm+d7535stTv746//95znnf857/OV/uv1N3V34IVOnXTZUTg06ErXAEdsA0h1KLPnqAWqh2UzrRoQFOQXfENWh2SkmRWw+dcBmOwXxI9yZJXApfIZ7AT8g7paTI3QQ/3Fc8gTaHi4vEVfDLHWM6nVJU5NXA6aif+A2rnVJcJLbCA3eMeQxLoMqpiSI+FA5C3PcLLHZKaZE8Dy6CXt1NeAoyeg9dUO/URBHvgIegPlq+QzDa4XSiw0hogVHQDldBr/I7HIZWpyaK+FrQBPQQk9xcvjBphn2g1ynj26A3lfh1077CeXoTTW7OJoxGwEZ4BTJ/DutguFP+ibYwgUcwwc3ZhZkKjPb1XdAAn2EPjHdcy7YGzoPiH2AvqE/dX5OBEGZTQUVG+13b9hyo+GgH6cPT4DGfQPnTbZFdmI2BbaCn1CBJ9aM3mmC7LbILMx1Y220e0G55ATfgDnyEOH4FGm2RTRjVwRkbCy3JfmgDbWWdLYvgHoQcLdEGW2QTRjPhnY3FSSgoOrTNhZfOEZp0rcPlC5OVENZeRWq5Qz1E+zDQ8R4moO2Z+oTtU5isj0y11h0OFYjYzihXFbLFofKFSR7CttP6Jx7btFfDUecJVcjsBQqTGfDapuICFHzhtKkQvXGOOAE1DpcvTFSej9tU6G3oSWfDONAZou9Eax5y9K2kux+kEWY6D3pXv7egoqN7RDjAAmehwd2zCaNZcN/GKkDxQEncgnTXs76EgaqfCpAuHuH2pK96C1yHb26L0WXmAEyxTXnCoAl2g8rsM5C5fhc43gjLYBfo4qJBN8McKDi2+y1M9D8hfjLtgIUO9xDtuh8O3B8bzPRH4xLEE9C9YKxTBl8MFlczoQtn//79ZBGDaV/rhqNvQKfeZIcqJwbVwaKjtnJPPrjK5f4AJRxgPNTUnT0AAAAASUVORK5CYII=" InformativeScreenshot="9df53560782eaeb19efe06168a49617a.jpg" Reference="sobT6TSR0U6vO4EQCkoJVA/mrYYb0dlC0ewQxOuv8ARtw" Selector="&lt;html app='msedge.exe' title='HubSpot*' /&gt;" Title="HubSpot Login and Sign in" Url="[in_HubSpotURL]" Version="V1" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1022,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;HubSpot_Login completed...&quot;]" />
+    </Sequence>
+  </Sequence>
+</Activity>

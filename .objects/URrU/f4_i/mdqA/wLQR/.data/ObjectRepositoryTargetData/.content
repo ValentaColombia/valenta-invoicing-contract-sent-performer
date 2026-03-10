@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6-vNUYx3IUa3mUZhK0kv2g" Reference="sobT6TSR0U6vO4EQCkoJVA/wLQRyOJabUqCCqseiu2gOA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="go.xero.com/app/!67tTl/dashboard" DesignTimeRectangle="1521, 330, 305, 53" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl parentid='global-search-mfe' tag='A' casesensitive:aaname='true' aaname='{0}*' /&gt;&quot;, in_CompanyName)]" Guid="3b221d8e-3754-4a12-af54-3a2518f8b264" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Dashboard – Xero' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d767bfd148f60422847c076a4bf09fd7.png" xmlns="">0PyvURvVIYEiH60XM3YzOcA</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData IsVariable="False" Name="in_CompanyName" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

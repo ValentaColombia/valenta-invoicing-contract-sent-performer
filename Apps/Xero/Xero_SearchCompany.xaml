@@ -1,0 +1,199 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Xero_SearchCompany" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_CompanyName" Type="InArgument(x:String)" />
+    <x:Property Name="out_ContactFound" Type="OutArgument(x:Boolean)" />
+  </x:Members>
+  <this:Xero_SearchCompany.in_CompanyName>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Xero_SearchCompany.in_CompanyName>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Xero_SearchCompany_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Xero_SearchCompany" sap:VirtualizedContainerService.HintSize="1836,2060" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap2010:Annotation.AnnotationText="Task Description: To search in Xero the company extracted from HubSpot. " DisplayName="Xero_SearchCompany" sap:VirtualizedContainerService.HintSize="1056,2037" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1022,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Xero_SearchCompany started...&quot;]" />
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge Dashboard – Xero" sap:VirtualizedContainerService.HintSize="1022,1586" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="005b2215-7518-488e-9d46-0a96e81fc3f3" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="988,1337" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="954,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Searching company name:  &quot;+in_CompanyName]" />
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Search Button" sap:VirtualizedContainerService.HintSize="954,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="005b2215-7518-488e-9d46-0a96e81fc3f3" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/dashboard" CVScreenId="fafcf911-021e-4750-b30b-d60127c5739a" ContentHash="kKZAV4yeQk6mHHxbWgIrwA" CvElementArea="1598, 102, 37, 34" CvType="Icon" DesignTimeRectangle="1597, 100, 40, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' aria-label='Search' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' aria-label='Search' type='button' class='x-nav-xui-button x-nav-xui-button-icon-medium x-nav-xui-button-icon' aaname='' /&gt;" Guid="aa0b0ef6-0558-4dc6-9329-f66d3f66ec72" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPPSURBVFhH1ZlLaBNRFIYjIi5EFFy5cuPKnSC6caUrV6IggiiICxExafpI6gNRsKBYdSEiaFUqlaJo8d13+rKPaK22Nda+rI+2oqUPsda2aZrjPSkTJ5N/OveGZloHPpg55947f2bOvefMjcNx1E//FdC4kIFGFTLryZFRQ47UCnK4y8nhKiHHkaIZ+Jxt7OM2mQ14DBWg0QoWySIi4grVcJXO9OUx0NhWQKMZmlAkJBESEQ6NRuZaqBEV4dBoJJliNfge6N5GoFGDf3WKiDl0g2TA97J60tCoYadYjZQyrEUDGhm3Dw9oB3xvpImBxvRqPJCdsAakLc7AMeTkhR8MYiesAcVznGE+Q8EIWjliLryJPd2l7mLafest5dR9pYqOQSprHyTX/fe0yismEGgvDXrKMRec91HHWdhxvYn6f04QH8NjQarpHib/pxEKhsI0OTVNJ552wH7SGCdgzIWzGHcCLHYWUq6/j6amw5Rd3kPrskRxo/Ov9JTSBWHn40xRV4xPCdak1xg98dbiDiZc9PVQOEy09fJL6NdIedAWEb0zpwn6pWBtcYLTKnFjwOrjvsgrP1v6EfqN+ERcdw2M0SLgk4K1xQlWiN/UgjYamwzRigy5TLgxuy7ylDdfEvUw8Fvi1mW/6AnXqagxIO9VPz1p/QF9Zgz+DtKhuwHos0SfrqMnChOuoPk73ajvhT4zWvp+UeajduizRD/xoieooQlXqj/Ts8AA9JnxZXic9t5uhj5rxHocL1g+Yey6+YYmxBq7PF3uE2nD+ZkYXnMy0boaCVYIiWVpJTQwOklZxd3Qb6Syc4iquoagTwoYEhzYqLEJ+/NaKCSShtXM94q45YNXCuSXAk46XjpQ41k49rg9EhqH7wVoietfSHEW3CQE5jf205/gNI0LDua/i+mrBFzWFBKHngN3Wql3ZJxGJ0L0QtQRDaKOYIF8BL6N0vpztbTtamPkbThFQYTGsAQmDsXUbGTt6apIIcTFzqnnnbRFpGx9Ztt+7TUJzZQmko6+nxQwNTMKEy8RuARl0RkPP0A/RD/hmJgLGz7n94m1mA+PrGhjER9zkWABrwpXbntyJZKIZQHP2LFpIovlJxLDO4xJjmUpWAPa7YwzMLw1igaxE9aAtEEjM5+hgUJBAxo1FNP1nMAfEkiLBjRq8Ax12RjPfC+rXXpoNGJHeMwWBnqgEcF7XclYo3lMs300BDSawTl9LreyOF71dYIM0GgFx3bCwsUT5dePNvpkgEYVPOIJsQD+6uZ/lfRJh8/Zpv1zxG3RGCpA40IGGhcsfvoLR2XdiyoVDU8AAAAASUVORK5CYII=" InformativeScreenshot="a5e19ac113a204e14b0e0e2ec950ef26.png" Reference="sobT6TSR0U6vO4EQCkoJVA/FDnkt2OmCUeW3Q159FdHQg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Search Textbox" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="005b2215-7518-488e-9d46-0a96e81fc3f3" Text="[in_CompanyName]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/dashboard" CVScreenId="3267d270-5cd9-4470-8b70-bab5107346d9" ContentHash="jztuIS0KGECIjDA2wyW3nA" CvElementArea="1525, 226, 322, 46" CvType="InputBox" DesignTimeRectangle="1566, 230, 280, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='MYsdlt_HJx' tag='INPUT' type='search' class='global-search-mfe-textinput--input global-search-mfe-textinput--input-medium' placeholder='Search contacts and transactions' aaname='' /&gt;" Guid="a9ad8607-de07-409b-883a-dbfd10ccdc59" InformativeScreenshot="4350770573d243ed180bdd0d66cea4e4.png" Reference="sobT6TSR0U6vO4EQCkoJVA/OvYGzzDWk0WnKPyjHPGK9w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xer*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="1539, 240, 18, 18" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='svg' type='' class='' aaname='' /&gt;" Guid="4a034efb-5ee7-4b8e-a194-b0967ae21bb3" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NCheckState DisplayName="Check App State Contact Exists" Exists="[out_ContactFound]" sap:VirtualizedContainerService.HintSize="954,661" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="005b2215-7518-488e-9d46-0a96e81fc3f3" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,419" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;The company was found&quot;]" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Contact to Open it" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="005b2215-7518-488e-9d46-0a96e81fc3f3" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/dashboard" ContentHash="6-vNUYx3IUa3mUZhK0kv2g" DesignTimeRectangle="1521, 330, 305, 53" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl parentid='global-search-mfe' tag='A' casesensitive:aaname='true' aaname='{0}*' /&gt;&quot;, in_CompanyName)]" Guid="3b221d8e-3754-4a12-af54-3a2518f8b264" InformativeScreenshot="d767bfd148f60422847c076a4bf09fd7.png" Reference="sobT6TSR0U6vO4EQCkoJVA/wLQRyOJabUqCCqseiu2gOA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Dashboard – Xero' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,230" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;The company was not found&quot;]" />
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/dashboard" ContentHash="h5jupPyQ80KJmsZyqgY49Q" DesignTimeRectangle="1529, 338, 276, 17" DesignTimeScaleFactor="1" FullSelectorArgument="[string.Format(&quot;&lt;webctrl tag='A' aaname='{0}*' casesensitive:aaname='false' /&gt;&quot;, in_CompanyName)]" FuzzySelectorArgument="&lt;webctrl aaname='Valenta Virtual Assistants Outsourcing' tag='MARK' type='' class='global-search-mfe-highlighted ' check:text='Valenta Virtual Assistants Outsourcing' /&gt;" Guid="84d7c03f-0f46-43f4-97d1-d19c7d3877c8" InformativeScreenshot="e67242c6da6a0ca37389a7b7d23489eb.png" Reference="sobT6TSR0U6vO4EQCkoJVA/4dSNJWkjakSK8VwhV3o4QA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="1521, 330, 305, 53" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='A' aaname='Valenta Virtual Assistants Outsourcing*' type='' class='global-search-mfe-button global-search-mfe-document-container-button global-search-mfe-button-borderless-muted global-search-mfe-button-medium global-search-mfe-button-fullwidth' check:text='Valenta Virtual Assistants OutsourcingJuan Posada' /&gt;" Guid="41d56f85-cbd6-4a32-afc4-5458ae24e1ec" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Edge" ContentHash="nuPSQUqXPE24pLdk7oyyEA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH2SURBVDhPnVNbL2NRFF5EIi4/gnciIgbxC4QHEh5kHsSzRMyfmHh16wxeEGnkBD09U3VJJIRMoiltpRjantPWtVVGacVlZpa1dncnLo1gJSvnO/t833f2WntteBHK7iew6v0wE3KDLRwRyVjTTTC1Vy1ZGUIJ54Ea6AWbcQ9z+wiz4acp1ow/oJKR5syXKhnKTxbbMwqfJ3M0YwHG3AVSTTHt63mTOJ3zxLX4vqXE5r1y2trfjMTX0mb8g4lflQAWf382O86EEOz0QTwpiZQzl36XIsK5aS7v2OIfAvgR9BQtHaH5KEmuQWxxxXAgdIVfdn6j5eQay1aPsYvw6EECO7bOUaW1VncMs9jUpnuBjymLHOucUXTF73AonMDuQByV4yS2b57h8tmNwG2ER8ikwRHF6ZMklpIxaMGoMMgmg6aNU1y7uMXPnhh+9cdx9DCBjeun2LwRw/HDpPjrGK3VOyJiZyUraQMqoZhKYAFhIeoLXooS1Mg1lhKxl94LF/axcztVApcp+iJKUH0m0RBujGzU88YJzEn4f2NZY9WHaYh2Kj50jGxk3q1KzQId5bsGiblTgcGUmGOQZls15t9kwhxNXwTFWyjVMviC8EXhcjIZ8RpPn0p/fiF+HIqvBqyB73RhNsVVnqWjshO20tRN+mslSwbAA2Z2Sv8z5CJZAAAAAElFTkSuQmCC" InformativeScreenshot="46934c9685b00443b2f3b5caae07be52.jpg" Reference="sobT6TSR0U6vO4EQCkoJVA/mdqALtkQtU67zvSMbDjcvQ" Selector="&lt;html app='msedge.exe' title='*Xero' /&gt;" Title="Dashboard – Xero" Version="V1" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1022,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Xero_SearchCompany completed...&quot;]" />
+    </Sequence>
+  </Sequence>
+</Activity>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LO1EyFfoYk-un8ALzY4yLA" Reference="sobT6TSR0U6vO4EQCkoJVA/_nAh_lbELEq0CeRetrh5pg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/tasks/146214366/view/all" CVScreenId="848305b8-d9a8-4a5d-980b-6cec87c1b875" CvElementArea="1278, 90, 85, 29" CvType="InputBox" DesignTimeRectangle="1349, 103, 6, 3" DesignTimeScaleFactor="0.75" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl parentid='hs-global-toolbar-accounts' tag='path' type='' class='' aaname='' /&gt;" Guid="c6b2920d-62d1-4667-98c8-0bfb5d81777a" ScopeSelectorArgument="&lt;html app='msedge.exe' url='*ubspot*' casesensitive:url='true' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="848305b8-d9a8-4a5d-980b-6cec87c1b875" CvElementArea="1278, 90, 85, 29" CvType="InputBox" DesignTimeRectangle="1304, 98, 38, 13" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='hs-global-toolbar-accounts' tag='SPAN' type='' class='' aaname='Valenta ' check:innerText='Valenta' /&gt;" Guid="322859ce-59a1-47fa-b3e0-22256a0ed701" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="444be4445fe3cb3bb4f3d601bcdaaece.png" xmlns="">09tUJ-P3SBUSMkKys91VHVw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

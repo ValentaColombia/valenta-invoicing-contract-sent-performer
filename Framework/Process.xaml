@@ -1,0 +1,437 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Process" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property sap2010:Annotation.AnnotationText="Transaction item to be processed." Name="in_TransactionItem" Type="InArgument(ui:QueueItem)" />
+    <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>818.4,454.4</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="50">
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Windows.Forms</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Numerics</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="80">
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="1540,5656" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="TaskDetailsDict" />
+      <Variable x:TypeArguments="x:Boolean" Name="ContactFound" />
+      <Variable x:TypeArguments="x:Boolean" Name="ContactEmailMatched" />
+      <Variable x:TypeArguments="x:String" Name="XeroContactEmail" />
+      <Variable x:TypeArguments="x:String" Name="XeroFullName" />
+      <Variable x:TypeArguments="x:String" Name="XeroOrganization" />
+      <Variable x:TypeArguments="x:String" Name="TaskDetailsURL" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="676,88" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
+    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="676,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
+    <ui:MultipleAssign DisplayName="Multiple Assign to Boolean Variables" sap:VirtualizedContainerService.HintSize="676,210" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign.AssignOperations>
+        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:Boolean">[ContactFound]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:Boolean">[ContactEmailMatched]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[TaskDetailsURL]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">[in_TransactionItem.Reference.Substring(0,in_TransactionItem.Reference.Length - 5)]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+        </scg:List>
+      </ui:MultipleAssign.AssignOperations>
+    </ui:MultipleAssign>
+    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="676,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Processing item with reference: &quot; &amp; TaskDetailsURL]" />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="HubSpot_OpenTask - Invoke Workflow File (Apps\HubSpot\HubSpot_OpenTask.xaml)" sap:VirtualizedContainerService.HintSize="676,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Apps\HubSpot\HubSpot_OpenTask.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_TaskDetailsURL">[TaskDetailsURL]</InArgument>
+        <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="out_TaskDetailsDict">[TaskDetailsDict]</OutArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <If Condition="[String.IsNullOrEmpty(TaskDetailsDict(&quot;Billing Contact Email&quot;)) Or&#xA;String.IsNullOrEmpty(TaskDetailsDict(&quot;Billing Contact First Name&quot;)) Or &#xA;String.IsNullOrEmpty(TaskDetailsDict(&quot;Billing Contact Last Name&quot;)) Or &#xA;String.IsNullOrEmpty(TaskDetailsDict(&quot;Billing Company&quot;)) Or &#xA;String.IsNullOrEmpty(TaskDetailsDict(&quot;Company Name&quot;))]" DisplayName="If Billing Contact or Email or Company or Comp Name are Empty" sap:VirtualizedContainerService.HintSize="676,1016" sap2010:WorkflowViewState.IdRef="If_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,757" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,173" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;The HubSpot fields are empty: Billing Contact Email, Billing Contact First Name and Billing Contact Last Name, Billing Company, Company Name&quot;]" />
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="HubSpot_AddCommentToTask - Invoke Workflow File (Apps\HubSpot\HubSpot_AddCommentToTask.xaml)" sap:VirtualizedContainerService.HintSize="382,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Apps\HubSpot\HubSpot_AddCommentToTask.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="in_TaskDetailsURL">[TaskDetailsURL]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_CommentNote">[in_Config("HubSpot_EmptyBillingContact").ToString.Replace("||", vbCrLf)]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_BusinessResponsible">[in_Config("HubSpot_BusinessResponsible").ToString]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_SecondCommentNote">[in_Config("HubSpot_SecondCommentNote").ToString]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_DealOwner">["@"+TaskDetailsDict("Deal Owner")]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_ThirdCommentNote" xml:space="preserve">[in_Config("HubSpot_ThirdCommentNote").ToString.Replace("||", vbCrLf) &amp;
+If(String.IsNullOrWhiteSpace(TaskDetailsDict("Company Name")), "Company Name" &amp; Environment.NewLine, "") &amp;
+If(String.IsNullOrWhiteSpace(TaskDetailsDict("Billing Company")), "Billing Company" &amp; Environment.NewLine, "") &amp;
+If(String.IsNullOrWhiteSpace(TaskDetailsDict("Billing Contact First Name")), "Billing Contact FirstName" &amp; Environment.NewLine, "") &amp;
+If(String.IsNullOrWhiteSpace(TaskDetailsDict("Billing Contact Last Name")), "Billing Contact Last Name" &amp; Environment.NewLine, "") &amp;
+If(String.IsNullOrWhiteSpace(TaskDetailsDict("Billing Contact Email")), "Billing Contact Email" &amp; Environment.NewLine, "") &amp; Environment.NewLine]</InArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+          </ui:InvokeWorkflowFile>
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+            <ui:CommentOut.Body>
+              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,228" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="HubSpot_UpdateTask - Invoke Workflow File (Apps\HubSpot\HubSpot_UpdateTask.xaml)" sap:VirtualizedContainerService.HintSize="382,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Apps\HubSpot\HubSpot_UpdateTask.xaml">
+                  <ui:InvokeWorkflowFile.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_TaskDetailsURL">[in_TransactionItem.Reference]</InArgument>
+                  </ui:InvokeWorkflowFile.Arguments>
+                </ui:InvokeWorkflowFile>
+              </Sequence>
+            </ui:CommentOut.Body>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:CommentOut>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Excel_WriteInInvoicingExecutionReport - Invoke Workflow File (Apps\Excel\Excel_WriteInInvoicingExecutionReport.xaml)" sap:VirtualizedContainerService.HintSize="382,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="Apps\Excel\Excel_WriteInInvoicingExecutionReport.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="in_SheetName">[in_Config("ReportSheetName").ToString]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_Timestamp">[Now.ToString("yyyyMMdd_HHmmss")]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_DealName">[TaskDetailsDict("Deal Name")]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_Status">[in_Config("BE1").ToString]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_ExecutionReportFilePath">[in_Config("ReportOutputFilePath").ToString]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_CompanyName">[TaskDetailsDict("Company Name")]</InArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+          </ui:InvokeWorkflowFile>
+          <Throw DisplayName="Throw Business Exception" Exception="[New BusinessRuleException(&quot;Flagged Mandatory Info Missed: &quot;+ TaskDetailsDict(&quot;Deal Name&quot;))]" sap:VirtualizedContainerService.HintSize="382,113" sap2010:WorkflowViewState.IdRef="Throw_1" />
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </If.Else>
+    </If>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Excel_ChooseXeroOrganization - Invoke Workflow File (Apps\Excel\Excel_ChooseXeroOrganization.xaml)" sap:VirtualizedContainerService.HintSize="676,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="Apps\Excel\Excel_ChooseXeroOrganization.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_InvoiceReportFilePath">[in_Config("TempFolderPath").ToString + in_Config("InvoicesReportFilename").ToString]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_InvoicesReportSheetNameThird">[in_Config("InvoicesReportFileSheetName").ToString]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_HubSpotKeyField">[TaskDetailsDict("Billing Company").Trim +" - "+ TaskDetailsDict("Currency").Trim + " - " + in_Config("PipelineField").ToString.Trim]</InArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_XeroOrganization">[XeroOrganization]</OutArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Xero_SearchOrganization - Invoke Workflow File (Apps\Xero\Xero_SearchOrganization.xaml)" sap:VirtualizedContainerService.HintSize="676,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_17" UnSafe="False" WorkflowFileName="Apps\Xero\Xero_SearchOrganization.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_XeroOrganization">[XeroOrganization]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Xero_SearchCompany - Invoke Workflow File (Apps\Xero\Xero_SearchCompany.xaml)" sap:VirtualizedContainerService.HintSize="676,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Apps\Xero\Xero_SearchCompany.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_CompanyName">[TaskDetailsDict("Company Name")]</InArgument>
+        <OutArgument x:TypeArguments="x:Boolean" x:Key="out_ContactFound">[ContactFound]</OutArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <If Condition="[ContactFound]" DisplayName="If Contact Found" sap:VirtualizedContainerService.HintSize="676,972" sap2010:WorkflowViewState.IdRef="If_2">
+      <If.Then>
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,401" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,173" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Contact found&quot;]" />
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Xero_ExtractContactDetails - Invoke Workflow File (Apps\Xero\Xero_ExtractContactDetails.xaml)" sap:VirtualizedContainerService.HintSize="382,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Apps\Xero\Xero_ExtractContactDetails.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="in_HubSpotContactEmail">[TaskDetailsDict("Billing Contact Email")]</InArgument>
+              <OutArgument x:TypeArguments="x:Boolean" x:Key="out_ContactEmailMatched">[ContactEmailMatched]</OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="out_XeroFullName">[XeroFullName]</OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="out_XeroContactEmail">[XeroContactEmail]</OutArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+          </ui:InvokeWorkflowFile>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,401" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,173" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Contact was not found&quot;]" />
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Xero_CreateContact - Invoke Workflow File (Apps\Xero\Xero_CreateContact.xaml)" sap:VirtualizedContainerService.HintSize="382,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Apps\Xero\Xero_CreateContact.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="in_TaskDetailsDict">[TaskDetailsDict]</InArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+          </ui:InvokeWorkflowFile>
+        </Sequence>
+      </If.Else>
+    </If>
+    <ui:IfElseIfV2 Condition="[ContactFound = True And ContactEmailMatched = False]" DisplayName="Else If Contact Found &amp; Contact Email Not Matched" sap:VirtualizedContainerService.HintSize="676,1876" sap2010:WorkflowViewState.IdRef="IfElseIfV2_1">
+      <ui:IfElseIfV2.Else>
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_9">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </ui:IfElseIfV2.Else>
+      <ui:IfElseIfV2.ElseIfs>
+        <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[ContactFound = False And (String.IsNullOrEmpty(TaskDetailsDict(&quot;Company Country&quot;)) Or &#xA;String.IsNullOrEmpty(TaskDetailsDict(&quot;Company City&quot;)) Or &#xA;String.IsNullOrEmpty(TaskDetailsDict(&quot;Company Postal Code&quot;)))]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_1">
+            <ui:IfElseIfBlock.Then>
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,757" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,173" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;The HubSpot fields are empty: Company Country, Company City and Company Postal&quot;]" />
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="HubSpot_AddCommentToTask - Invoke Workflow File (Apps\HubSpot\HubSpot_AddCommentToTask.xaml)" sap:VirtualizedContainerService.HintSize="382,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="Apps\HubSpot\HubSpot_AddCommentToTask.xaml">
+                  <ui:InvokeWorkflowFile.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_TaskDetailsURL">[TaskDetailsURL]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_CommentNote">[in_Config("HubSpot_EmptyBillingContact").ToString.Replace("||", vbCrLf)]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_BusinessResponsible">[in_Config("HubSpot_BusinessResponsible").ToString]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_SecondCommentNote">[in_Config("HubSpot_SecondCommentNote").ToString]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_DealOwner">["@"+TaskDetailsDict("Deal Owner")]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_ThirdCommentNote" xml:space="preserve">[in_Config("HubSpot_ThirdCommentNote").ToString.Replace("||", vbCrLf) &amp;
+If(String.IsNullOrWhiteSpace(TaskDetailsDict("Company Country")), "Company Country" &amp; Environment.NewLine, "") &amp;
+If(String.IsNullOrWhiteSpace(TaskDetailsDict("Company City")), "Company City" &amp; Environment.NewLine, "") &amp;
+If(String.IsNullOrWhiteSpace(TaskDetailsDict("Company Postal Code")), "Company Postal Code" &amp; Environment.NewLine, "") &amp; Environment.NewLine]</InArgument>
+                  </ui:InvokeWorkflowFile.Arguments>
+                </ui:InvokeWorkflowFile>
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                  <ui:CommentOut.Body>
+                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,228" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="HubSpot_UpdateTask - Invoke Workflow File (Apps\HubSpot\HubSpot_UpdateTask.xaml)" sap:VirtualizedContainerService.HintSize="382,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Apps\HubSpot\HubSpot_UpdateTask.xaml">
+                        <ui:InvokeWorkflowFile.Arguments>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_TaskDetailsURL">[in_TransactionItem.Reference]</InArgument>
+                        </ui:InvokeWorkflowFile.Arguments>
+                      </ui:InvokeWorkflowFile>
+                    </Sequence>
+                  </ui:CommentOut.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:CommentOut>
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Excel_WriteInInvoicingExecutionReport - Invoke Workflow File (Apps\Excel\Excel_WriteInInvoicingExecutionReport.xaml)" sap:VirtualizedContainerService.HintSize="382,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_14" UnSafe="False" WorkflowFileName="Apps\Excel\Excel_WriteInInvoicingExecutionReport.xaml">
+                  <ui:InvokeWorkflowFile.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_SheetName">[in_Config("ReportSheetName").ToString]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_Timestamp">[Now.ToString("yyyyMMdd_HHmmss")]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_DealName">[TaskDetailsDict("Deal Name")]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_Status">[in_Config("BE3").ToString]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_ExecutionReportFilePath">[in_Config("ReportOutputFilePath").ToString]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_CompanyName">[TaskDetailsDict("Company Name")]</InArgument>
+                  </ui:InvokeWorkflowFile.Arguments>
+                </ui:InvokeWorkflowFile>
+                <Throw DisplayName="Throw Business Exception" Exception="[New BusinessRuleException(&quot;Flagged Lack of Information: &quot;+ TaskDetailsDict(&quot;Deal Name&quot;))]" sap:VirtualizedContainerService.HintSize="382,113" sap2010:WorkflowViewState.IdRef="Throw_4" />
+              </Sequence>
+            </ui:IfElseIfBlock.Then>
+          </ui:IfElseIfBlock>
+        </sc:BindingList>
+      </ui:IfElseIfV2.ElseIfs>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:IfElseIfV2.Then>
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,757" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,173" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Contact did not match the Xero email vs HubSpot Email&quot;]" />
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="HubSpot_AddCommentToTask - Invoke Workflow File (Apps\HubSpot\HubSpot_AddCommentToTask.xaml)" sap:VirtualizedContainerService.HintSize="382,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Apps\HubSpot\HubSpot_AddCommentToTask.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="in_TaskDetailsURL">[TaskDetailsURL]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_CommentNote">[in_Config("HubSpot_BillingContactMismatch").ToString.Replace("||", vbCrLf).Replace("{{HS_FullName}}",TaskDetailsDict("Billing Contact First Name")+" "+TaskDetailsDict("Billing Contact Last Name")).Replace("{{HS_Email}}",TaskDetailsDict("Billing Contact Email")).Replace("{{Xero_FullName}}",XeroFullName).Replace("{{Xero_Email}}",XeroContactEmail)]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_BusinessResponsible">[in_Config("HubSpot_BusinessResponsible").ToString]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_SecondCommentNote">[in_Config("HubSpot_CommentNote").ToString]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_DealOwner" />
+              <InArgument x:TypeArguments="x:String" x:Key="in_ThirdCommentNote" />
+            </ui:InvokeWorkflowFile.Arguments>
+          </ui:InvokeWorkflowFile>
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="382,57" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+            <ui:CommentOut.Body>
+              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,228" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="HubSpot_UpdateTask - Invoke Workflow File (Apps\HubSpot\HubSpot_UpdateTask.xaml)" sap:VirtualizedContainerService.HintSize="382,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="Apps\HubSpot\HubSpot_UpdateTask.xaml">
+                  <ui:InvokeWorkflowFile.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_TaskDetailsURL">[in_TransactionItem.Reference]</InArgument>
+                  </ui:InvokeWorkflowFile.Arguments>
+                </ui:InvokeWorkflowFile>
+              </Sequence>
+            </ui:CommentOut.Body>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:CommentOut>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Excel_WriteInInvoicingExecutionReport - Invoke Workflow File (Apps\Excel\Excel_WriteInInvoicingExecutionReport.xaml)" sap:VirtualizedContainerService.HintSize="382,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="Apps\Excel\Excel_WriteInInvoicingExecutionReport.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="in_SheetName">[in_Config("ReportSheetName").ToString]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_Timestamp">[Now.ToString("yyyyMMdd_HHmmss")]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_DealName">[TaskDetailsDict("Deal Name")]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_Status">[in_Config("BE2").ToString]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_ExecutionReportFilePath">[in_Config("ReportOutputFilePath").ToString]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_CompanyName">[TaskDetailsDict("Company Name")]</InArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+          </ui:InvokeWorkflowFile>
+          <Throw DisplayName="Throw Business Exception" Exception="[New BusinessRuleException(&quot;Flagged Email Mismatch: &quot;+ TaskDetailsDict(&quot;Deal Name&quot;))]" sap:VirtualizedContainerService.HintSize="382,113" sap2010:WorkflowViewState.IdRef="Throw_3" />
+        </Sequence>
+      </ui:IfElseIfV2.Then>
+    </ui:IfElseIfV2>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="HubSpot_UpdateTask - Invoke Workflow File (Apps\HubSpot\HubSpot_UpdateTask.xaml)" sap:VirtualizedContainerService.HintSize="676,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Apps\HubSpot\HubSpot_UpdateTask.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_TaskDetailsURL">[TaskDetailsURL]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Excel_WriteInInvoicingExecutionReport - Invoke Workflow File (Apps\Excel\Excel_WriteInInvoicingExecutionReport.xaml)" sap:VirtualizedContainerService.HintSize="676,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="Apps\Excel\Excel_WriteInInvoicingExecutionReport.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_SheetName">[in_Config("ReportSheetName").ToString]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Timestamp">[Now.ToString("yyyyMMdd_HHmmss")]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_DealName">[TaskDetailsDict("Deal Name")]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Status">[in_Config("SuccessStatus").ToString]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_ExecutionReportFilePath">[in_Config("ReportOutputFilePath").ToString]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_CompanyName">[TaskDetailsDict("Company Name")]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+  </Sequence>
+</Activity>

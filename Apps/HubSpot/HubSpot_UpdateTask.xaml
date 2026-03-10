@@ -1,0 +1,177 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="HubSpot_UpdateTask" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_TaskDetailsURL" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>HubSpot_UpdateTask_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="HubSpot_UpdateTask" sap:VirtualizedContainerService.HintSize="1056,2175" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap2010:Annotation.AnnotationText="Task Description: To update the task in its status to Completed." DisplayName="HubSpot_UpdateTask" sap:VirtualizedContainerService.HintSize="1056,2152" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1022,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;HubSpot_UpdateTask started...&quot;]" />
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Tasks" sap:VirtualizedContainerService.HintSize="1022,1701" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="243326d1-bf0c-4692-bbce-a7a35fee97e9" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="988,1412" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="954,114" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[in_TaskDetailsURL]" Version="V4" />
+              <uix:NCheckState DisplayName="Check App State Task details" sap:VirtualizedContainerService.HintSize="954,1236" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="243326d1-bf0c-4692-bbce-a7a35fee97e9" Version="V4">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,994" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Change Task Status to Complete&quot;]" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Status Button" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="243326d1-bf0c-4692-bbce-a7a35fee97e9" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/tasks/146214366/view/all/task/393256084705" ContentHash="hSyVhVQQN0mDEDln2_WYGw" DesignTimeRectangle="1857, 205, 16, 16" DesignTimeScaleFactor="0.800000011920929" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl type='' tag='svg' class='StyledIcon-jibXlG gVFVNV' aaname='' /&gt;" Guid="242afd29-9c22-4e91-bf14-f6c39b81c10d" InformativeScreenshot="0da6cd4c7983e3fb8710dbf5fb4b1df5.png" Reference="sobT6TSR0U6vO4EQCkoJVA/IUYam90tbkuYXFTvBfJ_-Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Tasks' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Save Task&quot;]" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Save Button" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="243326d1-bf0c-4692-bbce-a7a35fee97e9" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/tasks/146214366/view/all/task/393256084705" CVScreenId="81826ab0-d3db-4b3a-9550-8b28390f5345" ContentHash="Rmv4XFpRtUWlxvrATIU9MQ" CvElementArea="1559, 995, 70, 36" CvTextArea="1579, 1006, 29, 11" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="1580, 1005, 27, 15" DesignTimeScaleFactor="0.800000011920929" FuzzySelectorArgument="&lt;webctrl aaname='Save' tag='I18N-STRING' type='' class='' check:innerText='Save' /&gt;" Guid="7d5bd983-39f1-4db8-a8ac-4b10a9f9e117" InformativeScreenshot="e228f60189cbc58abd26beb400816926.png" Reference="sobT6TSR0U6vO4EQCkoJVA/sxkiVJ8SwUeizraDeV-hEQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Tasks' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts to Refresh Tasks" sap:VirtualizedContainerService.HintSize="416,204" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(f5)][u(hk)]" Version="V4" />
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,91" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/tasks/146214366/view/all/task/393256084705" CVScreenId="5ba5022b-4341-4f85-bb0e-30bbe5560bdd" ContentHash="njBaqdTWVkywK29ykIczAQ" CvTextArea="1558, 113, 98, 17" CvTextArgument="Task details" CvType="Text" DesignTimeRectangle="1560, 112, 95, 20" DesignTimeScaleFactor="0.800000011920929" FuzzySelectorArgument="&lt;webctrl aaname='Task details' tag='I18N-STRING' type='' class='' check:text='Task details' /&gt;" Guid="224eb9d7-5d13-4aa4-b2e5-cc15217075e5" InformativeScreenshot="69ed1b30b6073ddce5a1c75192525e4b.png" Reference="sobT6TSR0U6vO4EQCkoJVA/_M-ZM-daRUuZPF7skEgcEw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Tasks' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Edge" ContentHash="NkQ0Hrr5lUuYwcxxqgaenw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAC+UlEQVRYR82XS4iOURzGP8aM0RgMjcbUqJHLZlJqyEhZWSiUy8KXBcplpdSsTBaykEiyskJKFiT33GLhkizcVliQBZFbErkbv0fP0Zn53vm+d7535stTv746//95znnf857/OV/uv1N3V34IVOnXTZUTg06ErXAEdsA0h1KLPnqAWqh2UzrRoQFOQXfENWh2SkmRWw+dcBmOwXxI9yZJXApfIZ7AT8g7paTI3QQ/3Fc8gTaHi4vEVfDLHWM6nVJU5NXA6aif+A2rnVJcJLbCA3eMeQxLoMqpiSI+FA5C3PcLLHZKaZE8Dy6CXt1NeAoyeg9dUO/URBHvgIegPlq+QzDa4XSiw0hogVHQDldBr/I7HIZWpyaK+FrQBPQQk9xcvjBphn2g1ynj26A3lfh1077CeXoTTW7OJoxGwEZ4BTJ/DutguFP+ibYwgUcwwc3ZhZkKjPb1XdAAn2EPjHdcy7YGzoPiH2AvqE/dX5OBEGZTQUVG+13b9hyo+GgH6cPT4DGfQPnTbZFdmI2BbaCn1CBJ9aM3mmC7LbILMx1Y220e0G55ATfgDnyEOH4FGm2RTRjVwRkbCy3JfmgDbWWdLYvgHoQcLdEGW2QTRjPhnY3FSSgoOrTNhZfOEZp0rcPlC5OVENZeRWq5Qz1E+zDQ8R4moO2Z+oTtU5isj0y11h0OFYjYzihXFbLFofKFSR7CttP6Jx7btFfDUecJVcjsBQqTGfDapuICFHzhtKkQvXGOOAE1DpcvTFSej9tU6G3oSWfDONAZou9Eax5y9K2kux+kEWY6D3pXv7egoqN7RDjAAmehwd2zCaNZcN/GKkDxQEncgnTXs76EgaqfCpAuHuH2pK96C1yHb26L0WXmAEyxTXnCoAl2g8rsM5C5fhc43gjLYBfo4qJBN8McKDi2+y1M9D8hfjLtgIUO9xDtuh8O3B8bzPRH4xLEE9C9YKxTBl8MFlczoQtn//79ZBGDaV/rhqNvQKfeZIcqJwbVwaKjtnJPPrjK5f4AJRxgPNTUnT0AAAAASUVORK5CYII=" InformativeScreenshot="4842f00778525be84fd996441211fd94.jpg" Reference="sobT6TSR0U6vO4EQCkoJVA/p4Ia1FuPRE6JWEEQV6TlMw" Selector="&lt;html app='msedge.exe' title='Tasks' /&gt;" Title="Tasks" Version="V1" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1022,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;HubSpot_UpdateTask completed...&quot;]" />
+    </Sequence>
+  </Sequence>
+</Activity>

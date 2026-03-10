@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="XpaR8SIyLUG65gbXPNN89A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="go.xero.com/app/!67tTl/contacts/add" DesignTimeRectangle="798, 835, 20, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl aria-labelledby='useAsAddressCheckbox' tag='INPUT' type='checkbox' class='xui-styledcheckboxradio--input xui-styledcheckboxradio--input-small' aaname='' /&gt;" Guid="e10352ae-5eb3-43dd-bb62-3b414c926449" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contacts – Add contact – Xero' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="5e3e2252-c43e-4615-bec9-a6098485a1e3" CvTextArea="825, 837, 162, 14" CvTextArgument="Use as delivery address" CvType="Text" DesignTimeRectangle="789, 826, 358, 38" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='xui-styledcheckboxradio' tag='LABEL' type='' aaname='' check:innerText='Use as delivery address' /&gt;" Guid="0d31068a-44c7-4534-8e09-6b17be854b23" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0ea503ff00f01311b98f0e7ce9cac954.png" xmlns="">0498lyi8GhU2h_hOtajMgvw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

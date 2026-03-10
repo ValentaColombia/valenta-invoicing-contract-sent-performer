@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="BgO3ItjcC0aercSSX5wCiw" Reference="sobT6TSR0U6vO4EQCkoJVA/O1tCTvNubkW3ZDWKTKAXLA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/tasks/146214366/view/all/task/394767284437" CVScreenId="e1e0bd02-f49a-427f-afd7-68d9d91014a4" CvTextArea="1051, 346, 154, 12" CvType="AnyWordGroup" DesignTimeRectangle="1053, 346, 152, 11" DesignTimeScaleFactor="0.75" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='tag-42' tag='SPAN' type='' class='' /&gt;" Guid="ec9e93ef-b7a7-4415-b668-963774dc19ba" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Tasks' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1036, 349, 10, 6" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl parentid='tag-42' tag='path' type='' class='' aaname='' /&gt;" Guid="4c8e0167-3ce7-40d8-8382-ec31429a5d0b" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="140d67b380fc688dcb05191857a1711d.png" xmlns="">0ES3EE417rUOLPIxki6Qu0w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

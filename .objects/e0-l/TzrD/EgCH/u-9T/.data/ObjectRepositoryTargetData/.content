@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="CtOCqbawRk-mHXabz-AV5w" Reference="sobT6TSR0U6vO4EQCkoJVA/u-9TXOQQqEKYB5bq4qPeVA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="login.xero.com/identity/user/login" CVScreenId="3512cb55-f45c-491e-ad41-24d6c65d3204" CvTextArea="500, 341, 96, 14" CvTextArgument="Email address" CvType="Text" DesignTimeRectangle="485, 330, 398, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='xl-form-email' tag='INPUT' type='email' class='xui-textinput--input xl-form-username' placeholder='Email address' aaname='Please enter your email address' /&gt;" Guid="71ad7495-0bf4-45ca-bc2f-6b83955e0ada" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="abd3dbc221e92e9a1c1d0f591eb1482d.png" xmlns="">0VJA5MxDA6keHrfmOGekKlQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

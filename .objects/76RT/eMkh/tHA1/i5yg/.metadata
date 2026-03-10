@@ -1,0 +1,14 @@
+﻿{
+  "Name": "CRM",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "i5yg9_BaGE22_2O0jWiSeQ",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/i5yg9_BaGE22_2O0jWiSeQ",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/tHA1sPuvTkCS3HpY3cxWRw",
+  "Created": "2025-12-16T02:35:56.1505654Z",
+  "Updated": "2025-12-16T02:35:56.1505654Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

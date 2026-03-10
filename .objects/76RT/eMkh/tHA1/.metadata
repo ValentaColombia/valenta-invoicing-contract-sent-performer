@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge User Guide  HubSpot",
+  "Type": "Screen",
+  "Id": "tHA1sPuvTkCS3HpY3cxWRw",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/tHA1sPuvTkCS3HpY3cxWRw",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/eMkh8skJXEuXyAZlZsA2Fg",
+  "Created": "2025-12-16T02:30:57.0535569Z",
+  "Updated": "2025-12-16T02:30:57.0535569Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

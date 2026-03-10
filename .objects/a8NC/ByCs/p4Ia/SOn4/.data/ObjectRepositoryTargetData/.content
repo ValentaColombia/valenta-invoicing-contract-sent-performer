@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="j4ngSjpfaUuzonUYGAwqdg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/tasks/146214366/view/all/task/395454853357" DesignTimeRectangle="1348, 138, 21, 522" DesignTimeScaleFactor="1" Guid="4686e86a-57c6-4031-9a1e-bc32481da186" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABUAAAIKCAYAAADMCATxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKHSURBVHhe7d1RaiJBAITh3F8QfFZBwd1T6JPeRPAMCsLstvTA0Kky1UOWZdm/oBjiTH1EzXP64+P4c/jcH59/Pv2+nso16PAmz+dzVkF91CDpf4AuFgv5eukstIBj1f1udAo6uAtV4NjpczGqoLbdaE9BfdQg6d9H7/f7cDweh/V6PSyXy9f1dDq9Xp8+F6PX63XYbDby73O73Q63260fPZ/PEhxb7nej7rccezgc+tHyGSps7Gq16kcV1BYUFLTuZUBBQUEV0hYUFLTuZUBBQUEV0hYUFLTuZUBBQUEV0hYUFLTuZUBBQUEV0hYUFLTuZUBBQUEV0hYUFLTuZUBBQUEV0hYUFLTuZUBBQUEV0hYUFLTuZUBBQUEV0hYUFLTuZUBBQUEV0hYUFLTuZUBBQUEV0hYUFLTuZUBBQUEV0hYUFLTuZUBBQUEV0hYUFLTuZUBBQUEV0ha0D/0jZx58dTrD5XLpRx+Px7Df7yW42+1e97vR0nKyRTnh4ttOvOgpqI8aJAX1UYOkoD5qkBTURw2SgvqoQVJQHzVICuqjBklBfdQgKaiPGiQF9VGDpKA+apAU1EcNkoL6qEFSUB81SArqowZJQX3UICmojxokBfVRg6SgPmqQFNRHDZKC+qhBUlAfNUgK6qMGSUF91CApqI8aJAX1UYOkoD5qkBTURw2SgvqoQVJQHzVICuqjBklBfdQgKaiPGiQF9VGDpKA+apAU1EcNkoL6qEFSUB81SArqowZJQX3UICmojxokBfVRg6SgPmqQFNRHDZKC+qhBUlAfNUgK6qMGSUF91CApqM/0QfVfG9p2o6UKGjt9rvvtfwWWzvpM34Gls78oB5bORt/1X0Gfwy9OBGzZTRrxvQAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Tasks' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c702fba06c0fec53ec5a34529b8e5056.png" xmlns="">0FfBv1dLiWkaT9lCWeFovNw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">MouseScroll</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

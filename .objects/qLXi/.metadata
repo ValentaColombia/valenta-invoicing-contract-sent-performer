@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge Tasks",
+  "Type": "App",
+  "Id": "qLXiwzO89EC50wUR9FkdvA",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/qLXiwzO89EC50wUR9FkdvA",
+  "Created": "2026-01-04T20:45:53.9627171Z",
+  "Updated": "2026-01-04T20:45:53.9627171Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

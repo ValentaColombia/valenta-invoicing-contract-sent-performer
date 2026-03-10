@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4sj2M2HBB06ncch9-Uj4Zg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/login" CVScreenId="b049344a-7512-4d86-a85c-584e587ae611" CvElementArea="556, 371, 302, 36" CvTextArea="693, 383, 29, 11" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="560, 373, 296, 33" DesignTimeScaleFactor="0.800000011920929" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='loginBtn' tag='BUTTON' type='submit' class='PrivateButton__StyledButton-eRHhiA gQDVtj' aaname='Next' check:innerText='Next' /&gt;" Guid="75885491-b9a7-44e7-973e-8efa59e927d7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HubSpot Login and Sign in' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4c20b22c536d932ffecf9b0b5f63cc41.png" xmlns="">0ZLx0QPPMIU2kfLHsZHyRiA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

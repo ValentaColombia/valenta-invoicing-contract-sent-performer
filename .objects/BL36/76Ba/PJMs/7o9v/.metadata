@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Add comment",
+  "Type": "Element",
+  "Id": "7o9vJu7NI0CJ6ZLzWDo7wQ",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/7o9vJu7NI0CJ6ZLzWDo7wQ",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/PJMsm3GEDUesuENeZ2xcCw",
+  "Created": "2025-12-21T19:54:05.2499659Z",
+  "Updated": "2025-12-21T19:54:05.2499659Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

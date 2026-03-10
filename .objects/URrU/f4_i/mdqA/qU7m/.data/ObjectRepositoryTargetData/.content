@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="bJeisHiraEKVcUWYMz0W9g" Reference="sobT6TSR0U6vO4EQCkoJVA/qU7mB7v-QECxs1xCiLFDwA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="go.xero.com/app/!67tTl/contacts/add" CVScreenId="5e3e2252-c43e-4615-bec9-a6098485a1e3" CvElementArea="1022, 891, 128, 44" CvTextArea="1038, 905, 94, 14" CvTextArgument="Add address" CvType="Button" DesignTimeRectangle="1023, 893, 125, 40" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Add address' tag='BUTTON' type='button' class='xui-button xui-button-main xui-button-medium' check:innerText='Add address' /&gt;" Guid="aa37a965-d34e-4119-8182-3df4cc355f4d" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="e90ef313a61ad12e2d18c224cca828a8.png" xmlns="">0dUlBxraNoUmq__VQjpLmZg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

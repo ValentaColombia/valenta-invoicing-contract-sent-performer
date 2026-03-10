@@ -1,0 +1,146 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Xero_Logout" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Xero_Logout_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Xero_Logout" sap:VirtualizedContainerService.HintSize="1282,1350" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Xero_Logout" sap:VirtualizedContainerService.HintSize="484,1327" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Xero_Logout started...&quot;]" />
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Edge Xero" sap:VirtualizedContainerService.HintSize="450,907" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="ef0da0a1-3d3b-4a0f-81af-205a2f4a5104" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,658" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on User Account Drop Down" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ef0da0a1-3d3b-4a0f-81af-205a2f4a5104" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/dashboard" CVScreenId="1d36a6cc-b843-46ea-a12b-52fd4e434433" ContentHash="sCXeIpdPXUKmLcuhQ3w9gw" CvElementArea="1299, 96, 48, 47" CvTextArea="1312, 112, 21, 15" CvType="Icon" DesignTimeRectangle="1303, 100, 40, 40" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl parentid='wac-top-panel' tag='ABBR' aaname='FA' type='' class='x-nav-xui-avatar x-nav-xui-avatar-color-3' check:text='FA' /&gt;" Guid="8db54e78-cb70-405f-b841-32d144315d4b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANISURBVFhH1ZnLTxNRFMZroktdmBI1caErXXRtYuIfwD9g0gUrF7otK9EEeRStpFAKGiBaQCSRlFfVaCRG205bK6AGBHGpJsStJsZXTMhxzrVD5/FNZ67QTln8kplvzj3nm+k997ZTn69lgXYVUKxnoChBQ3uOzg6lKDp9h2afDNGbfIy+LHcJ+HhG1fgaxxy8koM5pICiA0c6FLqavEsrhR7aXG+X4lUuRp2TEyIHyu0IFG3gIjH1aX1/22kxIgvn6FVzSRuHoomdNGpGM+5vczldoKhj3+UiDaZGYLGdhGtwLeTBABRLcJPkM3FYoBpwLcfGhKLK3ktFKmRrZ1ZDUU1zbeRJAEWVoRpMAzu4NvIkQOKF0SmYqJawB+TNYvhQu0I/Vnd+NZCFV4/DHVmDN4FZ8HIqmOmbGTN4E+hPjnel6c8aHuwF8CnrT8Ye3oYDvcTSgPqT98UoHOQl7EnvccvwycgzOKAeYG8Wwxcn7sFgxMaAn4JnfDYEaFEfrzRSc+laPKnTJWBvFsNz84MwGCFj2BAbajLkccvk42Gr4aLSB4MRmonmgRC8XqaJ4mw0GKB4kE37KaWguMqk0wNWwx+WumEwwrXhZKAcpz9GsRUwNJ528FNid6s0JfTzdDHEmvZUS0/bPMddwD+3LIZZRMEIV4a1Zgs20oZpnGzzQcMya7CbKVHppmSbD04JntgoGOFsOEQp0WR2yDUfbDpeOlAwwtEwmA4abj4dM3BZ+5+Nw67ov2azub61kbhvPrhxyGzNlQ1rq4Hdx16eLm6bD27NzK768sPwF2Y0yEsiyXF7w8fC6br4eaTBXhraTG+GDCcqfEdosBdYni5jFg605qV2vWrxdTlM+1sLBm8Ci6ASHJ6DSWoJv55F3qBhxsupAaeCBhRV9rS8pEy6HyasJo+e3hS1kScBFEtwh35cug4TV4NPai3uIeRlCyjqqNXr1lv3E9t/3arn/MhUVV6ycM5ziWlYEwJFG05cey6exK+17W8uv1c7KPEgIXKiWrZA0YGjnVm6MTuq7kRhaKYS31bC4i8CzoFyOwJFCU73zov/P/KZfnr3IkqfX0fEjTB8vF7sEde6p8bpVHQe5pACivUMFOuWBfoLBtufUu7v0pIAAAAASUVORK5CYII=" InformativeScreenshot="f018cc1d27854d39fcdd6b933a1af6d4.png" Reference="sobT6TSR0U6vO4EQCkoJVA/cbfyGxcyw0mTQwgL-IpjFg" ScopeSelectorArgument="&lt;html app='msedge.exe' url='*xero*' casesensitive:url='True' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Log out Button" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ef0da0a1-3d3b-4a0f-81af-205a2f4a5104" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/dashboard" CVScreenId="7e614381-c5d4-4dbb-b7ec-3d9f297677c2" ContentHash="u2gRL4_l5U2vwEHRsj-CpQ" CvTextArea="1195, 320, 52, 17" CvTextArgument="Log out" CvType="Text" DesignTimeRectangle="1143, 309, 200, 38" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Log outLog out' tag='A' type='' class='x-nav-xui-button x-nav-xui-button-borderless-standard x-nav-xui-button-small x-nav-xui-button-fullwidth' check:text='Log outLog out' /&gt;" Guid="3db8c6f9-aba5-4af4-9a1c-9b3e26e68574" InformativeScreenshot="1569deec16436de7ccc8f8675c8cf797.png" Reference="sobT6TSR0U6vO4EQCkoJVA/ZRop5QDEzk-Ze_uSlkXuVA" ScopeSelectorArgument="&lt;html app='msedge.exe' url='*xero*' casesensitive:url='True' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click on Log out Button" sap:VirtualizedContainerService.HintSize="382,218" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ef0da0a1-3d3b-4a0f-81af-205a2f4a5104" Timeout="3" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="login.xero.com/identity/user/logout" CVScreenId="def3778e-578c-4d52-b89a-6fe1ef3133a3" ContentHash="MozwdzB_uk6oEsY0DUuRmg" CvElementArea="483, 385, 401, 41" CvTextArea="655, 398, 58, 17" CvTextArgument="Log out" CvType="Button" DesignTimeRectangle="484, 386, 400, 40" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='logout-confirm' tag='BUTTON' type='' class='xui-button xui-button-medium xui-u-fullwidth xui-button-main xui-margin-top-large' aaname='Confirm logout' check:innerText='Log out' /&gt;" Guid="a6ecd913-80aa-4b70-9050-026498441b20" InformativeScreenshot="809414e43f2a5a25fde0d7f2ed8c4431.png" Reference="sobT6TSR0U6vO4EQCkoJVA/lhX8DDAf2EyKkLopfpMoDw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Edge" ContentHash="l9c13N02WE64i-JHn-L5dA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH2SURBVDhPnVNbL2NRFF5EIi4/gnciIgbxC4QHEh5kHsSzRMyfmHh16wxeEGnkBD09U3VJJIRMoiltpRjantPWtVVGacVlZpa1dncnLo1gJSvnO/t833f2WntteBHK7iew6v0wE3KDLRwRyVjTTTC1Vy1ZGUIJ54Ea6AWbcQ9z+wiz4acp1ow/oJKR5syXKhnKTxbbMwqfJ3M0YwHG3AVSTTHt63mTOJ3zxLX4vqXE5r1y2trfjMTX0mb8g4lflQAWf382O86EEOz0QTwpiZQzl36XIsK5aS7v2OIfAvgR9BQtHaH5KEmuQWxxxXAgdIVfdn6j5eQay1aPsYvw6EECO7bOUaW1VncMs9jUpnuBjymLHOucUXTF73AonMDuQByV4yS2b57h8tmNwG2ER8ikwRHF6ZMklpIxaMGoMMgmg6aNU1y7uMXPnhh+9cdx9DCBjeun2LwRw/HDpPjrGK3VOyJiZyUraQMqoZhKYAFhIeoLXooS1Mg1lhKxl94LF/axcztVApcp+iJKUH0m0RBujGzU88YJzEn4f2NZY9WHaYh2Kj50jGxk3q1KzQId5bsGiblTgcGUmGOQZls15t9kwhxNXwTFWyjVMviC8EXhcjIZ8RpPn0p/fiF+HIqvBqyB73RhNsVVnqWjshO20tRN+mslSwbAA2Z2Sv8z5CJZAAAAAElFTkSuQmCC" InformativeScreenshot="adf25c612b8944018bb9600cac5a5166.jpg" Reference="sobT6TSR0U6vO4EQCkoJVA/DrpLto4_YUi5Sa9QjTSEtg" Selector="&lt;html app='msedge.exe' url='*xero*' casesensitive:url='True' /&gt;" Title="My Xero | Home" Version="V1" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Xero_Logout completed...&quot;]" />
+    </Sequence>
+  </Sequence>
+</Activity>

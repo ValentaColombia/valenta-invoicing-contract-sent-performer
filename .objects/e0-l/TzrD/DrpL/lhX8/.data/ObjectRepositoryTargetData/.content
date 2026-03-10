@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MozwdzB_uk6oEsY0DUuRmg" Reference="sobT6TSR0U6vO4EQCkoJVA/lhX8DDAf2EyKkLopfpMoDw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="login.xero.com/identity/user/logout" CVScreenId="def3778e-578c-4d52-b89a-6fe1ef3133a3" CvElementArea="483, 385, 401, 41" CvTextArea="655, 398, 58, 17" CvTextArgument="Log out" CvType="Button" DesignTimeRectangle="484, 386, 400, 40" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='logout-confirm' tag='BUTTON' type='' class='xui-button xui-button-medium xui-u-fullwidth xui-button-main xui-margin-top-large' aaname='Confirm logout' check:innerText='Log out' /&gt;" Guid="a6ecd913-80aa-4b70-9050-026498441b20" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="809414e43f2a5a25fde0d7f2ed8c4431.png" xmlns="">00RnNG3Y6n0iiZjfFu-eWMQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

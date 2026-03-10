@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Tasks",
+  "Type": "App",
+  "Id": "a8NCAR72hUmibDnzliVPLg",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/a8NCAR72hUmibDnzliVPLg",
+  "Created": "2025-12-16T14:00:04.0356418Z",
+  "Updated": "2025-12-16T14:00:04.0356418Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

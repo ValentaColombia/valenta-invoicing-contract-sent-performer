@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Contact details",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "WWctXQvmn0ubrVqd4pOiZA",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/WWctXQvmn0ubrVqd4pOiZA",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/ndZn9ETpLUSnWaF6bs0iFQ",
+  "Created": "2025-12-17T16:27:04.1708128Z",
+  "Updated": "2025-12-17T16:27:04.1708128Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

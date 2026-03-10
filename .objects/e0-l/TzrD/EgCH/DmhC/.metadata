@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Trust this device",
+  "Type": "Element",
+  "TaxonomyType": "Checkbox",
+  "Id": "DmhCPBzQvUWmYd8KkTEt2Q",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/DmhCPBzQvUWmYd8KkTEt2Q",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/EgCHWbGSDkW9f9Gs6q3WDQ",
+  "Created": "2026-01-06T13:09:54.9098278Z",
+  "Updated": "2026-01-06T13:09:54.9098278Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

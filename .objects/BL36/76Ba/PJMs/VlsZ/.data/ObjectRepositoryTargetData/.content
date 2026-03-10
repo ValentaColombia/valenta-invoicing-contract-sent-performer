@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="bEmpqJi6nkuytGhVs5O-PA" Reference="sobT6TSR0U6vO4EQCkoJVA/VlsZnZdyPEqio1j64iYVhg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/contacts/146214366/record/0-3/406329236685" CVScreenId="083e1939-c385-4550-bc52-a5e4ae1cc588" CvElementArea="468, 640, 48, 26" CvTextArea="480, 648, 23, 9" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="469, 641, 46, 24" DesignTimeScaleFactor="0.75" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Save' parentid='engagement-comments-394767284437' tag='BUTTON' type='button' class='PrivateButton__StyledButton-eRHhiA kkZiDs' check:innerText='Save' /&gt;" Guid="ee9b0998-9f51-4160-b725-74286a15e022" ScopeSelectorArgument="&lt;html app='msedge.exe' url='https://app-eu1.hubspot.com*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="213dbc559a84b79d88dcc650b27969a3.png" xmlns="">0eIFYvh7QQU6ng916PdlT3w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

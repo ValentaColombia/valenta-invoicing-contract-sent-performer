@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4iqkq38QkU2gfFPKIAHfkw" Reference="sobT6TSR0U6vO4EQCkoJVA/dbGnUYnfaUWJ1WHt6l8dcQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="go.xero.com/app/!67tTl/contacts/add" CVScreenId="e08932ad-cfb0-4655-a993-5c640cc8df30" CvElementArea="628, 328, 402, 42" CvType="InputBox" DesignTimeRectangle="630, 330, 398, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='contactName' tag='INPUT' type='' class='xui-textinput--input xui-textinput--input-medium' placeholder='A business or person&amp;apos;s name' aaname='Contact name (required)' /&gt;" Guid="292d0f47-f3a7-4c97-8cf5-51cca06c89e7" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contacts – Add contact – Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="e08932ad-cfb0-4655-a993-5c640cc8df30" CvTextArea="627, 309, 148, 16" CvTextArgument="Contact name (required)" CvType="Text" DesignTimeRectangle="629, 308, 145, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='xui-text-label xui-fieldlabel-layout' aaname='Contact name' check:innerText='Contact name (required)' /&gt;" Guid="bcf5eedc-eb19-4478-b189-917202b92714" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="354d03ae94819d9cefeb5b8f4b339888.png" xmlns="">0x53YQSjug0W6kA2JmJe2dQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

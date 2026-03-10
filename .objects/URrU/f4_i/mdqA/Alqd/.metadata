@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Label 'Addresses'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Alqdv8_Xj0WrLzxzrqiNLg",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/Alqdv8_Xj0WrLzxzrqiNLg",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/mdqALtkQtU67zvSMbDjcvQ",
+  "Created": "2025-12-19T20:42:23.782324Z",
+  "Updated": "2025-12-19T20:42:23.782324Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

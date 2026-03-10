@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="sHmDn86QTkG8tl0KqB1vjA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="my.xero.com/!xkcD/Dashboard" DesignTimeRectangle="28, 151, 91, 34" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='xnav-appbutton--body' parentid='header' tag='DIV' type='' aaname='' check:innerText='My Xero' /&gt;" Guid="1f2a114a-9b19-43a3-959b-5d7f222133a5" ScopeSelectorArgument="&lt;html app='msedge.exe' title='My Xero | Home' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="99, 166, 10, 5" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl type='' tag='svg' class='xnav-appbutton--caret xnav-icon xnav-icon-svg' aaname='' /&gt;" Guid="9f7af43f-c739-481a-a83c-0b342d1d8e81" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="8e7e592ac6b464939512a342ec1505d6.png" xmlns="">0bPbRcSwdVE-tbIGHEarM1A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

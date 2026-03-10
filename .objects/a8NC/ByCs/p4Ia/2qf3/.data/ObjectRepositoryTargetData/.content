@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tLYWZ3qcr06LLHYe-4-s3A" Reference="sobT6TSR0U6vO4EQCkoJVA/2qf3CSPRbkCwGkQQcEjgdQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/tasks/146214366/view/all/task/393256084705" CVScreenId="a3e466b3-bfb3-43c9-ad87-39d39abe1209" CvTextArea="1576, 652, 166, 14" CvTextArgument="Billing Company = Valenta AU" CvType="Text" DesignTimeRectangle="1577, 650, 287, 17" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Billing Company*' tag='P' type='' class='' check:text='Billing Company = Valenta AU' /&gt;" Guid="9239ef6c-32ae-4f2f-82e9-904e97abf79a" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Tasks' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d92d4094f2c7dbfa3fb654cd3ee15d3c.png" xmlns="">02VpT9p1ORkKxz7phc7svjA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

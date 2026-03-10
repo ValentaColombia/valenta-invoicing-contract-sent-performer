@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9TVBCSzgk06pDNixvfEpBg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="newtab" DesignTimeRectangle="24, 164, 54, 22" DesignTimeScaleFactor="1" Guid="80b4470d-2260-42a2-8437-2472efaf4404" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAWCAYAAACL6W/rAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEtSURBVFhH7VTBDcMgDGQbRmIsxsk4GcXFxwUMpFLVKqloOYkH+Gzf2VGc/CiWsdmwjM2GZWw2LGOz4Z+MbRKck7DxSuzRi+sfB+wS/Zh7BbbgxMedtxHLWGNsC+J8TDYyaozGYhSfarh0bHMVo284R61duUGi1kDMS6NXex057Il+fHtm7hJjLgkFE6IptMlRHt/BSTmsjVoHj7EcYm3y3t5YmZI9Lxrrt4R7l1NgzQPa/2wYCXrn0L7zKZpcKwA8DqmI4qdYU6qxZnsKw73FmDY539i4wQwzgH5j9v6VjRUxmW+NFTFGZJMPHvPBqSKbLTGW01ibNa4xloAtqaE0QfzREOMmzF+xplAY34soiA8STL2mNYbImNke9Ng6HU6M3Qwa6+b4MZaxuSDyAIHg45ipbV0IAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' idx='*' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d100ce86da90cb025544cfa1727e780f.png" xmlns="">00znfvh3A9UO2IBnjSTAiMQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

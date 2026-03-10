@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ZtcUooOmUUeeavkRdGNv-A" Reference="sobT6TSR0U6vO4EQCkoJVA/qdrBqqYCHEONCFjTs3k0fw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="go.xero.com/app/!67tTl/contacts/add" CVScreenId="00e61740-8180-49bd-8b18-021429c454cd" CvElementArea="786, 752, 182, 42" CvType="InputBox" DesignTimeRectangle="789, 754, 178, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='postalCode' tag='INPUT' type='' class='xui-textinput--input xui-textinput--input-medium' aaname='Zip code' /&gt;" Guid="0d52d721-f098-4dd1-af7d-08174084b5e2" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="00e61740-8180-49bd-8b18-021429c454cd" CvTextArea="786, 733, 56, 16" CvTextArgument="Zip code" CvType="Text" DesignTimeRectangle="788, 728, 180, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Zip code' tag='LABEL' type='' class='xui-text-label xui-fieldlabel-layout' check:innerText='Zip code' /&gt;" Guid="54749454-c88e-4151-88e2-80771757eefd" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b0f1932aa014ee5f619565f46148b98c.png" xmlns="">09QGeKvi_iU6cnOhJ3W5bPQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

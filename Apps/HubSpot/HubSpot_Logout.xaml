@@ -1,0 +1,138 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="HubSpot_Logout" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="HubSpot_Logout_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="HubSpot_Logout" sap:VirtualizedContainerService.HintSize="1282,1154" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap2010:Annotation.AnnotationText="Task Description: To log out HubSpot." DisplayName="HubSpot_Logout" sap:VirtualizedContainerService.HintSize="484,1131" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;HubSpot_Logout started...&quot;]" />
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Edge Tasks" sap:VirtualizedContainerService.HintSize="450,680" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="3f09aedc-d49c-4b0d-8258-b04a0781d4b1" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,431" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on User Account Drop Down" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3f09aedc-d49c-4b0d-8258-b04a0781d4b1" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/tasks/146214366/view/all" CVScreenId="848305b8-d9a8-4a5d-980b-6cec87c1b875" ContentHash="LO1EyFfoYk-un8ALzY4yLA" CvElementArea="1278, 90, 85, 29" CvType="InputBox" DesignTimeRectangle="1349, 103, 6, 3" DesignTimeScaleFactor="0.75" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl parentid='hs-global-toolbar-accounts' tag='path' type='' class='' aaname='' /&gt;" Guid="c6b2920d-62d1-4667-98c8-0bfb5d81777a" InformativeScreenshot="444be4445fe3cb3bb4f3d601bcdaaece.png" Reference="sobT6TSR0U6vO4EQCkoJVA/_nAh_lbELEq0CeRetrh5pg" ScopeSelectorArgument="&lt;html app='msedge.exe' url='*ubspot*' casesensitive:url='true' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="848305b8-d9a8-4a5d-980b-6cec87c1b875" CvElementArea="1278, 90, 85, 29" CvType="InputBox" DesignTimeRectangle="1304, 98, 38, 13" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='hs-global-toolbar-accounts' tag='SPAN' type='' class='' aaname='Valenta ' check:innerText='Valenta' /&gt;" Guid="322859ce-59a1-47fa-b3e0-22256a0ed701" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Sign out Button" sap:VirtualizedContainerService.HintSize="382,182" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3f09aedc-d49c-4b0d-8258-b04a0781d4b1" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/tasks/146214366/view/all" CVScreenId="5b6aa85e-6c9d-4b6e-aa0f-3c70eb71bd9d" ContentHash="e1ohx83Vx0mLPnxjQeOsqg" CvTextArea="1162, 622, 38, 12" CvTextArgument="Signout" CvType="Text" DesignTimeRectangle="1163, 621, 37, 13" DesignTimeScaleFactor="0.75" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='signout' tag='A' type='' class='MenuItem__StyledLink-jYtZbD kvrzCM' aaname=' Sign out' check:innerText='Sign out' /&gt;" Guid="df3de4ad-1bea-42bf-bde8-e091da38e4d1" InformativeScreenshot="1169cfd35de688fa7dd6dcfda995e507.png" Reference="sobT6TSR0U6vO4EQCkoJVA/QMdareUcykWYpXD7Pw97nw" ScopeSelectorArgument="&lt;html app='msedge.exe' url='*ubspot*' casesensitive:url='true' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Edge" ContentHash="tfLDnjwDjk-7YZDvADNniQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAC+UlEQVRYR82XS4iOURzGP8aM0RgMjcbUqJHLZlJqyEhZWSiUy8KXBcplpdSsTBaykEiyskJKFiT33GLhkizcVliQBZFbErkbv0fP0Zn53vm+d7535stTv746//95znnf857/OV/uv1N3V34IVOnXTZUTg06ErXAEdsA0h1KLPnqAWqh2UzrRoQFOQXfENWh2SkmRWw+dcBmOwXxI9yZJXApfIZ7AT8g7paTI3QQ/3Fc8gTaHi4vEVfDLHWM6nVJU5NXA6aif+A2rnVJcJLbCA3eMeQxLoMqpiSI+FA5C3PcLLHZKaZE8Dy6CXt1NeAoyeg9dUO/URBHvgIegPlq+QzDa4XSiw0hogVHQDldBr/I7HIZWpyaK+FrQBPQQk9xcvjBphn2g1ynj26A3lfh1077CeXoTTW7OJoxGwEZ4BTJ/DutguFP+ibYwgUcwwc3ZhZkKjPb1XdAAn2EPjHdcy7YGzoPiH2AvqE/dX5OBEGZTQUVG+13b9hyo+GgH6cPT4DGfQPnTbZFdmI2BbaCn1CBJ9aM3mmC7LbILMx1Y220e0G55ATfgDnyEOH4FGm2RTRjVwRkbCy3JfmgDbWWdLYvgHoQcLdEGW2QTRjPhnY3FSSgoOrTNhZfOEZp0rcPlC5OVENZeRWq5Qz1E+zDQ8R4moO2Z+oTtU5isj0y11h0OFYjYzihXFbLFofKFSR7CttP6Jx7btFfDUecJVcjsBQqTGfDapuICFHzhtKkQvXGOOAE1DpcvTFSej9tU6G3oSWfDONAZou9Eax5y9K2kux+kEWY6D3pXv7egoqN7RDjAAmehwd2zCaNZcN/GKkDxQEncgnTXs76EgaqfCpAuHuH2pK96C1yHb26L0WXmAEyxTXnCoAl2g8rsM5C5fhc43gjLYBfo4qJBN8McKDi2+y1M9D8hfjLtgIUO9xDtuh8O3B8bzPRH4xLEE9C9YKxTBl8MFlczoQtn//79ZBGDaV/rhqNvQKfeZIcqJwbVwaKjtnJPPrjK5f4AJRxgPNTUnT0AAAAASUVORK5CYII=" InformativeScreenshot="5fa76d5e6e8f9c030ea26a345d853f3f.jpg" Reference="sobT6TSR0U6vO4EQCkoJVA/XQrSod8cNEiWLen2iMQBQw" Selector="&lt;html app='msedge.exe' url='*ubspot*' casesensitive:url='true' /&gt;" Title="Tasks" Version="V1" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;HubSpot_Logout completed...&quot;]" />
+    </Sequence>
+  </Sequence>
+</Activity>

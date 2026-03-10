@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="3dbOXmv_zkWtWkaOZkSbGA" Reference="sobT6TSR0U6vO4EQCkoJVA/JCDAt47lUUmfKnZl7HipWg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/login" CVScreenId="682625d8-2dfd-4061-ad05-1c5f5b36b0d2" CvElementArea="551, 295, 279, 33" CvTextArea="641, 305, 116, 13" CvTextArgument="Sign in with Microsoft" CvType="Button" DesignTimeRectangle="553, 296, 276, 31" DesignTimeScaleFactor="0.75" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='microsoftBtn' tag='BUTTON' type='button' class='PrivateButton__StyledButton-eRHhiA iPQKvv' aaname='Sign in with Microsoft' check:innerText='Sign in with Microsoft' /&gt;" Guid="49791549-0ec4-4429-9256-624709217b08" ScopeSelectorArgument="&lt;html app='msedge.exe' title='HubSpot Login and Sign in' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a2190fd95dcf3b8bd9771c71ad88f7b9.png" xmlns="">0Ie8xohcSGk22jRw_UTy8KA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

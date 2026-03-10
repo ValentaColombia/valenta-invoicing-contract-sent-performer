@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4KiUxF7w9kSjhMuiZWromw" Reference="sobT6TSR0U6vO4EQCkoJVA/-g67OegylE2EXq4tYNqHRw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="login.xero.com/identity/user/login/two-factor/authenticate" CVScreenId="f5e12f5a-8c7e-44ac-9a75-ac62c152c485" CvElementArea="482, 489, 403, 42" CvType="InputBox" DesignTimeRectangle="485, 491, 398, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='' class='xui-textinput--input xui-textinput--input-medium' placeholder='123456' aaname='Authentication code' /&gt;" Guid="b870b38e-4df1-4b79-9294-a92e86046488" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='MFA Login | Xero Accounting Software' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="484, 410, 400, 64" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='xui-margin-top-x-large xui-margin-bottom-none xui-text-align-center xui-heading-xlarge undefined' aaname='Enter the 6-digit code found in your authenticator app' check:innerText='Enter the 6-digit code found in your authenticator app' /&gt;" Guid="020f471e-0030-4fc4-8e77-e8172f410928" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="483b005b523569f27329d4192ebf141d.png" xmlns="">0b7XHHIO2SE2xccPkhR-FHQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

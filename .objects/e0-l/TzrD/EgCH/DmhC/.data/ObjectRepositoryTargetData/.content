@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="28m_dBznDkeQI3HoSFqFQQ" Reference="sobT6TSR0U6vO4EQCkoJVA/DmhCPBzQvUWmYd8KkTEt2Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="login.xero.com/identity/user/login/two-factor/authenticate" CVScreenId="f5e12f5a-8c7e-44ac-9a75-ac62c152c485" CvElementArea="596, 617, 23, 23" CvType="CheckBox" DesignTimeRectangle="598, 618, 20, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='checkbox' class='xui-styledcheckboxradio--input xui-styledcheckboxradio--input-small' aaname='' /&gt;" Guid="5e7fc87a-3c8c-4cdb-92b9-9cd8e7d4734a" ScopeSelectorArgument="&lt;html app='msedge.exe' title='MFA Login | Xero*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f5e12f5a-8c7e-44ac-9a75-ac62c152c485" CvElementArea="596, 617, 23, 23" CvTextArea="625, 620, 104, 13" CvTextArgument="Trust this device" CvType="CheckBox" DesignTimeRectangle="598, 618, 131, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='xui-styledcheckboxradio' tag='LABEL' type='' aaname='' check:innerText='Trust this device' /&gt;" Guid="1e3ff39a-02df-4229-8e97-9ab69dcbeb0f" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="913f963b9b5e70424e35a46aea634534.png" xmlns="">0BeMZZgi3r0m_g3Hwl8eiOQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Check</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

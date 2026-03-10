@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Sign in with a Passkey",
+  "Type": "Element",
+  "Id": "JCDAt47lUUmfKnZl7HipWg",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/JCDAt47lUUmfKnZl7HipWg",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/mrYYb0dlC0ewQxOuv8ARtw",
+  "Created": "2025-12-15T20:54:01.0198573Z",
+  "Updated": "2025-12-15T20:54:01.0198573Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

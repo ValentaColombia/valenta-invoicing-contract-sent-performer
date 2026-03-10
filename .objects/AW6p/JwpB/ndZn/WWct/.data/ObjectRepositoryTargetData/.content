@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="qsLoyP16-UWhUHwDfdi5bA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="go.xero.com/app/!67tTl/contacts/contact/7bda03ee-db2e-4637-a22c-434a134bd25c/activity/invoices" CVScreenId="5662d032-8f8d-4a24-aab7-08f553e1c044" CvTextArea="118, 302, 101, 14" CvTextArgument="Contact details" CvType="Text" DesignTimeRectangle="120, 298, 99, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='details' tag='SPAN' type='' class='xui-pickitem--text' aaname='Contact details' check:innerText='Contact details' /&gt;" Guid="2a5e7e26-45e0-4909-8c8b-5b7775f1f438" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contacts – Valenta Virtual Assistants Outsourcing – Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="5662d032-8f8d-4a24-aab7-08f553e1c044" CvTextArea="118, 302, 101, 14" CvTextArgument="Contact details" CvType="Text" DesignTimeRectangle="100, 280, 139, 60" ElementType="Button" FuzzySelectorArgument="&lt;webctrl parentid='details' tag='BUTTON' type='button' class='xui-pickitem--body' aaname='Contact details' check:innerText='Contact details' /&gt;" Guid="9d8bfbb5-fded-4e06-9d87-cc4ce710eb11" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="645fd3964ad50244297b54cdc048f777.png" xmlns="">0-T4JVpJjO06hbhzT2uJelw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

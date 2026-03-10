@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kim7z03K5UK4maB0Y-rRgA" Reference="sobT6TSR0U6vO4EQCkoJVA/sV3u1Zr-VkelBQFHYjL0bQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/tasks/146214366/view/all/task/393256084705" CVScreenId="d739d4f3-32f3-47d7-ac03-df71d1dd401a" CvElementArea="1630, 995, 80, 35" CvTextArea="1650, 1006, 39, 11" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="1631, 996, 78, 33" DesignTimeScaleFactor="0.800000011920929" FuzzySelectorArgument="&lt;webctrl aaname='Cancel' tag='BUTTON' type='button' class='PrivateButton__StyledButton-eRHhiA cDsEbw' check:text='Cancel' /&gt;" Guid="954fa939-e96e-4bf0-8337-69ddeae5c8eb" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Tasks' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a8d88dc600f0eddbc1a08eb9847cda32.png" xmlns="">0uKvkDKz2M0OYWifWhPtmvg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

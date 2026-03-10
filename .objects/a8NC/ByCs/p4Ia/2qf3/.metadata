@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Billing Company = Valen…(1)",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "2qf3CSPRbkCwGkQQcEjgdQ",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/2qf3CSPRbkCwGkQQcEjgdQ",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/p4Ia1FuPRE6JWEEQV6TlMw",
+  "Created": "2025-12-17T13:28:54.3073492Z",
+  "Updated": "2025-12-17T13:28:54.3073492Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="RPCTHz2DoESG4T-slSqO4Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="teams.microsoft.com/v2" CVScreenId="06f37e6a-fc13-45d1-b149-824a6e087cb3" CvTextArea="788, 198, 49, 11" CvTextArgument="Activities" CvType="Text" DesignTimeRectangle="674, 186, 277, 36" DesignTimeScaleFactor="0.75" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Activities' aria-role='button' parentid='record-page-middle-pane' tag='A' type='' class='Link__StyledLink-gGnXeN igrisU' check:innerText='Activities' /&gt;" Guid="eddaa6b7-5200-4c77-9db2-4fd8577afaf7" ScopeSelectorArgument="&lt;html app='msedge.exe' title='TEST Valenta DA Implementation' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="13af845297bd9642d3ae08e47c0b4b20.png" xmlns="">0SvrRlVR_aEeID07fJ99PkQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

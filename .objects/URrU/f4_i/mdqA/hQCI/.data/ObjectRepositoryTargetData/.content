@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="JukEx3rQLUu6EIci1IsjZw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="go.xero.com/app/!67tTl/dashboard" CVScreenId="dfa84c32-685b-4ff8-ae8b-4489c54a2aa8" CvTextArea="1529, 175, 57, 15" CvTextArgument="Search" CvType="Text" DesignTimeRectangle="1529, 164, 328, 40" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='global-search-mfe' tag='H2' type='' class='global-search-mfe-heading-large global-search-mfe-search-container__title' aaname='Search' check:innerText='Search' /&gt;" Guid="a78ce387-e71c-4184-871b-9a32e9d01775" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Dashboard – Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="dd198bc5563b2f755361ada370b6217b.png" xmlns="">0UHts5ITA4EiveI7-ovtsGw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

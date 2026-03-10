@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="iw69XazLr0GxUQkd993yNA" Reference="sobT6TSR0U6vO4EQCkoJVA/s2c4Yxh3CEaldwdmH_Jp2A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/contacts/146214366/record/0-3/413523111148" CVScreenId="2f05b66d-5f39-4722-931a-a09597883396" CvElementArea="672, 184, 281, 40" CvTextArea="788, 198, 49, 11" CvTextArgument="Activities" CvType="Button" DesignTimeRectangle="674, 186, 277, 36" DesignTimeScaleFactor="0.75" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Activities' aria-role='button' parentid='record-page-middle-pane' tag='A' type='' class='Link__StyledLink-gGnXeN igrisU' check:innerText='Activities' /&gt;" Guid="31feb9a6-bbe8-48e6-a52c-a45cb7d20cbf" ScopeSelectorArgument="[string.Format(&quot;&lt;html app='msedge.exe' title='{0}' /&gt;&quot;, TaskTitle)]" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="13af845297bd9642d3ae08e47c0b4b20.png" xmlns="">0ooO6siZcBkuxPKHF7UWEuw</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData Name="TaskTitle" />
+    </scg:List>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
