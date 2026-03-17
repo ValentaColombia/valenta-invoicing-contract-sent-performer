@@ -120,7 +120,7 @@
       <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Outlook_SendEmail" sap:VirtualizedContainerService.HintSize="1836,1122" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Outlook_SendEmail" sap:VirtualizedContainerService.HintSize="1282,1122" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="HTMLBody" />
     </Sequence.Variables>
@@ -148,7 +148,7 @@
           <InArgument x:TypeArguments="x:String">[File.ReadAllText(in_HTMLBodyPath)]</InArgument>
         </Assign.Value>
       </Assign>
-      <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentList="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" MailboxBackup="{x:Reference __ReferenceID0}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Existing" AuthScopesInvalid="False" Bcc="[{in_Bcc}]" Body="[HTMLBody]" Cc="[{in_Cc}]" ConnectionId="809c2be7-a881-4b19-bf5d-ef19b5b83888" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,534" sap2010:WorkflowViewState.IdRef="SendMailConnections_1" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[in_Subject]" To="[{in_MailTo}]" UseConnectionService="True" UseSharedMailbox="False">
+      <umam:SendMailConnections ArgumentAttachmentPaths="{x:Null}" AttachmentList="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Mailbox="{x:Null}" MailboxBackup="{x:Reference __ReferenceID0}" ReplyTo="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="Existing" AuthScopesInvalid="False" Bcc="[in_Bcc.Replace(&quot; &quot;,&quot;&quot;).Split(&quot;;&quot;c)]" Body="[HTMLBody]" Cc="[in_Cc.Replace(&quot; &quot;,&quot;&quot;).Split(&quot;;&quot;c)]" ConnectionId="809c2be7-a881-4b19-bf5d-ef19b5b83888" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,534" sap2010:WorkflowViewState.IdRef="SendMailConnections_1" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[in_Subject]" To="[in_MailTo.Replace(&quot; &quot;,&quot;&quot;).Split(&quot;;&quot;c)]" UseConnectionService="True" UseSharedMailbox="False">
         <umam:SendMailConnections.AttachmentsBackup>
           <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="Existing">
             <usau:BackupSlot.BackupValues>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ZvtfTFhQ_ECXVKGo1le3hg" Reference="sobT6TSR0U6vO4EQCkoJVA/8R64ctD4ek-MfJ5730gofQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/contacts/146214366/record/0-3/493677356225" CVScreenId="1ebf208a-8e56-4dc8-8320-2b3c7f001d13" CvElementArea="486, 989, 17, 15" CvType="Icon" DesignTimeRectangle="490, 992, 9, 8" DesignTimeScaleFactor="0.75" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl type='' parentid='main-content' tag='path' class='' aaname='' /&gt;" Guid="234143f2-64bf-4289-aa40-0118da0ac959" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAYAAAC5tzfZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC+SURBVChTpYzNCoJgEEV78HqAWrVUaFEWtDOCMlpYtBFRVy4isoI0w7IfIwoxbMLJPpIvDerCZeByzuTgh/wv2e4JFvY+tVc/QI5I1saDPCNkttHTkCWSbqw/gu8tN0fIUpJhucAJKtS6CsxXO9xM5wiVtpwuFTkRCqyALdUHuL0uJc2s59essi0JWSJFUcYm8EOdQAwvgahOSe2th1xCirJ0DihUOwoEtzBek6Gk88WHvjyBMLzHCx1K+h6AB6YbLu33opokAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='msedge.exe' url='https://app-eu1.hubspot.com*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="1ebf208a-8e56-4dc8-8320-2b3c7f001d13" CvTextArea="505, 990, 66, 11" CvTextArgument="2 comments" CvType="Text" DesignTimeRectangle="507, 987, 63, 18" FullSelectorArgument="&lt;webctrl aaname='*comments' parentid='main-content' tag='I18N-STRING' /&gt;" Guid="cb63a0a1-b76a-4759-9a61-a67ab91b69ed" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="210e084e94beb9d02a62399feb7374fa.png" xmlns="">0Fk0MxUdws0G4imow4dKdAg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

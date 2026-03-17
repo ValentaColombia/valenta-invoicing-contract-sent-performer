@@ -77,7 +77,7 @@
       <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="HubSpot_AddCommentToTask_TestCase" sap:VirtualizedContainerService.HintSize="986,904" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="HubSpot_AddCommentToTask_TestCase" sap:VirtualizedContainerService.HintSize="1836,904" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="ExpectedResult" />
     </Sequence.Variables>
@@ -111,7 +111,7 @@
         <TryCatch.Try>
           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="HubSpot_AddCommentToTask - Invoke Workflow File (Apps\HubSpot\HubSpot_AddCommentToTask.xaml)" sap:VirtualizedContainerService.HintSize="337,145" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Apps\HubSpot\HubSpot_AddCommentToTask.xaml">
             <ui:InvokeWorkflowFile.Arguments>
-              <InArgument x:TypeArguments="x:String" x:Key="in_TaskDetailsURL">https://app-eu1.hubspot.com/tasks/146214366/view/all/task/450330949846</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_TaskDetailsURL">https://app-eu1.hubspot.com/tasks/146214366/view/all/task/465548485819</InArgument>
               <InArgument x:TypeArguments="x:String" x:Key="in_CommentNote">- Contact in Xero is EMAIL email ID. Please check the right billing contact as per HubSpot and update XERO.</InArgument>
               <InArgument x:TypeArguments="x:String" x:Key="in_BusinessResponsible">@Akshata Hegde</InArgument>
               <InArgument x:TypeArguments="x:String" x:Key="in_SecondCommentNote" />
