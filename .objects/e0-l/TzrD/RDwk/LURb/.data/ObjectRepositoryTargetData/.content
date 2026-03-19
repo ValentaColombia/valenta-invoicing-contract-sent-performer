@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4CO6VfLm8kWcqRaA1bE4RQ" Reference="sobT6TSR0U6vO4EQCkoJVA/LURb0hiQ-kmh9k1zinKGHQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="go.xero.com/app/!!KvVG/homepage" DesignTimeRectangle="297, 106, 17, 26" DesignTimeScaleFactor="1" Guid="ab154594-b389-43b7-a8ac-d1a94fad90da" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABEAAAAaCAYAAABRqrc5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABtSURBVEhLpcxRCoAgFAVRF9wiWtXbTIsx7ocgMaSDwQkb8rZ2VT+G0cJoYbQwWhgtjBZGC6OF0cJoYbTuevrqyT94ecjrb2g5EONAQ1sDMX/MQ9sD8Q25rAYCo4XRwmhhtDBaGC2MFkYLo1L9Bb8I25qPkMSLAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*ero' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="ab7898a06080050d3759a9bf44e459e4.png" xmlns="">0GX0tRnGSokWvL0LMMRYl6g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

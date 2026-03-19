@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Xero_SearchOrganization" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Xero_SearchOrganization" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_XeroOrganization" Type="InArgument(x:String)" />
   </x:Members>
@@ -46,6 +46,9 @@
       <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
       <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
       <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -108,7 +111,7 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Xero_SearchOrganization" sap:VirtualizedContainerService.HintSize="1836,2186" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Xero_SearchOrganization" sap:VirtualizedContainerService.HintSize="1836,2471" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="XeroOrganization" />
     </Sequence.Variables>
@@ -117,26 +120,26 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Xero_SearchOrganization" sap:VirtualizedContainerService.HintSize="552,2163" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Xero_SearchOrganization" sap:VirtualizedContainerService.HintSize="608,2448" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="518,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Xero_SearchOrganization started...&quot;]" />
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge My Xero  Home" sap:VirtualizedContainerService.HintSize="518,1743" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="ab6537c6-15f5-4f01-b1fc-84e27af7cbb5" Version="V2" WindowResize="Maximize">
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="574,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Xero_SearchOrganization started...&quot;]" />
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge My Xero  Home(2)" sap:VirtualizedContainerService.HintSize="574,2028" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="ab6537c6-15f5-4f01-b1fc-84e27af7cbb5" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,1494" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="540,1779" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NGetText DisplayName="Get Text Xero Organization" sap:VirtualizedContainerService.HintSize="450,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="ab6537c6-15f5-4f01-b1fc-84e27af7cbb5" TextString="[XeroOrganization]" Version="V4">
+              <uix:NGetText DisplayName="Get Text Xero Organization" sap:VirtualizedContainerService.HintSize="506,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="ab6537c6-15f5-4f01-b1fc-84e27af7cbb5" TextString="[XeroOrganization]" Version="V4">
                 <uix:NGetText.Target>
                   <uix:TargetAnchorable BrowserURL="go.xero.com/app/!zH68C/dashboard" CVScreenId="3254ae48-6df5-4ca1-bfe1-130bed605494" ContentHash="tPObZnxsGECEcQMpN7IlsA" CvElementArea="111, 97, 240, 44" CvType="InputBox" DesignTimeRectangle="125, 108, 195, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='main-menu' tag='SPAN' type='' class='x-nav--tenant-menu-button-text' /&gt;" Guid="e57a1112-44df-4f2d-b636-00743a91aa60" InformativeScreenshot="335b4a5f88c1f051dd3f45c96c4a2ec6.png" Reference="sobT6TSR0U6vO4EQCkoJVA/RaHb55PkmE63D7xEqLLtOw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*ero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -147,7 +150,7 @@
                   </uix:TargetAnchorable>
                 </uix:NGetText.Target>
               </uix:NGetText>
-              <If Condition="[in_XeroOrganization.ToString = XeroOrganization.ToString]" DisplayName="If to Verifiy the Organization has been selected" sap:VirtualizedContainerService.HintSize="450,1243" sap2010:WorkflowViewState.IdRef="If_1">
+              <If Condition="[in_XeroOrganization.ToString = XeroOrganization.ToString]" DisplayName="If to Verifiy the Organization has been selected" sap:VirtualizedContainerService.HintSize="506,1528" sap2010:WorkflowViewState.IdRef="If_1">
                 <If.Then>
                   <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,226" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <sap:WorkflowViewStateService.ViewState>
@@ -159,25 +162,71 @@
                   </Sequence>
                 </If.Then>
                 <If.Else>
-                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,854" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="472,1139" sap2010:WorkflowViewState.IdRef="Sequence_5">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;The Organization will be chosen: &quot;+in_XeroOrganization]" />
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Organizations Drop Down List" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ab6537c6-15f5-4f01-b1fc-84e27af7cbb5" Version="V4">
-                      <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="go.xero.com/app/!NPrxr/dashboard" CVScreenId="8140dd6d-4327-4066-b645-a84b0a49dbd1" ContentHash="52BmVb4o1kO_NJ_CzHoEEw" CvElementArea="111, 147, 165, 44" CvType="InputBox" DesignTimeRectangle="253, 168, 10, 5" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='x-nav-xui-button--caret' parentid='main-menu' tag='DIV' type='' aaname='' /&gt;" Guid="1216ab36-9053-4f2b-b129-787bc59535fb" InformativeScreenshot="26d259d45482007f90f7fbce7294bc45.png" Reference="sobT6TSR0U6vO4EQCkoJVA/46chK478p0SM6eovNqOuDw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*ero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
-                          <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                              <uix:Target CVScreenId="8140dd6d-4327-4066-b645-a84b0a49dbd1" CvElementArea="111, 147, 165, 44" CvType="InputBox" DesignTimeRectangle="112, 149, 164, 42" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='x-nav-xui-button x-nav--tenant-menu-button x-nav-xui-button-borderless-inverted x-nav-xui-button-medium x-nav-xui-button-has-icon' aaname='VALValenta AI Limited' /&gt;" Guid="485c1f29-3dc5-4acd-a84a-d3e1bfe6ec1b" SearchSteps="FuzzySelector, CV" />
-                            </scg:List>
-                          </uix:TargetAnchorable.Anchors>
-                        </uix:TargetAnchorable>
-                      </uix:NClick.Target>
-                    </uix:NClick>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Search Organizations" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="ab6537c6-15f5-4f01-b1fc-84e27af7cbb5" Text="[in_XeroOrganization]" Version="V4">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="438,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;The Organization will be chosen: &quot;+in_XeroOrganization]" />
+                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,417" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                      <TryCatch.Try>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Organizations Drop Down List" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ab6537c6-15f5-4f01-b1fc-84e27af7cbb5" Timeout="5" Version="V4">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="go.xero.com/app/!!KvVG/homepage" ContentHash="4CO6VfLm8kWcqRaA1bE4RQ" DesignTimeRectangle="297, 106, 17, 26" DesignTimeScaleFactor="1" Guid="ab154594-b389-43b7-a8ac-d1a94fad90da" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABEAAAAaCAYAAABRqrc5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABtSURBVEhLpcxRCoAgFAVRF9wiWtXbTIsx7ocgMaSDwQkb8rZ2VT+G0cJoYbQwWhgtjBZGC6OF0cJoYbTuevrqyT94ecjrb2g5EONAQ1sDMX/MQ9sD8Q25rAYCo4XRwmhhtDBaGC2MFkYLo1L9Bb8I25qPkMSLAAAAAElFTkSuQmCC" InformativeScreenshot="ab7898a06080050d3759a9bf44e459e4.png" Reference="sobT6TSR0U6vO4EQCkoJVA/LURb0hiQ-kmh9k1zinKGHQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*ero' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </TryCatch.Try>
+                      <TryCatch.Catches>
+                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ActivityAction x:TypeArguments="s:Exception">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                            </ActivityAction.Argument>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="New Click on Organizations Drop Down List" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ab6537c6-15f5-4f01-b1fc-84e27af7cbb5" Version="V4">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable Accuracy="0.7" BrowserURL="go.xero.com/app/!!KvVG/homepage" ContentHash="vRSVGNHcT0Ofw1twHkBnCg" DesignTimeRectangle="293, 112, 17, 15" DesignTimeScaleFactor="1" Guid="29f3dd0e-c664-49b5-b801-a67e37038bc7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABEAAAAPCAYAAAACsSQRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABcSURBVDhPpczBCcAgEERRC7aIVLXNWMyGgT1o/DEMEd7Bj05rPfI3jC6MLowujC6Mrme4YuTX0Zvl33Ipp6FtQLZQaAgHBGOZh14HBONEn48DgtGF0YXRhdESeQM65k1wI4965AAAAABJRU5ErkJggg==" InformativeScreenshot="3b363ec4f78a7510d556dfa3c56a01f0.png" Reference="sobT6TSR0U6vO4EQCkoJVA/o3I4mIV6MUGIryQ2wRb47g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*ro' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                          </ActivityAction>
+                        </Catch>
+                      </TryCatch.Catches>
+                    </TryCatch>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="438,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,240" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Organizations Drop Down List" sap:VirtualizedContainerService.HintSize="382,180" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ab6537c6-15f5-4f01-b1fc-84e27af7cbb5" Version="V4">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="go.xero.com/app/!NPrxr/dashboard" CVScreenId="8140dd6d-4327-4066-b645-a84b0a49dbd1" ContentHash="52BmVb4o1kO_NJ_CzHoEEw" CvElementArea="111, 147, 165, 44" CvType="InputBox" DesignTimeRectangle="253, 168, 10, 5" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='x-nav-xui-button--caret' parentid='main-menu' tag='DIV' type='' aaname='' /&gt;" Guid="1216ab36-9053-4f2b-b129-787bc59535fb" InformativeScreenshot="26d259d45482007f90f7fbce7294bc45.png" Reference="sobT6TSR0U6vO4EQCkoJVA/46chK478p0SM6eovNqOuDw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*ero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="8140dd6d-4327-4066-b645-a84b0a49dbd1" CvElementArea="111, 147, 165, 44" CvType="InputBox" DesignTimeRectangle="112, 149, 164, 42" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='x-nav-xui-button x-nav--tenant-menu-button x-nav-xui-button-borderless-inverted x-nav-xui-button-medium x-nav-xui-button-has-icon' aaname='VALValenta AI Limited' /&gt;" Guid="485c1f29-3dc5-4acd-a84a-d3e1bfe6ec1b" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:CommentOut>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Search Organizations" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="438,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="ab6537c6-15f5-4f01-b1fc-84e27af7cbb5" Text="[in_XeroOrganization]" Version="V4">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="go.xero.com/app/!TW2bn/homepage" CVScreenId="36c4a999-a48f-42f1-b205-1fb040165913" ContentHash="4iMrVaHXL0OWc1hagMSeHA" CvElementArea="128, 317, 267, 47" CvTextArea="173, 333, 142, 17" CvTextArgument="Search organizations" CvType="Button" DesignTimeRectangle="172, 322, 219, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='DSjVNqFgqF' tag='INPUT' type='search' class='x-nav-xui-textinput--input x-nav-xui-textinput--input-medium' placeholder='Search organizations' aaname='' /&gt;" Guid="e4a297cd-d37e-4721-bd4b-2de6c843956c" InformativeScreenshot="6dd08935a8d51e945f90e7f98156e8af.png" Reference="sobT6TSR0U6vO4EQCkoJVA/DZrGtAYNjUS42yIeyMDLhg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*ero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -188,7 +237,7 @@
                         </uix:TargetAnchorable>
                       </uix:NTypeInto.Target>
                     </uix:NTypeInto>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Organization" sap:VirtualizedContainerService.HintSize="382,180" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ab6537c6-15f5-4f01-b1fc-84e27af7cbb5" Version="V4">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Organization" sap:VirtualizedContainerService.HintSize="438,180" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ab6537c6-15f5-4f01-b1fc-84e27af7cbb5" Version="V4">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="go.xero.com/app/!wmySz/dashboard" CVScreenId="1e6e857f-3d4c-4cc3-a7d9-f14af8fc96e6" ContentHash="Dd90cBZWIUSb0doqqBspFQ" CvTextArea="133, 386, 216, 14" CvTextArgument="VFL Valenta Franchise Limited" CvType="Text" DesignTimeRectangle="112, 373, 300, 42" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aaname='*{0}' aria-role='link' /&gt;&quot;, in_XeroOrganization)]" FuzzySelectorArgument="&lt;webctrl aaname='VFLValenta Franchise Limited' aria-role='link' tag='A' type='' class='x-nav-xui-button x-nav-xui-button-borderless-standard x-nav-xui-button-small x-nav-xui-button-fullwidth' check:text='VFLValenta Franchise Limited' /&gt;" Guid="06f3856d-aab8-4852-93ce-5477486379da" InformativeScreenshot="6576eb5126ac3ff4bfa7fa25f6175022.png" Reference="sobT6TSR0U6vO4EQCkoJVA/WJdNoUKV20-fIQyZSiGtbQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*ero' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                       </uix:NClick.Target>
@@ -200,7 +249,7 @@
           </ActivityAction>
         </uix:NApplicationCard.Body>
         <uix:NApplicationCard.TargetApp>
-          <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Edge" ContentHash="MsB2QZaJ70CaHN-YpKsCrw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH2SURBVDhPnVNbL2NRFF5EIi4/gnciIgbxC4QHEh5kHsSzRMyfmHh16wxeEGnkBD09U3VJJIRMoiltpRjantPWtVVGacVlZpa1dncnLo1gJSvnO/t833f2WntteBHK7iew6v0wE3KDLRwRyVjTTTC1Vy1ZGUIJ54Ea6AWbcQ9z+wiz4acp1ow/oJKR5syXKhnKTxbbMwqfJ3M0YwHG3AVSTTHt63mTOJ3zxLX4vqXE5r1y2trfjMTX0mb8g4lflQAWf382O86EEOz0QTwpiZQzl36XIsK5aS7v2OIfAvgR9BQtHaH5KEmuQWxxxXAgdIVfdn6j5eQay1aPsYvw6EECO7bOUaW1VncMs9jUpnuBjymLHOucUXTF73AonMDuQByV4yS2b57h8tmNwG2ER8ikwRHF6ZMklpIxaMGoMMgmg6aNU1y7uMXPnhh+9cdx9DCBjeun2LwRw/HDpPjrGK3VOyJiZyUraQMqoZhKYAFhIeoLXooS1Mg1lhKxl94LF/axcztVApcp+iJKUH0m0RBujGzU88YJzEn4f2NZY9WHaYh2Kj50jGxk3q1KzQId5bsGiblTgcGUmGOQZls15t9kwhxNXwTFWyjVMviC8EXhcjIZ8RpPn0p/fiF+HIqvBqyB73RhNsVVnqWjshO20tRN+mslSwbAA2Z2Sv8z5CJZAAAAAElFTkSuQmCC" InformativeScreenshot="29f50a6dde8930d64f3d2d8265f4c895.jpg" Reference="sobT6TSR0U6vO4EQCkoJVA/vWl5EhgCrUGcqSClzrm0Rg" Selector="&lt;html app='msedge.exe' title='*Xer*' /&gt;" Title="My Xero | Home" Version="V1" />
+          <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Edge" ContentHash="dli3mKNSwEuRp8rZeH9HuQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH2SURBVDhPnVNbL2NRFF5EIi4/gnciIgbxC4QHEh5kHsSzRMyfmHh16wxeEGnkBD09U3VJJIRMoiltpRjantPWtVVGacVlZpa1dncnLo1gJSvnO/t833f2WntteBHK7iew6v0wE3KDLRwRyVjTTTC1Vy1ZGUIJ54Ea6AWbcQ9z+wiz4acp1ow/oJKR5syXKhnKTxbbMwqfJ3M0YwHG3AVSTTHt63mTOJ3zxLX4vqXE5r1y2trfjMTX0mb8g4lflQAWf382O86EEOz0QTwpiZQzl36XIsK5aS7v2OIfAvgR9BQtHaH5KEmuQWxxxXAgdIVfdn6j5eQay1aPsYvw6EECO7bOUaW1VncMs9jUpnuBjymLHOucUXTF73AonMDuQByV4yS2b57h8tmNwG2ER8ikwRHF6ZMklpIxaMGoMMgmg6aNU1y7uMXPnhh+9cdx9DCBjeun2LwRw/HDpPjrGK3VOyJiZyUraQMqoZhKYAFhIeoLXooS1Mg1lhKxl94LF/axcztVApcp+iJKUH0m0RBujGzU88YJzEn4f2NZY9WHaYh2Kj50jGxk3q1KzQId5bsGiblTgcGUmGOQZls15t9kwhxNXwTFWyjVMviC8EXhcjIZ8RpPn0p/fiF+HIqvBqyB73RhNsVVnqWjshO20tRN+mslSwbAA2Z2Sv8z5CJZAAAAAElFTkSuQmCC" InformativeScreenshot="29f50a6dde8930d64f3d2d8265f4c895.jpg" Reference="sobT6TSR0U6vO4EQCkoJVA/RDwkLvv3s0ikYbURYwM7Sg" Selector="&lt;html app='msedge.exe' title='*Xer*' /&gt;" Title="My Xero | Home" Version="V1" />
         </uix:NApplicationCard.TargetApp>
       </uix:NApplicationCard>
       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="518,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Xero_SearchOrganization completed...&quot;]" />

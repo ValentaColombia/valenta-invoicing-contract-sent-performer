@@ -80,7 +80,7 @@
       <AssemblyReference>System.Private.Uri</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Excel_ChooseXeroOrganization_TestCase" sap:VirtualizedContainerService.HintSize="1540,904" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Excel_ChooseXeroOrganization_TestCase" sap:VirtualizedContainerService.HintSize="1836,904" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="ExpectedResult" />
     </Sequence.Variables>
@@ -116,7 +116,7 @@
             <ui:InvokeWorkflowFile.Arguments>
               <InArgument x:TypeArguments="x:String" x:Key="in_InvoiceReportFilePath">C:\Users\botuser_5\Documents\UiPath\FIN_Invoicing_ContractSent_Performer\Data\Temp\InvoicesReport UI Extraction.xlsx</InArgument>
               <InArgument x:TypeArguments="x:String" x:Key="in_InvoicesReportSheetNameThird">XERO Entities</InArgument>
-              <InArgument x:TypeArguments="x:String" x:Key="in_HubSpotKeyField">Valenta AU - AUD - Sales Pipeline</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_HubSpotKeyField">Valenta EU - EUR - Sales Pipeline</InArgument>
               <OutArgument x:TypeArguments="x:String" x:Key="out_XeroOrganization" />
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
