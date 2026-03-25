@@ -119,7 +119,7 @@
         <TryCatch.Try>
           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Xero_SearchOrganization - Invoke Workflow File (Apps\Xero\Xero_SearchOrganization.xaml)" sap:VirtualizedContainerService.HintSize="336,145" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Apps\Xero\Xero_SearchOrganization.xaml">
             <ui:InvokeWorkflowFile.Arguments>
-              <InArgument x:TypeArguments="x:String" x:Key="in_XeroOrganization">JA Wealth Pty Ltd</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_XeroOrganization">Valenta GmbH</InArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
         </TryCatch.Try>

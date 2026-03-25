@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="YtJeYfOvEUGwotZIEM62mw" Reference="sobT6TSR0U6vO4EQCkoJVA/aN9oLKHgqUy9o7c6sbGXNw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="KrD0zB23w0i0h3UlnP8ATQ" Reference="sobT6TSR0U6vO4EQCkoJVA/aN9oLKHgqUy9o7c6sbGXNw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="go.xero.com/app/!67tTl/contacts/contact/7bda03ee-db2e-4637-a22c-434a134bd25c/details" CVScreenId="1d839f0b-c141-478f-8cc6-d9a1517291cf" CvTextArea="450, 467, 179, 16" CvType="AnyWordGroup" DesignTimeRectangle="453, 467, 176, 15" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' parentid='shell-app-root' tag='A' class='' /&gt;" Guid="d5659b89-d9f4-4c58-b813-75b06988f9ca" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contacts*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="go.xero.com/app/!NPrxr/contacts/contact/4bc89fba-3b85-447b-84ad-405298caacff/details" CVScreenId="b9e55309-536d-446a-bd5b-ce8819eb4924" CvTextArea="450, 467, 149, 16" CvTextArgument="*@*" CvType="Text" DesignTimeRectangle="453, 467, 146, 15" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='*@*' type='' parentid='shell-app-root' tag='A' class='' check:innerText='*@*' /&gt;" Guid="21db6ca7-96f1-4f13-8469-afc9b7eeab26" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contact*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
       <TargetAnchorable.Anchors>
-        <scg:List x:TypeArguments="ITarget" Capacity="4">
-          <Target CVScreenId="1d839f0b-c141-478f-8cc6-d9a1517291cf" CvElementArea="556, 443, 114, 22" CvType="InputBox" DesignTimeRectangle="557, 444, 112, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='xui-tagcontent' parentid='shell-app-root' tag='SPAN' type='' aaname='Included in emails' check:innerText='Included in emails' /&gt;" Guid="c7a9b5c4-c7b1-4ebb-bf12-9335fbd3c445" SearchSteps="FuzzySelector, CV" />
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="b9e55309-536d-446a-bd5b-ce8819eb4924" CvTextArea="399, 384, 127, 20" CvTextArgument="Primary person" CvType="Text" DesignTimeRectangle="401, 380, 124, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='shell-app-root' tag='H2' type='' class='xui-panel--heading' aaname='Primary person' check:innerText='Primary person' /&gt;" Guid="66072459-f8d1-49a8-9521-541dee32eeb1" SearchSteps="FuzzySelector, CV" />
         </scg:List>
       </TargetAnchorable.Anchors>
-      <imageRef attrName="InformativeScreenshot" originalValue="f7dc4fb09b7cd27e6ae1d106174249fe.png" xmlns="">0he5n2oC-nUy8VI4VvHuKvA</imageRef>
+      <imageRef attrName="InformativeScreenshot" originalValue="0cb7197ce73224ec5a341ae303ca1058.png" xmlns="">08Qc68RehMUO5m5QVr6GUcA</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">GetText</x:String>
   </ObjectRepositoryTargetData.Data>

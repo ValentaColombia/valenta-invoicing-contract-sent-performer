@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Xero_ExtractContactDetails" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Xero_ExtractContactDetails" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_HubSpotContactEmail" Type="InArgument(x:String)" />
     <x:Property Name="out_ContactEmailMatched" Type="OutArgument(x:Boolean)" />
@@ -48,6 +48,9 @@
       <x:String>System.Reflection</x:String>
       <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
       <x:String>System.ComponentModel</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -103,15 +106,17 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Xero_ExtractContactDetails" sap:VirtualizedContainerService.HintSize="1282,1944" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Xero_ExtractContactDetails" sap:VirtualizedContainerService.HintSize="1836,2408" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="Task Description: To extract contact details within contact found." DisplayName="Xero_ExtractContactDetails" sap:VirtualizedContainerService.HintSize="604,1921" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap2010:Annotation.AnnotationText="Task Description: To extract contact details within contact found." DisplayName="Xero_ExtractContactDetails" sap:VirtualizedContainerService.HintSize="604,2385" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -119,13 +124,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="570,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Xero_ExtractContactDetails started...&quot;]" />
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge Contacts" sap:VirtualizedContainerService.HintSize="570,1470" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="b461c840-2aae-41a4-b679-838dfce7eae7" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge Contacts" sap:VirtualizedContainerService.HintSize="570,1934" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="b461c840-2aae-41a4-b679-838dfce7eae7" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="536,1221" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="536,1685" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -142,22 +147,88 @@
                   </uix:TargetAnchorable>
                 </uix:NClick.Target>
               </uix:NClick>
-              <uix:NGetText DisplayName="Get Text First Name &amp; Last Name" sap:VirtualizedContainerService.HintSize="502,189" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="b461c840-2aae-41a4-b679-838dfce7eae7" TextString="[out_XeroFullName]" Version="V4">
-                <uix:NGetText.Target>
-                  <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/contacts/contact/7bda03ee-db2e-4637-a22c-434a134bd25c/details" CVScreenId="cde8037c-0e8f-426a-a06c-684d84f91600" ContentHash="Jap6mhUvN0C3H-zFb1x6LA" CvTextArea="174, 445, 94, 14" CvType="AnyWordGroup" DesignTimeRectangle="176, 441, 92, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='shell-app-root' tag='H2' type='' class='xui-contentblockitem--primaryheading' /&gt;" Guid="8016055a-625a-4ab5-97c2-71bb667eb07d" InformativeScreenshot="916fee1e3b0e9823dce0cfe7153cc506.png" Reference="sobT6TSR0U6vO4EQCkoJVA/mf95GBXOkEO2qoOgyUzWFg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contacts*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
-                </uix:NGetText.Target>
-              </uix:NGetText>
-              <uix:NGetText DisplayName="Get Text Contact Email" sap:VirtualizedContainerService.HintSize="502,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="b461c840-2aae-41a4-b679-838dfce7eae7" TextString="[out_XeroContactEmail]" Version="V4">
-                <uix:NGetText.Target>
-                  <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/contacts/contact/7bda03ee-db2e-4637-a22c-434a134bd25c/details" CVScreenId="1d839f0b-c141-478f-8cc6-d9a1517291cf" ContentHash="YtJeYfOvEUGwotZIEM62mw" CvTextArea="450, 467, 179, 16" CvType="AnyWordGroup" DesignTimeRectangle="453, 467, 176, 15" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' parentid='shell-app-root' tag='A' class='' /&gt;" Guid="d5659b89-d9f4-4c58-b813-75b06988f9ca" InformativeScreenshot="f7dc4fb09b7cd27e6ae1d106174249fe.png" Reference="sobT6TSR0U6vO4EQCkoJVA/aN9oLKHgqUy9o7c6sbGXNw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contacts*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
-                    <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                        <uix:Target CVScreenId="1d839f0b-c141-478f-8cc6-d9a1517291cf" CvElementArea="556, 443, 114, 22" CvType="InputBox" DesignTimeRectangle="557, 444, 112, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='xui-tagcontent' parentid='shell-app-root' tag='SPAN' type='' aaname='Included in emails' check:innerText='Included in emails' /&gt;" Guid="c7a9b5c4-c7b1-4ebb-bf12-9335fbd3c445" SearchSteps="FuzzySelector, CV" />
-                      </scg:List>
-                    </uix:TargetAnchorable.Anchors>
-                  </uix:TargetAnchorable>
-                </uix:NGetText.Target>
-              </uix:NGetText>
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="502,421" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                <TryCatch.Try>
+                  <uix:NGetText DisplayName="Get Text First Name &amp; Last Name" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="b461c840-2aae-41a4-b679-838dfce7eae7" ScrapingMethod="Fulltext" ScrapingOptions="None" TextString="[out_XeroFullName]" Timeout="5" Version="V4">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/contacts/contact/7bda03ee-db2e-4637-a22c-434a134bd25c/details" CVScreenId="cde8037c-0e8f-426a-a06c-684d84f91600" ContentHash="w_BU3HFjoESU7V5XhIwIog" CvTextArea="174, 445, 94, 14" CvType="AnyWordGroup" DesignTimeRectangle="453, 441, 129, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='shell-app-root' tag='H2' type='' class='xui-contentblockitem--primaryheading' /&gt;" Guid="8016055a-625a-4ab5-97c2-71bb667eb07d" InformativeScreenshot="d91a73acb6d4ef53b9983443699aba17.png" Reference="sobT6TSR0U6vO4EQCkoJVA/mf95GBXOkEO2qoOgyUzWFg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contact*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="b9e55309-536d-446a-bd5b-ce8819eb4924" CvTextArea="399, 384, 127, 20" CvTextArgument="Primary person" CvType="Text" DesignTimeRectangle="401, 380, 124, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='shell-app-root' tag='H2' type='' class='xui-panel--heading' aaname='Primary person' check:innerText='Primary person' /&gt;" Guid="17669d32-6dee-4455-b1d0-d9984d761b3d" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                </TryCatch.Try>
+                <TryCatch.Catches>
+                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,227" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ActivityAction x:TypeArguments="s:Exception">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                      </ActivityAction.Argument>
+                      <uix:NGetText DisplayName="Get Text Primary Person" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="b461c840-2aae-41a4-b679-838dfce7eae7" ScrapingMethod="Fulltext" TextString="[out_XeroFullName]" Timeout="5" Version="V4">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="go.xero.com/app/!NPrxr/contacts/contact/24f07144-fb55-451a-a73d-bf41f746e30c/details" CVScreenId="91fd93d5-1971-42a0-8ad5-399c6ccdbca7" ContentHash="Cxx-eWOvfUSImIGMMlPgSQ" CvTextArea="90, 226, 73, 14" CvType="AnyWordGroup" DesignTimeRectangle="92, 225, 70, 20" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='shell-app-root' tag='SPAN' type='' class='' /&gt;" Guid="10726299-ed4d-4a02-85ab-0495b1dadb24" InformativeScreenshot="f1cf5cfa6fef2dff41e8e46e8ec869fe.png" Reference="sobT6TSR0U6vO4EQCkoJVA/GRLNQNODykWTTtZpc_x4iw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contact*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="91fd93d5-1971-42a0-8ad5-399c6ccdbca7" CvElementArea="68, 224, 19, 20" CvType="Icon" DesignTimeRectangle="72, 224, 20, 20" FuzzySelectorArgument="&lt;webctrl type='' parentid='shell-app-root' tag='DIV' class='xui-u-flex-none xui-u-flex-justify-start xui-iconwrapper xui-iconwrapper-xsmall' aaname='' check:text='Primary person' /&gt;" Guid="7921f1b7-c304-41c4-81d4-036e65ddd4f3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD2SURBVEhLY/hPYzBqAUEwTC14+/b9/7auKf+DItLAGMQGiZEDsFrQ2Nr/38E9DAWDxEgHL7Fb4Okfi2GBf2gyVJZY8PL/+tQw7BaADKPcgiv/24H6iA6iprYJUFliAR4fgCK0pWPS/4CwFHAkt3dP+f/u3QeoLAngxQ7sFlAToFjw69ev/6vWbv5fXNEMjOg4ePB4BcT9L6ls+b92w7b/v3//hqomDsAt+Pbt+/+s/GqUcMeGQZaDHEIQXJz63z4VKYhqG3uwGogN906cBdWFD6ClInffGKyGYcOgyCcOIGU0bAbhw8QClEimBRi1gCAY6hb8/w8AJbFDbjNrSNsAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NGetText.Target>
+                      </uix:NGetText>
+                    </ActivityAction>
+                  </Catch>
+                </TryCatch.Catches>
+              </TryCatch>
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="502,421" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                <TryCatch.Try>
+                  <uix:NGetText DisplayName="Get Text Contact Email" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="b461c840-2aae-41a4-b679-838dfce7eae7" ScrapingMethod="Fulltext" TextString="[out_XeroContactEmail]" Timeout="5" Version="V4">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="go.xero.com/app/!NPrxr/contacts/contact/4bc89fba-3b85-447b-84ad-405298caacff/details" CVScreenId="b9e55309-536d-446a-bd5b-ce8819eb4924" ContentHash="KrD0zB23w0i0h3UlnP8ATQ" CvTextArea="450, 467, 149, 16" CvTextArgument="*@*" CvType="Text" DesignTimeRectangle="453, 467, 146, 15" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='*@*' type='' parentid='shell-app-root' tag='A' class='' check:innerText='*@*' /&gt;" Guid="21db6ca7-96f1-4f13-8469-afc9b7eeab26" InformativeScreenshot="0cb7197ce73224ec5a341ae303ca1058.png" Reference="sobT6TSR0U6vO4EQCkoJVA/aN9oLKHgqUy9o7c6sbGXNw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contact*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="b9e55309-536d-446a-bd5b-ce8819eb4924" CvTextArea="399, 384, 127, 20" CvTextArgument="Primary person" CvType="Text" DesignTimeRectangle="401, 380, 124, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='shell-app-root' tag='H2' type='' class='xui-panel--heading' aaname='Primary person' check:innerText='Primary person' /&gt;" Guid="66072459-f8d1-49a8-9521-541dee32eeb1" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                </TryCatch.Try>
+                <TryCatch.Catches>
+                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,227" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ActivityAction x:TypeArguments="s:Exception">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                      </ActivityAction.Argument>
+                      <uix:NGetText DisplayName="Get Text Email" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="b461c840-2aae-41a4-b679-838dfce7eae7" ScrapingMethod="Fulltext" TextString="[out_XeroContactEmail]" Timeout="5" Version="V4">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="go.xero.com/app/!NPrxr/contacts/contact/24f07144-fb55-451a-a73d-bf41f746e30c/details" CVScreenId="91fd93d5-1971-42a0-8ad5-399c6ccdbca7" ContentHash="0GjO2aCyd0u0spzfO6pXEQ" CvTextArea="192, 226, 141, 17" CvType="AnyWordGroup" DesignTimeRectangle="194, 227, 138, 15" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='xui-text-minorlink' parentid='shell-app-root' tag='A' type='' /&gt;" Guid="b05dcc06-3ca9-4caa-8ec5-6284811dbbe8" InformativeScreenshot="95bf55330e0dd709270b5fdde856f297.png" Reference="sobT6TSR0U6vO4EQCkoJVA/pMUlmShO-kyrDz7-NaDOgw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contact*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="91fd93d5-1971-42a0-8ad5-399c6ccdbca7" CvElementArea="171, 227, 19, 17" CvType="Icon" DesignTimeRectangle="174, 225, 20, 20" FuzzySelectorArgument="&lt;webctrl type='' class='xui-u-flex-none xui-u-flex-justify-start xui-iconwrapper xui-iconwrapper-xsmall' parentid='shell-app-root' tag='DIV' aaname='' check:text='Email' /&gt;" Guid="f5dd46fa-4bcb-4336-8bd5-642d4ee0208d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD7SURBVEhLY/hPYzBqAUEwagFBALcgK7/6v4N7GNE4r7gOqhM/gFsA0rRrz8H/nv6xGIYhY5A8SB2ITQxAsQAEnj598T89pwLFUBgGiYPkQQDEJwTO94ShWtDaOfn/t2/f///+/fv/9FmL/ztCDQbRID5IHCQPUkfQgotT/9un7kC1AISjE3P/37x1Fyx2+szF/8kZpWAaBEDiIHmYWrwAZAFQDYYFIOziFfl/xepN///9+weWA9EgPkgcWR1BALQEqwUwXFrV8v/O3QdgGps8MQCvBYQwPvB8UxH2OCAFEwIoqYjmGY3aICgiFewQmlkAA6MWEARD3YL//wFGGgUbVo1tsgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NGetText.Target>
+                      </uix:NGetText>
+                    </ActivityAction>
+                  </Catch>
+                </TryCatch.Catches>
+              </TryCatch>
               <If Condition="[out_XeroContactEmail.ToLower.Trim = in_HubSpotContactEmail.ToLower.Trim]" DisplayName="If Xero Contact Email is equal to HubSpot Contact Email" sap:VirtualizedContainerService.HintSize="502,592" sap2010:WorkflowViewState.IdRef="If_1">
                 <If.Then>
                   <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,340" sap2010:WorkflowViewState.IdRef="Sequence_4">

@@ -77,7 +77,7 @@
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Xero_ExtractContactDetails_TestCase" sap:VirtualizedContainerService.HintSize="1530,904" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Xero_ExtractContactDetails_TestCase" sap:VirtualizedContainerService.HintSize="1836,904" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="ExpectedResult" />
     </Sequence.Variables>
@@ -113,6 +113,8 @@
             <ui:InvokeWorkflowFile.Arguments>
               <InArgument x:TypeArguments="x:String" x:Key="in_HubSpotContactEmail">jacobo.posada111@gmail.com</InArgument>
               <OutArgument x:TypeArguments="x:Boolean" x:Key="out_ContactEmailMatched" />
+              <OutArgument x:TypeArguments="x:String" x:Key="out_XeroFullName" />
+              <OutArgument x:TypeArguments="x:String" x:Key="out_XeroContactEmail" />
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
         </TryCatch.Try>

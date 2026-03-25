@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="vRSVGNHcT0Ofw1twHkBnCg" Reference="sobT6TSR0U6vO4EQCkoJVA/o3I4mIV6MUGIryQ2wRb47g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="JGy1L-c830Kt1cg_OyAEbQ" Reference="sobT6TSR0U6vO4EQCkoJVA/o3I4mIV6MUGIryQ2wRb47g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" Accuracy="0.7" BrowserURL="go.xero.com/app/!!KvVG/homepage" DesignTimeRectangle="293, 112, 17, 15" DesignTimeScaleFactor="1" Guid="29f3dd0e-c664-49b5-b801-a67e37038bc7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABEAAAAPCAYAAAACsSQRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABcSURBVDhPpczBCcAgEERRC7aIVLXNWMyGgT1o/DEMEd7Bj05rPfI3jC6MLowujC6Mrme4YuTX0Zvl33Ipp6FtQLZQaAgHBGOZh14HBONEn48DgtGF0YXRhdESeQM65k1wI4965AAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*ro' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="3b363ec4f78a7510d556dfa3c56a01f0.png" xmlns="">0VXJmCYATNUG_IWhZBoUHQw</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="go.xero.com/app/!NPrxr/contacts/contact/24f07144-fb55-451a-a73d-bf41f746e30c/details" CVScreenId="91fd93d5-1971-42a0-8ad5-399c6ccdbca7" CvElementArea="96, 97, 172, 43" CvType="InputBox" DesignTimeRectangle="241, 118, 10, 5" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='x-nav-xui-button--caret' parentid='main-menu' tag='DIV' type='' aaname='' /&gt;" Guid="ed08df4f-45be-4315-9f43-08ac60471aad" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*o*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="91fd93d5-1971-42a0-8ad5-399c6ccdbca7" CvTextArea="286, 112, 43, 14" CvTextArgument="Home" CvType="Text" DesignTimeRectangle="276, 88, 64, 64" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='link' parentid='main-menu' tag='A' type='' class='x-nav-xui-button x-nav-xui-button-fullwidth' aaname='HomeHome' check:innerText='Home' /&gt;" Guid="46d46c17-e9f3-4995-b3e4-a310ac7bbeaf" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="50e984ee47811e0d72aa5cb0457665b8.png" xmlns="">0Q9_hHUDjx0qpl5fGhPo2sQ</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>

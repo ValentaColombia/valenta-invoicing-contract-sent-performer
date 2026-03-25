@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Cxx-eWOvfUSImIGMMlPgSQ" Reference="sobT6TSR0U6vO4EQCkoJVA/GRLNQNODykWTTtZpc_x4iw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="go.xero.com/app/!NPrxr/contacts/contact/24f07144-fb55-451a-a73d-bf41f746e30c/details" CVScreenId="91fd93d5-1971-42a0-8ad5-399c6ccdbca7" CvTextArea="90, 226, 73, 14" CvType="AnyWordGroup" DesignTimeRectangle="92, 225, 70, 20" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='shell-app-root' tag='SPAN' type='' class='' /&gt;" Guid="10726299-ed4d-4a02-85ab-0495b1dadb24" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Contact*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="91fd93d5-1971-42a0-8ad5-399c6ccdbca7" CvElementArea="68, 224, 19, 20" CvType="Icon" DesignTimeRectangle="72, 224, 20, 20" FuzzySelectorArgument="&lt;webctrl type='' parentid='shell-app-root' tag='DIV' class='xui-u-flex-none xui-u-flex-justify-start xui-iconwrapper xui-iconwrapper-xsmall' aaname='' check:text='Primary person' /&gt;" Guid="7921f1b7-c304-41c4-81d4-036e65ddd4f3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD2SURBVEhLY/hPYzBqAUEwTC14+/b9/7auKf+DItLAGMQGiZEDsFrQ2Nr/38E9DAWDxEgHL7Fb4Okfi2GBf2gyVJZY8PL/+tQw7BaADKPcgiv/24H6iA6iprYJUFliAR4fgCK0pWPS/4CwFHAkt3dP+f/u3QeoLAngxQ7sFlAToFjw69ev/6vWbv5fXNEMjOg4ePB4BcT9L6ls+b92w7b/v3//hqomDsAt+Pbt+/+s/GqUcMeGQZaDHEIQXJz63z4VKYhqG3uwGogN906cBdWFD6ClInffGKyGYcOgyCcOIGU0bAbhw8QClEimBRi1gCAY6hb8/w8AJbFDbjNrSNsAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f1cf5cfa6fef2dff41e8e46e8ec869fe.png" xmlns="">0QAtLAV9iBEqmJMAo5MENVg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

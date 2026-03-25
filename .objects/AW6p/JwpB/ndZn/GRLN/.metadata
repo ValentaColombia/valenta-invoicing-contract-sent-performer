@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Primary person",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "GRLNQNODykWTTtZpc_x4iw",
+  "Reference": "sobT6TSR0U6vO4EQCkoJVA/GRLNQNODykWTTtZpc_x4iw",
+  "ParentRef": "sobT6TSR0U6vO4EQCkoJVA/ndZn9ETpLUSnWaF6bs0iFQ",
+  "Created": "2026-03-25T22:03:50.4614972Z",
+  "Updated": "2026-03-25T22:03:50.4614972Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
