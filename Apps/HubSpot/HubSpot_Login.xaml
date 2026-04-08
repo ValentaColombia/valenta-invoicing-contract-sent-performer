@@ -143,13 +143,13 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="HubSpot_Connection" sap:VirtualizedContainerService.HintSize="1056,2743" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="HubSpot_Connection" sap:VirtualizedContainerService.HintSize="1836,2711" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="Task Description: To log into HubSpot website." DisplayName="HubSpot_Login" sap:VirtualizedContainerService.HintSize="1056,2720" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap2010:Annotation.AnnotationText="Task Description: To log into HubSpot website." DisplayName="HubSpot_Login" sap:VirtualizedContainerService.HintSize="1056,2688" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -157,13 +157,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1022,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;HubSpot_Login started...&quot;]" />
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome HubSpot Login and Sign in" sap:VirtualizedContainerService.HintSize="1022,2269" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="7a784198-12d0-401e-b328-8238cad8eb4e" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome HubSpot Login and Sign in" sap:VirtualizedContainerService.HintSize="1022,2237" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="7a784198-12d0-401e-b328-8238cad8eb4e" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="988,2020" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="988,1988" sap2010:WorkflowViewState.IdRef="Sequence_12">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -364,9 +364,9 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NCheckState>
-              <uix:NCheckState DisplayName="Check App State Open Your Authenticator App" sap:VirtualizedContainerService.HintSize="954,957" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="7a784198-12d0-401e-b328-8238cad8eb4e" Version="V4">
+              <uix:NCheckState DisplayName="Check App State Open Your Authenticator App" sap:VirtualizedContainerService.HintSize="954,925" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="7a784198-12d0-401e-b328-8238cad8eb4e" Version="V4">
                 <uix:NCheckState.IfExists>
-                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,717" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,683" sap2010:WorkflowViewState.IdRef="Sequence_23">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -388,20 +388,10 @@
                         <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/login/two-factor" CVScreenId="6223489d-d4fc-4f74-a1b0-7cad5ee5b8b5" ContentHash="hBctKi7T3kO9XOJil1hfpg" CvElementArea="562, 453, 244, 33" CvTextArea="658, 463, 49, 11" CvTextArgument="Continue" CvType="Button" DesignTimeRectangle="583, 463, 202, 14" DesignTimeScaleFactor="0.75" FuzzySelectorArgument="&lt;webctrl type='' tag='SPAN' class='PrivateButton__StyledButtonTextContainer-gKiNOa kXEbeH' aaname='' check:innerText='Continue' /&gt;" Guid="3eb00dfc-f62e-4889-98cd-f1aabedcb1f5" InformativeScreenshot="c27d574b43abd78cfa4253609fa80651.png" Reference="sobT6TSR0U6vO4EQCkoJVA/8T-JR_DQlkmnBi9qKq23zw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='HubSpot*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click on Remember Me Button" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7a784198-12d0-401e-b328-8238cad8eb4e" Timeout="3" Version="V4">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click on Remember Me Button" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7a784198-12d0-401e-b328-8238cad8eb4e" Timeout="3" Version="V4">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/login/two-factor" CVScreenId="1a532855-9c9f-4f5f-bc9a-a665bbc97ef1" ContentHash="BIPCx1bVxkeS4-6e3uW26g" CvElementArea="570, 243, 117, 33" CvTextArea="589, 253, 79, 11" CvTextArgument="Remember me" CvType="Button" DesignTimeRectangle="590, 253, 77, 14" DesignTimeScaleFactor="0.75" FuzzySelectorArgument="&lt;webctrl aaname='Remember me' tag='I18N-STRING' type='' class='' check:innerText='Remember me' /&gt;" Guid="221955bd-701d-45e0-be8a-4b94456e2ef9" InformativeScreenshot="9e6189c330289efa328c0320ac7c98bd.png" Reference="sobT6TSR0U6vO4EQCkoJVA/fKp-RKtSKkqLN-CWho5npA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='HubSpot*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
                       </uix:NClick.Target>
-                      <uix:NClick.VerifyOptions>
-                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                          <uix:VerifyExecutionOptions.Retry>
-                            <InArgument x:TypeArguments="x:Boolean" />
-                          </uix:VerifyExecutionOptions.Retry>
-                          <uix:VerifyExecutionOptions.Timeout>
-                            <InArgument x:TypeArguments="x:Double" />
-                          </uix:VerifyExecutionOptions.Timeout>
-                        </uix:VerifyExecutionOptions>
-                      </uix:NClick.VerifyOptions>
                     </uix:NClick>
                   </Sequence>
                 </uix:NCheckState.IfExists>

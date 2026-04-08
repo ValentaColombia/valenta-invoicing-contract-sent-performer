@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="WcVV9oXdrUae0TPFDm-cpg" Reference="sobT6TSR0U6vO4EQCkoJVA/IsmSL-zbTk-64Wmg3UHXoA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/contacts/146214366/record/0-3/460172385471" CVScreenId="824955e5-f710-4594-937d-748d49c5eaf5" CvTextArea="632, 823, 87, 14" CvTextArgument="7 comments" CvType="Text" DesignTimeRectangle="634, 818, 84, 24" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;html app='msedge.exe' url='https://app-eu1.hubspot.com*' /&gt;&lt;webctrl aaname='*ommen*' tag='I18N-STRING' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='*ommen*' tag='I18N-STRING' type='' class='' check:text='7 comments' /&gt;" Guid="d338fd83-cff6-45ea-a88d-3e6b9831acb7" ScopeSelectorArgument="&lt;html app='msedge.exe' url='https://app-eu1.hubspot.com*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Visible">
+      <imageRef attrName="InformativeScreenshot" originalValue="79fb7cef5e10b84ffcd5e8d78e359866.png" xmlns="">0yUt7gJvLeEqGvTIVJGdySQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

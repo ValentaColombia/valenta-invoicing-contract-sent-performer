@@ -116,13 +116,13 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="HubSpot_OpenTask" sap:VirtualizedContainerService.HintSize="1530,2921" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="HubSpot_OpenTask" sap:VirtualizedContainerService.HintSize="1540,2530" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="Task Description: To open each task individually." DisplayName="HubSpot_OpenTask" sap:VirtualizedContainerService.HintSize="1092,2898" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap2010:Annotation.AnnotationText="Task Description: To open each task individually." DisplayName="HubSpot_OpenTask" sap:VirtualizedContainerService.HintSize="1074,2507" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="TaskDetails" />
       </Sequence.Variables>
@@ -132,51 +132,51 @@
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1058,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;HubSpot_OpenTask started...&quot;]" />
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Tasks" sap:VirtualizedContainerService.HintSize="1058,2274" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="243326d1-bf0c-4692-bbce-a7a35fee97e9" Version="V2" WindowResize="Maximize">
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1040,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;HubSpot_OpenTask started...&quot;]" />
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Tasks" sap:VirtualizedContainerService.HintSize="1040,1883" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="243326d1-bf0c-4692-bbce-a7a35fee97e9" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1024,2025" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1006,1634" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="990,114" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[in_TaskDetailsURL]" Version="V4" />
-              <uix:NCheckState DisplayName="Check App State Task details" sap:VirtualizedContainerService.HintSize="990,1849" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="243326d1-bf0c-4692-bbce-a7a35fee97e9" Version="V4">
+              <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="972,114" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[in_TaskDetailsURL]" Version="V4" />
+              <uix:NCheckState DisplayName="Check App State Task details" sap:VirtualizedContainerService.HintSize="972,1458" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="243326d1-bf0c-4692-bbce-a7a35fee97e9" Version="V4">
                 <uix:NCheckState.IfExists>
-                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="486,1567" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="468,1216" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Task Details Title" sap:VirtualizedContainerService.HintSize="452,189" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="243326d1-bf0c-4692-bbce-a7a35fee97e9" Version="V4">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Task Details Title" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="243326d1-bf0c-4692-bbce-a7a35fee97e9" Version="V4">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/tasks/146214366/view/all/task/395454853357" CVScreenId="da12898d-e655-46a4-8ebb-e738aebf1bf6" ContentHash="MOLaJaAbpUW8AL-oeFDyGw" CvTextArea="1023, 105, 92, 15" CvTextArgument="Task details" CvType="Text" DesignTimeRectangle="1025, 104, 89, 19" DesignTimeScaleFactor="0.75" FullSelectorArgument="&lt;webctrl innertext='Task details' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='I18N-STRING' class='' aaname='Task details' check:innerText='Task details' /&gt;" Guid="b36e49ef-0c35-4bdb-9226-6cd07295257c" InformativeScreenshot="fa7f27bea772fe9116f17b3b3f69eb67.png" Reference="sobT6TSR0U6vO4EQCkoJVA/ACyxbL4ZQESCsqC-V73pOQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Tasks' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <uix:NMouseScroll KeyModifiers="{x:Null}" ContinueOnError="True" DelayBefore="3" Direction="Down" DisplayName="Mouse Scroll on Tasks Details" sap:VirtualizedContainerService.HintSize="452,189" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" MovementUnits="2" ScopeIdentifier="243326d1-bf0c-4692-bbce-a7a35fee97e9" Version="V4">
+                    <uix:NMouseScroll KeyModifiers="{x:Null}" ContinueOnError="True" DelayBefore="3" Direction="Down" DisplayName="Mouse Scroll on Tasks Details" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" MovementUnits="2" ScopeIdentifier="243326d1-bf0c-4692-bbce-a7a35fee97e9" Version="V4">
                       <uix:NMouseScroll.Target>
                         <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/tasks/146214366/view/all/task/395454853357" ContentHash="j4ngSjpfaUuzonUYGAwqdg" DesignTimeRectangle="1348, 138, 21, 522" DesignTimeScaleFactor="1" Guid="4686e86a-57c6-4031-9a1e-bc32481da186" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABUAAAIKCAYAAADMCATxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKHSURBVHhe7d1RaiJBAITh3F8QfFZBwd1T6JPeRPAMCsLstvTA0Kky1UOWZdm/oBjiTH1EzXP64+P4c/jcH59/Pv2+nso16PAmz+dzVkF91CDpf4AuFgv5eukstIBj1f1udAo6uAtV4NjpczGqoLbdaE9BfdQg6d9H7/f7cDweh/V6PSyXy9f1dDq9Xp8+F6PX63XYbDby73O73Q63260fPZ/PEhxb7nej7rccezgc+tHyGSps7Gq16kcV1BYUFLTuZUBBQUEV0hYUFLTuZUBBQUEV0hYUFLTuZUBBQUEV0hYUFLTuZUBBQUEV0hYUFLTuZUBBQUEV0hYUFLTuZUBBQUEV0hYUFLTuZUBBQUEV0hYUFLTuZUBBQUEV0hYUFLTuZUBBQUEV0hYUFLTuZUBBQUEV0hYUFLTuZUBBQUEV0hYUFLTuZUBBQUEV0hYUFLTuZUBBQUEV0ha0D/0jZx58dTrD5XLpRx+Px7Df7yW42+1e97vR0nKyRTnh4ttOvOgpqI8aJAX1UYOkoD5qkBTURw2SgvqoQVJQHzVICuqjBklBfdQgKaiPGiQF9VGDpKA+apAU1EcNkoL6qEFSUB81SArqowZJQX3UICmojxokBfVRg6SgPmqQFNRHDZKC+qhBUlAfNUgK6qMGSUF91CApqI8aJAX1UYOkoD5qkBTURw2SgvqoQVJQHzVICuqjBklBfdQgKaiPGiQF9VGDpKA+apAU1EcNkoL6qEFSUB81SArqowZJQX3UICmojxokBfVRg6SgPmqQFNRHDZKC+qhBUlAfNUgK6qMGSUF91CApqM/0QfVfG9p2o6UKGjt9rvvtfwWWzvpM34Gls78oB5bORt/1X0Gfwy9OBGzZTRrxvQAAAABJRU5ErkJggg==" InformativeScreenshot="c702fba06c0fec53ec5a34529b8e5056.png" Reference="sobT6TSR0U6vO4EQCkoJVA/SOn47RxBHEOSWFUeFL2iQg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Tasks' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive" />
                       </uix:NMouseScroll.Target>
                     </uix:NMouseScroll>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Notes Field" sap:VirtualizedContainerService.HintSize="452,189" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="243326d1-bf0c-4692-bbce-a7a35fee97e9" Version="V4">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Notes Field" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="243326d1-bf0c-4692-bbce-a7a35fee97e9" Version="V4">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/tasks/146214366/view/all/task/393256084705" CVScreenId="a3e466b3-bfb3-43c9-ad87-39d39abe1209" ContentHash="tLYWZ3qcr06LLHYe-4-s3A" CvTextArea="1576, 652, 166, 14" CvTextArgument="Billing Company = Valenta AU" CvType="Text" DesignTimeRectangle="1577, 650, 287, 17" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Billing Company*' tag='P' type='' class='' check:text='Billing Company = Valenta AU' /&gt;" Guid="9239ef6c-32ae-4f2f-82e9-904e97abf79a" InformativeScreenshot="d92d4094f2c7dbfa3fb654cd3ee15d3c.png" Reference="sobT6TSR0U6vO4EQCkoJVA/2qf3CSPRbkCwGkQQcEjgdQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Tasks' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="452,211" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][d(ctrl)]a[u(ctrl)][u(hk)]" Version="V4" />
-                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="452,211" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" Shortcuts="[d(hk)][d(ctrl)]c[u(ctrl)][u(hk)]" Version="V4" />
-                    <ui:GetFromClipboard TimeoutMS="{x:Null}" DisplayName="Get From Clipboard" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="GetFromClipboard_1">
+                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="434,211" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][d(ctrl)]a[u(ctrl)][u(hk)]" Version="V4" />
+                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="434,211" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" Shortcuts="[d(hk)][d(ctrl)]c[u(ctrl)][u(hk)]" Version="V4" />
+                    <ui:GetFromClipboard TimeoutMS="{x:Null}" DisplayName="Get From Clipboard" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="GetFromClipboard_1">
                       <ui:GetFromClipboard.Result>
                         <OutArgument x:TypeArguments="x:String">[TaskDetails]</OutArgument>
                       </ui:GetFromClipboard.Result>
                     </ui:GetFromClipboard>
-                    <Assign sap:VirtualizedContainerService.HintSize="452,115" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign DisplayName="Assign to Task Details" sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_1">
                       <Assign.To>
                         <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[out_TaskDetailsDict]</OutArgument>
                       </Assign.To>
@@ -189,22 +189,6 @@
     )]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452,344" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-                      <ui:CommentOut.Body>
-                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,240" sap2010:WorkflowViewState.IdRef="Sequence_6">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Cancel Button" sap:VirtualizedContainerService.HintSize="382,180" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="243326d1-bf0c-4692-bbce-a7a35fee97e9" Version="V4">
-                            <uix:NClick.Target>
-                              <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/tasks/146214366/view/all/task/393256084705" CVScreenId="d739d4f3-32f3-47d7-ac03-df71d1dd401a" ContentHash="kim7z03K5UK4maB0Y-rRgA" CvElementArea="1630, 995, 80, 35" CvTextArea="1650, 1006, 39, 11" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="1631, 996, 78, 33" DesignTimeScaleFactor="0.800000011920929" FuzzySelectorArgument="&lt;webctrl aaname='Cancel' tag='BUTTON' type='button' class='PrivateButton__StyledButton-eRHhiA cDsEbw' check:text='Cancel' /&gt;" Guid="954fa939-e96e-4bf0-8337-69ddeae5c8eb" InformativeScreenshot="a8d88dc600f0eddbc1a08eb9847cda32.png" Reference="sobT6TSR0U6vO4EQCkoJVA/sV3u1Zr-VkelBQFHYjL0bQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Tasks' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
-                            </uix:NClick.Target>
-                          </uix:NClick>
-                        </Sequence>
-                      </ui:CommentOut.Body>
-                    </ui:CommentOut>
                   </Sequence>
                 </uix:NCheckState.IfExists>
                 <uix:NCheckState.IfNotExists>
@@ -227,8 +211,8 @@
           <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Edge" ContentHash="NkQ0Hrr5lUuYwcxxqgaenw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAC+UlEQVRYR82XS4iOURzGP8aM0RgMjcbUqJHLZlJqyEhZWSiUy8KXBcplpdSsTBaykEiyskJKFiT33GLhkizcVliQBZFbErkbv0fP0Zn53vm+d7535stTv746//95znnf857/OV/uv1N3V34IVOnXTZUTg06ErXAEdsA0h1KLPnqAWqh2UzrRoQFOQXfENWh2SkmRWw+dcBmOwXxI9yZJXApfIZ7AT8g7paTI3QQ/3Fc8gTaHi4vEVfDLHWM6nVJU5NXA6aif+A2rnVJcJLbCA3eMeQxLoMqpiSI+FA5C3PcLLHZKaZE8Dy6CXt1NeAoyeg9dUO/URBHvgIegPlq+QzDa4XSiw0hogVHQDldBr/I7HIZWpyaK+FrQBPQQk9xcvjBphn2g1ynj26A3lfh1077CeXoTTW7OJoxGwEZ4BTJ/DutguFP+ibYwgUcwwc3ZhZkKjPb1XdAAn2EPjHdcy7YGzoPiH2AvqE/dX5OBEGZTQUVG+13b9hyo+GgH6cPT4DGfQPnTbZFdmI2BbaCn1CBJ9aM3mmC7LbILMx1Y220e0G55ATfgDnyEOH4FGm2RTRjVwRkbCy3JfmgDbWWdLYvgHoQcLdEGW2QTRjPhnY3FSSgoOrTNhZfOEZp0rcPlC5OVENZeRWq5Qz1E+zDQ8R4moO2Z+oTtU5isj0y11h0OFYjYzihXFbLFofKFSR7CttP6Jx7btFfDUecJVcjsBQqTGfDapuICFHzhtKkQvXGOOAE1DpcvTFSej9tU6G3oSWfDONAZou9Eax5y9K2kux+kEWY6D3pXv7egoqN7RDjAAmehwd2zCaNZcN/GKkDxQEncgnTXs76EgaqfCpAuHuH2pK96C1yHb26L0WXmAEyxTXnCoAl2g8rsM5C5fhc43gjLYBfo4qJBN8McKDi2+y1M9D8hfjLtgIUO9xDtuh8O3B8bzPRH4xLEE9C9YKxTBl8MFlczoQtn//79ZBGDaV/rhqNvQKfeZIcqJwbVwaKjtnJPPrjK5f4AJRxgPNTUnT0AAAAASUVORK5CYII=" InformativeScreenshot="4842f00778525be84fd996441211fd94.jpg" Reference="sobT6TSR0U6vO4EQCkoJVA/p4Ia1FuPRE6JWEEQV6TlMw" Selector="&lt;html app='msedge.exe' title='Tasks' /&gt;" Title="Tasks" Version="V1" />
         </uix:NApplicationCard.TargetApp>
       </uix:NApplicationCard>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1058,173" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Data for this task: &quot;+vbLf+String.Join(Environment.NewLine,out_TaskDetailsDict.Select(Function(kv) $&quot;{kv.Key}: {kv.Value}&quot;))]" />
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1058,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;HubSpot_OpenTask completed...&quot;]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1040,173" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Data for this task: &quot;+vbLf+String.Join(Environment.NewLine,out_TaskDetailsDict.Select(Function(kv) $&quot;{kv.Key}: {kv.Value}&quot;))]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1040,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;HubSpot_OpenTask completed...&quot;]" />
     </Sequence>
   </Sequence>
 </Activity>

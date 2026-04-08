@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="cSA2G4eP4kGPm_6CwBk2Ug" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/contacts/146214366/record/0-3/460172385471" DesignTimeRectangle="1436, 192, 14, 853" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='record-page-middle-pane' tag='DIV' class='Overhang__StyledOverhang-dVyrkV fTXOsd' aaname='' /&gt;" Guid="aa8152cd-079c-4d47-b41e-1069e09e795d" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Curve Accountants Pty Ltd - Now Infinity' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="0b1ef61374c2c8cb3ab6cc1f3058aa5e.png" xmlns="">0WhDQTeGscUuA3axQsJqkjg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">KeyboardShortcut</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
