@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="hwfWr3NYikGg0AtROfmgyw" Reference="sobT6TSR0U6vO4EQCkoJVA/ght0dQmsUEy-pRWwVItlPQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/contacts/146214366/record/0-3/497261422790" CVScreenId="f6ceea5a-794e-4c8b-a03d-4b3f4e9c0e80" CvTextArea="662, 614, 331, 17" CvTextArgument="Leave a comment and mention a teammate using" CvType="Text" DesignTimeRectangle="650, 601, 741, 42" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl parentid='comments-scrollContainer' tag='BUTTON' type='' class='sc-fzoyTs GPatH' aaname='Leave a comment and mention a teammate using @' check:innerText='Leave a comment and mention a teammate using @' /&gt;" Guid="32c310b0-e314-40d5-a99c-8541a8f025a4" ScopeSelectorArgument="&lt;html app='msedge.exe' url='https://app-eu1.hubspot.com*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f6ceea5a-794e-4c8b-a03d-4b3f4e9c0e80" CvTextArea="662, 614, 331, 17" CvTextArgument="Leave a comment and mention a teammate using" CvType="Text" DesignTimeRectangle="663, 613, 348, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Leave a comment and mention a teammate using @' parentid='comments-scrollContainer' tag='SPAN' type='' class='' check:innerText='Leave a comment and mention a teammate using @' /&gt;" Guid="e53a55f0-23ae-42d7-8e9f-5eea4a6ed1f4" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1a41bbb80835485308bbc438b33ee62c.png" xmlns="">0E3Dl1EXktkmw3kLyUhcKNA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
