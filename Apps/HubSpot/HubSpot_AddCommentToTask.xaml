@@ -133,7 +133,7 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="HubSpot_OpenTask" sap:VirtualizedContainerService.HintSize="1680,7260" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="HubSpot_OpenTask" sap:VirtualizedContainerService.HintSize="1680,7492" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="TaskTitle" />
     </Sequence.Variables>
@@ -142,7 +142,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="Task Description: To add comment to the task within HubSpot." DisplayName="HubSpot_AddCommentToTask" sap:VirtualizedContainerService.HintSize="1680,7237" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap2010:Annotation.AnnotationText="Task Description: To add comment to the task within HubSpot." DisplayName="HubSpot_AddCommentToTask" sap:VirtualizedContainerService.HintSize="1680,7469" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="TaskDetails" />
       </Sequence.Variables>
@@ -248,13 +248,13 @@
           <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Edge" ContentHash="NkQ0Hrr5lUuYwcxxqgaenw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAC+UlEQVRYR82XS4iOURzGP8aM0RgMjcbUqJHLZlJqyEhZWSiUy8KXBcplpdSsTBaykEiyskJKFiT33GLhkizcVliQBZFbErkbv0fP0Zn53vm+d7535stTv746//95znnf857/OV/uv1N3V34IVOnXTZUTg06ErXAEdsA0h1KLPnqAWqh2UzrRoQFOQXfENWh2SkmRWw+dcBmOwXxI9yZJXApfIZ7AT8g7paTI3QQ/3Fc8gTaHi4vEVfDLHWM6nVJU5NXA6aif+A2rnVJcJLbCA3eMeQxLoMqpiSI+FA5C3PcLLHZKaZE8Dy6CXt1NeAoyeg9dUO/URBHvgIegPlq+QzDa4XSiw0hogVHQDldBr/I7HIZWpyaK+FrQBPQQk9xcvjBphn2g1ynj26A3lfh1077CeXoTTW7OJoxGwEZ4BTJ/DutguFP+ibYwgUcwwc3ZhZkKjPb1XdAAn2EPjHdcy7YGzoPiH2AvqE/dX5OBEGZTQUVG+13b9hyo+GgH6cPT4DGfQPnTbZFdmI2BbaCn1CBJ9aM3mmC7LbILMx1Y220e0G55ATfgDnyEOH4FGm2RTRjVwRkbCy3JfmgDbWWdLYvgHoQcLdEGW2QTRjPhnY3FSSgoOrTNhZfOEZp0rcPlC5OVENZeRWq5Qz1E+zDQ8R4moO2Z+oTtU5isj0y11h0OFYjYzihXFbLFofKFSR7CttP6Jx7btFfDUecJVcjsBQqTGfDapuICFHzhtKkQvXGOOAE1DpcvTFSej9tU6G3oSWfDONAZou9Eax5y9K2kux+kEWY6D3pXv7egoqN7RDjAAmehwd2zCaNZcN/GKkDxQEncgnTXs76EgaqfCpAuHuH2pK96C1yHb26L0WXmAEyxTXnCoAl2g8rsM5C5fhc43gjLYBfo4qJBN8McKDi2+y1M9D8hfjLtgIUO9xDtuh8O3B8bzPRH4xLEE9C9YKxTBl8MFlczoQtn//79ZBGDaV/rhqNvQKfeZIcqJwbVwaKjtnJPPrjK5f4AJRxgPNTUnT0AAAAASUVORK5CYII=" InformativeScreenshot="4842f00778525be84fd996441211fd94.jpg" Reference="sobT6TSR0U6vO4EQCkoJVA/p4Ia1FuPRE6JWEEQV6TlMw" Selector="&lt;html app='msedge.exe' title='Tasks' /&gt;" Title="Tasks" Version="V1" />
         </uix:NApplicationCard.TargetApp>
       </uix:NApplicationCard>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge Open Company" sap:VirtualizedContainerService.HintSize="1646,5418" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Never" ScopeGuid="a2034fe6-25f0-4ed7-8c89-6352a2d781e1" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Edge Open Company" sap:VirtualizedContainerService.HintSize="1646,5650" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Never" ScopeGuid="a2034fe6-25f0-4ed7-8c89-6352a2d781e1" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1612,5169" sap2010:WorkflowViewState.IdRef="Sequence_11">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1612,5401" sap2010:WorkflowViewState.IdRef="Sequence_11">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Boolean" Name="CommentExists" />
                 <Variable x:TypeArguments="x:Int32" Name="CommentCounter" />
@@ -426,28 +426,58 @@
                   </Catch>
                 </TryCatch.Catches>
               </TryCatch>
-              <uix:NCheckState DisplayName="Check App State Add Comment" sap:VirtualizedContainerService.HintSize="1578,2878" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="a2034fe6-25f0-4ed7-8c89-6352a2d781e1" Version="V4">
+              <uix:NCheckState DisplayName="Check App State Add Comment" sap:VirtualizedContainerService.HintSize="1578,3110" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="a2034fe6-25f0-4ed7-8c89-6352a2d781e1" Version="V4">
                 <uix:NCheckState.IfExists>
-                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,2636" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="468,2868" sap2010:WorkflowViewState.IdRef="Sequence_16">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on add comment" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a2034fe6-25f0-4ed7-8c89-6352a2d781e1" Version="V4">
-                      <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/contacts/146214366/record/0-3/497261422790" CVScreenId="f6ceea5a-794e-4c8b-a03d-4b3f4e9c0e80" ContentHash="hwfWr3NYikGg0AtROfmgyw" CvTextArea="662, 614, 331, 17" CvTextArgument="Leave a comment and mention a teammate using" CvType="Text" DesignTimeRectangle="650, 601, 741, 42" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl parentid='comments-scrollContainer' tag='BUTTON' type='' class='sc-fzoyTs GPatH' aaname='Leave a comment and mention a teammate using @' check:innerText='Leave a comment and mention a teammate using @' /&gt;" Guid="32c310b0-e314-40d5-a99c-8541a8f025a4" InformativeScreenshot="1a41bbb80835485308bbc438b33ee62c.png" Reference="sobT6TSR0U6vO4EQCkoJVA/ght0dQmsUEy-pRWwVItlPQ" ScopeSelectorArgument="&lt;html app='msedge.exe' url='https://app-eu1.hubspot.com*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
-                          <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                              <uix:Target CVScreenId="f6ceea5a-794e-4c8b-a03d-4b3f4e9c0e80" CvTextArea="662, 614, 331, 17" CvTextArgument="Leave a comment and mention a teammate using" CvType="Text" DesignTimeRectangle="663, 613, 348, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Leave a comment and mention a teammate using @' parentid='comments-scrollContainer' tag='SPAN' type='' class='' check:innerText='Leave a comment and mention a teammate using @' /&gt;" Guid="e53a55f0-23ae-42d7-8e9f-5eea4a6ed1f4" SearchSteps="FuzzySelector, CV" />
-                            </scg:List>
-                          </uix:TargetAnchorable.Anchors>
-                        </uix:TargetAnchorable>
-                      </uix:NClick.Target>
-                    </uix:NClick>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into Comment Editor Textbox" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="416,257" sap2010:WorkflowViewState.IdRef="NTypeInto_6" Text="[in_CommentNote]" Version="V4" />
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into Comment Editor Textbox" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="416,257" sap2010:WorkflowViewState.IdRef="NTypeInto_7" Text="[in_DealOwner]" Version="V4" />
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,421" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                      <TryCatch.Try>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on add comment" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a2034fe6-25f0-4ed7-8c89-6352a2d781e1" Timeout="5" Version="V4">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/contacts/146214366/record/0-3/497261422790" CVScreenId="f6ceea5a-794e-4c8b-a03d-4b3f4e9c0e80" ContentHash="hwfWr3NYikGg0AtROfmgyw" CvTextArea="662, 614, 331, 17" CvTextArgument="Leave a comment and mention a teammate using" CvType="Text" DesignTimeRectangle="650, 601, 741, 42" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl parentid='comments-scrollContainer' tag='BUTTON' type='' class='sc-fzoyTs GPatH' aaname='Leave a comment and mention a teammate using @' check:innerText='Leave a comment and mention a teammate using @' /&gt;" Guid="32c310b0-e314-40d5-a99c-8541a8f025a4" InformativeScreenshot="1a41bbb80835485308bbc438b33ee62c.png" Reference="sobT6TSR0U6vO4EQCkoJVA/ght0dQmsUEy-pRWwVItlPQ" ScopeSelectorArgument="&lt;html app='msedge.exe' url='https://app-eu1.hubspot.com*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="f6ceea5a-794e-4c8b-a03d-4b3f4e9c0e80" CvTextArea="662, 614, 331, 17" CvTextArgument="Leave a comment and mention a teammate using" CvType="Text" DesignTimeRectangle="663, 613, 348, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Leave a comment and mention a teammate using @' parentid='comments-scrollContainer' tag='SPAN' type='' class='' check:innerText='Leave a comment and mention a teammate using @' /&gt;" Guid="e53a55f0-23ae-42d7-8e9f-5eea4a6ed1f4" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </TryCatch.Try>
+                      <TryCatch.Catches>
+                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,227" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ActivityAction x:TypeArguments="s:Exception">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                            </ActivityAction.Argument>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Add comment" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a2034fe6-25f0-4ed7-8c89-6352a2d781e1" Version="V4">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/contacts/146214366/record/0-3/494472119526" CVScreenId="b7a61ee9-ed7a-41b6-b33e-9353fc93945f" ContentHash="8kpWEgHj2kW2BeeDnA2Tag" CvTextArea="670, 400, 332, 17" CvTextArgument="Leave a comment and mention a teammate using" CvType="Text" DesignTimeRectangle="671, 398, 699, 100" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl type='' parentid='comments-scrollContainer' tag='DIV' class='ProseMirror ProseMirror-focused' aaname='' /&gt;" Guid="1e09b6c1-4e89-453a-b572-7aab4c3a5246" InformativeScreenshot="a408f9cff0d2c4171ec9e02422c46d15.png" Reference="sobT6TSR0U6vO4EQCkoJVA/h54-6gwdDEWx9hG_8Ma3EQ" ScopeSelectorArgument="&lt;html app='msedge.exe' url='https://app-eu1.hubspot.com*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="650, 385, 741, 153" FuzzySelectorArgument="&lt;webctrl type='' class='ProsemirrorEditor__wrapper undefined' parentid='comments-scrollContainer' tag='DIV' aaname='' check:innerText='Leave a comment and mention a teammate using @&amp;#xA;&amp;#xA;&amp;#xA;&amp;#xA;&amp;#xA;More' /&gt;" Guid="124b0eae-c065-4409-a3ab-1e9e61a7b4c5" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                          </ActivityAction>
+                        </Catch>
+                      </TryCatch.Catches>
+                    </TryCatch>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into Comment Editor Textbox" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="434,257" sap2010:WorkflowViewState.IdRef="NTypeInto_6" Text="[in_CommentNote]" Version="V4" />
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into Comment Editor Textbox" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="434,257" sap2010:WorkflowViewState.IdRef="NTypeInto_7" Text="[in_DealOwner]" Version="V4" />
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
                       <ui:CommentOut.Body>
                         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,301" sap2010:WorkflowViewState.IdRef="Sequence_29">
                           <sap:WorkflowViewStateService.ViewState>
@@ -481,7 +511,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:CommentOut>
-                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="CommentOut_2">
                       <ui:CommentOut.Body>
                         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,301" sap2010:WorkflowViewState.IdRef="Sequence_30">
                           <sap:WorkflowViewStateService.ViewState>
@@ -515,7 +545,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:CommentOut>
-                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="416,211" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" InteractionMode="SameAsCard" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V4">
+                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="434,211" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" InteractionMode="SameAsCard" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V4">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
