@@ -133,7 +133,7 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="HubSpot_OpenTask" sap:VirtualizedContainerService.HintSize="1680,7492" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="HubSpot_OpenTask" sap:VirtualizedContainerService.HintSize="1680,7452" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="TaskTitle" />
     </Sequence.Variables>
@@ -142,7 +142,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="Task Description: To add comment to the task within HubSpot." DisplayName="HubSpot_AddCommentToTask" sap:VirtualizedContainerService.HintSize="1680,7469" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap2010:Annotation.AnnotationText="Task Description: To add comment to the task within HubSpot." DisplayName="HubSpot_AddCommentToTask" sap:VirtualizedContainerService.HintSize="1680,7429" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="TaskDetails" />
       </Sequence.Variables>
@@ -153,20 +153,20 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1646,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;HubSpot_AddCommentToTask started...&quot;]" />
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Tasks" sap:VirtualizedContainerService.HintSize="1646,1368" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="243326d1-bf0c-4692-bbce-a7a35fee97e9" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Tasks" sap:VirtualizedContainerService.HintSize="1646,1328" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="243326d1-bf0c-4692-bbce-a7a35fee97e9" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1010,1119" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1010,1079" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="976,114" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" Url="[in_TaskDetailsURL]" Version="V4" />
-              <uix:NCheckState DisplayName="Check App State Task details" sap:VirtualizedContainerService.HintSize="976,943" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="243326d1-bf0c-4692-bbce-a7a35fee97e9" Version="V4">
+              <uix:NCheckState DisplayName="Check App State Task details" sap:VirtualizedContainerService.HintSize="976,903" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="243326d1-bf0c-4692-bbce-a7a35fee97e9" Version="V4">
                 <uix:NCheckState.IfExists>
                   <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="472,661" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <sap:WorkflowViewStateService.ViewState>
@@ -320,7 +320,7 @@
                         </uix:TargetAnchorable>
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[Not CommentExists And CommentCounter &lt; 3]" DisplayName="While to Identify Comment Button" sap:VirtualizedContainerService.HintSize="1040,819" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                    <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While to Identify Comment Button" sap:VirtualizedContainerService.HintSize="1040,819" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
                       <ui:InterruptibleWhile.Body>
                         <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1006,680" sap2010:WorkflowViewState.IdRef="Sequence_26">
                           <sap:WorkflowViewStateService.ViewState>
@@ -358,11 +358,20 @@
                               </Sequence>
                             </uix:NCheckState.IfNotExists>
                             <uix:NCheckState.Target>
-                              <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/contacts/146214366/record/0-3/460172385471" CVScreenId="824955e5-f710-4594-937d-748d49c5eaf5" ContentHash="WcVV9oXdrUae0TPFDm-cpg" CvTextArea="632, 823, 87, 14" CvTextArgument="7 comments" CvType="Text" DesignTimeRectangle="634, 818, 84, 24" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;html app='msedge.exe' url='https://app-eu1.hubspot.com*' /&gt;&lt;webctrl aaname='*ommen*' tag='I18N-STRING' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='*ommen*' tag='I18N-STRING' type='' class='' check:text='7 comments' /&gt;" Guid="d338fd83-cff6-45ea-a88d-3e6b9831acb7" InformativeScreenshot="79fb7cef5e10b84ffcd5e8d78e359866.png" Reference="sobT6TSR0U6vO4EQCkoJVA/IsmSL-zbTk-64Wmg3UHXoA" ScopeSelectorArgument="&lt;html app='msedge.exe' url='https://app-eu1.hubspot.com*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Visible" />
+                              <uix:TargetAnchorable BrowserURL="app-eu1.hubspot.com/contacts/146214366/record/0-3/498917712076" ContentHash="xnjhJbzPaEyUbGl3TWP9UQ" DesignTimeRectangle="648, 689, 50, 12" DesignTimeScaleFactor="1" Guid="88078cef-3f9c-4799-9e73-5e6c5bfc6975" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADIAAAAMCAYAAAAgT+5sAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ2SURBVEhL3VU9iyJBEDXb0NDwwg0NL7yfcKGh4YaG/oxBEAwOXBDkEGRHEF0RhmFFENnF5RyWRQ5UGPxgQIaBgfFQeFdd3T07enBwiQc+KLC7Pl91TZnCleB6iLzPXlA0bRSsH7C9X+paYb+F/TRC3hzCeJ5jcVD3AkI3cWAufSBwYVpDiuHgNTiS8gjfdWC0yW/igiwUfLwKn7ctooMnY3df4ryRN0ela6P4dJaLEeGjVp1HIlr/RCpVekBSPltbVvpTG5kzXarUg7FWAdZj3Iq7ShufkjZlC/lGK+FDUptgw04z5NiGfMoJfalDzeolziTlAUbsQ9i7KFYTOpYW8tOQ1Qurg1S6PqaO+NhQB/PfWsgJ5W6CL8r46/MKm4C6Z/WRTibQRLQNdbOgkxGZe5diLsfIsk0HhiecFBGSbJe6HqxwX9ekOyjOPIrjIKdI5t+EzxGjtrSRPj4Ws6GMWx5yLUzk+14Ya8hub4ayOzfmnM8SO1RqIkELdzM6aiLVMRbSQAaku9u+fFVgC4PJEZG1OGsiNh5ZT6CXZyINR10Aj01h80BNFac57phYDwUxlkoKXIuMy3njgAnEBakx0zhJ8Dcisd8/EGmK7kicEvl4xTSNceZE+qjQS3NeHiUF36URET90cCrynTWEUD+5KupiRHQMNfYah4g+fwnOKwyydRu5Wpuds/0VGWhnkkoPObOPrJrbNCXkLXQxInLx8PdJkqnRMmn2eBHpEea8XIySm+oA5k5tpXAJoyHJSSHCpqO2D+GCRMS3u5kO4maylGnTTTx+Fc4rjCLaBP4fe1sjgh+E8TP+b0QhbcPw7P+OcCX/7MBvMtL9J7sk1BYAAAAASUVORK5CYII=" InformativeScreenshot="091be1edc95666d520ba9386e95ad40d.png" Reference="sobT6TSR0U6vO4EQCkoJVA/IsmSL-zbTk-64Wmg3UHXoA" ScopeSelectorArgument="&lt;html app='msedge.exe' url='https://app-eu1.hubspot.com*' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="25e7ec10-4455-4270-8095-7d3028ff5834" CvTextArea="601, 655, 55, 18" CvTextArgument="Expand" CvType="Text" DesignTimeRectangle="602, 651, 53, 24" FuzzySelectorArgument="&lt;webctrl aaname='Expand' tag='I18N-STRING' type='' class='' check:innerText='Expand' /&gt;" Guid="ea8912a1-7edb-45e8-b3ea-d7d2f7c671bb" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
                             </uix:NCheckState.Target>
                           </uix:NCheckState>
                         </Sequence>
                       </ui:InterruptibleWhile.Body>
+                      <ui:InterruptibleWhile.Condition>
+                        <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="Not CommentExists AND CommentCounter &lt; 3" />
+                      </ui:InterruptibleWhile.Condition>
                     </ui:InterruptibleWhile>
                   </Sequence>
                 </uix:NCheckState.IfExists>
