@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="fTrZQRUyEkOaV6gCdAusaA" Reference="sobT6TSR0U6vO4EQCkoJVA/2FBaWYyz502-b2NWaDBNbQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="WootJj7cVUaZbcHfAq_0yg" Reference="sobT6TSR0U6vO4EQCkoJVA/2FBaWYyz502-b2NWaDBNbQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="go.xero.com/app/!67tTl/dashboard" CVScreenId="89f7c2ca-a0ac-4ebc-9328-bdbca66464f5" CvTextArea="1565, 333, 54, 14" CvTextArgument="Contact" CvType="Text" DesignTimeRectangle="1545, 322, 200, 38" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Contact' aria-role='link' omit:parentid='create-menu-list' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Contact' aria-role='link' parentid='create-menu-list' tag='A' type='' class='x-nav-xui-button x-nav-xui-button-borderless-standard x-nav-xui-button-small x-nav-xui-button-fullwidth' check:innerText='Contact' /&gt;" Guid="ac111f73-2aa0-4aa5-97bf-03673a4140ef" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="e409fc1902b44730f9a343ccf68f4ffa.png" xmlns="">0eZSg0qiWSU-J6ogQ0lBwuA</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="go.xero.com/app/!67tTl/dashboard" CVScreenId="89f7c2ca-a0ac-4ebc-9328-bdbca66464f5" CvTextArea="1565, 333, 54, 14" CvTextArgument="Contact" CvType="Text" DesignTimeRectangle="1581, 333, 54, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Contact' aria-role='link' omit:parentid='create-menu-list' tag='A' /&gt;" Guid="ac111f73-2aa0-4aa5-97bf-03673a4140ef" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="9bf9c62d-042d-44d0-8ea2-be4f4cf1b7d0" CvTextArea="1579, 183, 77, 13" CvTextArgument="CREATE NEW" CvType="Text" DesignTimeRectangle="1561, 172, 240, 36" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='create-menu-list' tag='H2' type='' class='x-nav--nav-item-heading' aaname='' check:innerText='CREATE NEW' /&gt;" Guid="24985879-d1f2-4ea3-a6f4-bf59cff98532" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="07778234079332e5c37b16ce2c221471.png" xmlns="">0FwsAiIj7kkOYLS3K-zC-EQ</imageRef>
     </TargetAnchorable>
-    <x:String x:Key="ActivityType">Click</x:String>
+    <x:String x:Key="ActivityType">None</x:String>
   </ObjectRepositoryTargetData.Data>
 </ObjectRepositoryTargetData>

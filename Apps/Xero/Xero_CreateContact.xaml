@@ -108,7 +108,7 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Xero_CreateContact" sap:VirtualizedContainerService.HintSize="1530,5492" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Xero_CreateContact" sap:VirtualizedContainerService.HintSize="1540,5492" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -150,7 +150,13 @@
                     </sap:WorkflowViewStateService.ViewState>
                     <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Contact Option" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="005b2215-7518-488e-9d46-0a96e81fc3f3" Version="V4">
                       <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/dashboard" CVScreenId="89f7c2ca-a0ac-4ebc-9328-bdbca66464f5" ContentHash="fTrZQRUyEkOaV6gCdAusaA" CvTextArea="1565, 333, 54, 14" CvTextArgument="Contact" CvType="Text" DesignTimeRectangle="1545, 322, 200, 38" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Contact' aria-role='link' omit:parentid='create-menu-list' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Contact' aria-role='link' parentid='create-menu-list' tag='A' type='' class='x-nav-xui-button x-nav-xui-button-borderless-standard x-nav-xui-button-small x-nav-xui-button-fullwidth' check:innerText='Contact' /&gt;" Guid="ac111f73-2aa0-4aa5-97bf-03673a4140ef" InformativeScreenshot="e409fc1902b44730f9a343ccf68f4ffa.png" Reference="sobT6TSR0U6vO4EQCkoJVA/2FBaWYyz502-b2NWaDBNbQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
+                        <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/dashboard" CVScreenId="89f7c2ca-a0ac-4ebc-9328-bdbca66464f5" ContentHash="WootJj7cVUaZbcHfAq_0yg" CvTextArea="1565, 333, 54, 14" CvTextArgument="Contact" CvType="Text" DesignTimeRectangle="1581, 333, 54, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Contact' aria-role='link' omit:parentid='create-menu-list' tag='A' /&gt;" Guid="ac111f73-2aa0-4aa5-97bf-03673a4140ef" InformativeScreenshot="07778234079332e5c37b16ce2c221471.png" Reference="sobT6TSR0U6vO4EQCkoJVA/2FBaWYyz502-b2NWaDBNbQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*Xero' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="9bf9c62d-042d-44d0-8ea2-be4f4cf1b7d0" CvTextArea="1579, 183, 77, 13" CvTextArgument="CREATE NEW" CvType="Text" DesignTimeRectangle="1561, 172, 240, 36" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='create-menu-list' tag='H2' type='' class='x-nav--nav-item-heading' aaname='' check:innerText='CREATE NEW' /&gt;" Guid="24985879-d1f2-4ea3-a6f4-bf59cff98532" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
                       </uix:NClick.Target>
                     </uix:NClick>
                   </Sequence>
@@ -165,7 +171,7 @@
                   </Sequence>
                 </uix:NCheckState.IfNotExists>
                 <uix:NCheckState.Target>
-                  <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/dashboard" CVScreenId="290d2db5-cdd6-405a-8ef6-32d3e106ac0f" ContentHash="bsAsFZhCX0qPqSSDwHrkuA" CvTextArea="1563, 184, 76, 11" CvTextArgument="CREATE NEW" CvType="Text" DesignTimeRectangle="1545, 172, 200, 36" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='create-menu-list' tag='H2' type='' class='x-nav--nav-item-heading' aaname='' check:innerText='CREATE NEW' /&gt;" Guid="5a5e2a3f-2ca3-402a-8420-5c4a20431351" InformativeScreenshot="399886d37d07a54d8319de3fde57657e.png" Reference="sobT6TSR0U6vO4EQCkoJVA/MKN-RFSUoUuoVjd_2SBHQw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Dashboard – Xero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                  <uix:TargetAnchorable BrowserURL="go.xero.com/app/!67tTl/dashboard" CVScreenId="290d2db5-cdd6-405a-8ef6-32d3e106ac0f" ContentHash="7cSex1EpWE6nFX__bKMa1g" CvTextArea="1563, 184, 76, 11" CvTextArgument="CREATE NEW" CvType="Text" DesignTimeRectangle="1545, 172, 200, 36" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='create-menu-list' tag='H2' type='' class='x-nav--nav-item-heading' aaname='' check:innerText='CREATE NEW' /&gt;" Guid="5a5e2a3f-2ca3-402a-8420-5c4a20431351" InformativeScreenshot="399886d37d07a54d8319de3fde57657e.png" Reference="sobT6TSR0U6vO4EQCkoJVA/MKN-RFSUoUuoVjd_2SBHQw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='*ero' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
                 </uix:NCheckState.Target>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -396,7 +402,7 @@
           </ActivityAction>
         </uix:NApplicationCard.Body>
         <uix:NApplicationCard.TargetApp>
-          <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Edge" ContentHash="nuPSQUqXPE24pLdk7oyyEA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH2SURBVDhPnVNbL2NRFF5EIi4/gnciIgbxC4QHEh5kHsSzRMyfmHh16wxeEGnkBD09U3VJJIRMoiltpRjantPWtVVGacVlZpa1dncnLo1gJSvnO/t833f2WntteBHK7iew6v0wE3KDLRwRyVjTTTC1Vy1ZGUIJ54Ea6AWbcQ9z+wiz4acp1ow/oJKR5syXKhnKTxbbMwqfJ3M0YwHG3AVSTTHt63mTOJ3zxLX4vqXE5r1y2trfjMTX0mb8g4lflQAWf382O86EEOz0QTwpiZQzl36XIsK5aS7v2OIfAvgR9BQtHaH5KEmuQWxxxXAgdIVfdn6j5eQay1aPsYvw6EECO7bOUaW1VncMs9jUpnuBjymLHOucUXTF73AonMDuQByV4yS2b57h8tmNwG2ER8ikwRHF6ZMklpIxaMGoMMgmg6aNU1y7uMXPnhh+9cdx9DCBjeun2LwRw/HDpPjrGK3VOyJiZyUraQMqoZhKYAFhIeoLXooS1Mg1lhKxl94LF/axcztVApcp+iJKUH0m0RBujGzU88YJzEn4f2NZY9WHaYh2Kj50jGxk3q1KzQId5bsGiblTgcGUmGOQZls15t9kwhxNXwTFWyjVMviC8EXhcjIZ8RpPn0p/fiF+HIqvBqyB73RhNsVVnqWjshO20tRN+mslSwbAA2Z2Sv8z5CJZAAAAAElFTkSuQmCC" InformativeScreenshot="46934c9685b00443b2f3b5caae07be52.jpg" Reference="sobT6TSR0U6vO4EQCkoJVA/mdqALtkQtU67zvSMbDjcvQ" Selector="&lt;html app='msedge.exe' title='*Xero' /&gt;" Title="Dashboard – Xero" Version="V1" />
+          <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Edge" ContentHash="7E8KXQ1Ad0ujvk9XYEOq4A" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH2SURBVDhPnVNbL2NRFF5EIi4/gnciIgbxC4QHEh5kHsSzRMyfmHh16wxeEGnkBD09U3VJJIRMoiltpRjantPWtVVGacVlZpa1dncnLo1gJSvnO/t833f2WntteBHK7iew6v0wE3KDLRwRyVjTTTC1Vy1ZGUIJ54Ea6AWbcQ9z+wiz4acp1ow/oJKR5syXKhnKTxbbMwqfJ3M0YwHG3AVSTTHt63mTOJ3zxLX4vqXE5r1y2trfjMTX0mb8g4lflQAWf382O86EEOz0QTwpiZQzl36XIsK5aS7v2OIfAvgR9BQtHaH5KEmuQWxxxXAgdIVfdn6j5eQay1aPsYvw6EECO7bOUaW1VncMs9jUpnuBjymLHOucUXTF73AonMDuQByV4yS2b57h8tmNwG2ER8ikwRHF6ZMklpIxaMGoMMgmg6aNU1y7uMXPnhh+9cdx9DCBjeun2LwRw/HDpPjrGK3VOyJiZyUraQMqoZhKYAFhIeoLXooS1Mg1lhKxl94LF/axcztVApcp+iJKUH0m0RBujGzU88YJzEn4f2NZY9WHaYh2Kj50jGxk3q1KzQId5bsGiblTgcGUmGOQZls15t9kwhxNXwTFWyjVMviC8EXhcjIZ8RpPn0p/fiF+HIqvBqyB73RhNsVVnqWjshO20tRN+mslSwbAA2Z2Sv8z5CJZAAAAAElFTkSuQmCC" InformativeScreenshot="46934c9685b00443b2f3b5caae07be52.jpg" Reference="sobT6TSR0U6vO4EQCkoJVA/mdqALtkQtU67zvSMbDjcvQ" Selector="&lt;html app='msedge.exe' title='*ero' /&gt;" Title="Dashboard – Xero" Version="V1" />
         </uix:NApplicationCard.TargetApp>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
