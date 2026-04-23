@@ -143,41 +143,41 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="HubSpot_Connection" sap:VirtualizedContainerService.HintSize="1836,2711" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="HubSpot_Connection" sap:VirtualizedContainerService.HintSize="1540,3449" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="Task Description: To log into HubSpot website." DisplayName="HubSpot_Login" sap:VirtualizedContainerService.HintSize="1056,2688" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap2010:Annotation.AnnotationText="Task Description: To log into HubSpot website." DisplayName="HubSpot_Login" sap:VirtualizedContainerService.HintSize="1074,3426" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1022,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;HubSpot_Login started...&quot;]" />
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome HubSpot Login and Sign in" sap:VirtualizedContainerService.HintSize="1022,2237" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="7a784198-12d0-401e-b328-8238cad8eb4e" Version="V2" WindowResize="Maximize">
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1040,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;HubSpot_Login started...&quot;]" />
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome HubSpot Login and Sign in" sap:VirtualizedContainerService.HintSize="1040,2975" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="7a784198-12d0-401e-b328-8238cad8eb4e" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="988,1988" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1006,2726" sap2010:WorkflowViewState.IdRef="Sequence_12">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="954,219" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="972,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
                 <ui:CommentOut.Body>
-                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_25">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NCheckState DisplayName="Check App State Change Tag" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="7a784198-12d0-401e-b328-8238cad8eb4e" Version="V4">
+                    <uix:NCheckState DisplayName="Check App State Change Tag" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="NCheckState_6" ScopeIdentifier="7a784198-12d0-401e-b328-8238cad8eb4e" Timeout="2" Version="V4">
                       <uix:NCheckState.IfExists>
                         <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,419" sap2010:WorkflowViewState.IdRef="Sequence_13">
                           <sap:WorkflowViewStateService.ViewState>
@@ -220,16 +220,22 @@
                     </uix:NCheckState>
                   </Sequence>
                 </ui:CommentOut.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
               </ui:CommentOut>
-              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="954,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="972,57" sap2010:WorkflowViewState.IdRef="CommentOut_2">
                 <ui:CommentOut.Body>
-                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="988,780" sap2010:WorkflowViewState.IdRef="Sequence_26">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NCheckState DisplayName="Check App State Email Address" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="NCheckState_2" Version="V4">
+                    <uix:NCheckState DisplayName="Check App State Email Address" sap:VirtualizedContainerService.HintSize="954,720" sap2010:WorkflowViewState.IdRef="NCheckState_7" Timeout="2" Version="V4">
                       <uix:NCheckState.IfExists>
                         <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,480" sap2010:WorkflowViewState.IdRef="Sequence_15">
                           <sap:WorkflowViewStateService.ViewState>
@@ -271,7 +277,7 @@
                       </uix:NCheckState.Target>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -285,7 +291,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:CommentOut>
-              <uix:NCheckState DisplayName="Check App State Sign in with Microsoft" sap:VirtualizedContainerService.HintSize="954,668" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="7a784198-12d0-401e-b328-8238cad8eb4e" Version="V4">
+              <uix:NCheckState DisplayName="Check App State Sign in with Microsoft" sap:VirtualizedContainerService.HintSize="972,668" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="7a784198-12d0-401e-b328-8238cad8eb4e" Version="V4">
                 <uix:NCheckState.IfExists>
                   <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,419" sap2010:WorkflowViewState.IdRef="Sequence_17">
                     <sap:WorkflowViewStateService.ViewState>
@@ -320,7 +326,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NCheckState>
-              <uix:NCheckState DisplayName="Check App State Pick an account Title" sap:VirtualizedContainerService.HintSize="954,57" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="7a784198-12d0-401e-b328-8238cad8eb4e" Version="V4">
+              <uix:NCheckState DisplayName="Check App State Pick an account Title" sap:VirtualizedContainerService.HintSize="972,957" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="7a784198-12d0-401e-b328-8238cad8eb4e" Version="V4">
                 <uix:NCheckState.IfExists>
                   <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="468,708" sap2010:WorkflowViewState.IdRef="Sequence_19">
                     <sap:WorkflowViewStateService.ViewState>
@@ -355,16 +361,22 @@
                   </Sequence>
                 </uix:NCheckState.IfNotExists>
                 <uix:NCheckState.Target>
-                  <uix:TargetAnchorable BrowserURL="login.microsoftonline.com/common/oauth2/v2.0/authorize" CVScreenId="bd83bd47-8823-45f2-b3fb-78d0a0288ad4" ContentHash="ikzZs2VPyEmgsDqu3qt06A" CvTextArea="792, 439, 172, 21" CvTextArgument="Pick an account" CvType="Text" DesignTimeRectangle="792, 435, 352, 28" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='heading' tag='DIV' type='' class='' aaname='Pick an account' check:innerText='Pick an account' /&gt;" Guid="00a889ef-8fe1-41ca-ac4d-3693dfe5b142" InformativeScreenshot="2453ac9ef07c9f2de0fae7f9a45802c8.png" Reference="sobT6TSR0U6vO4EQCkoJVA/vJwJ_TheNECKCngksm1KIg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Sign in to your account' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                  <uix:TargetAnchorable BrowserURL="login.microsoftonline.com/common/oauth2/v2.0/authorize" CVScreenId="bd83bd47-8823-45f2-b3fb-78d0a0288ad4" ContentHash="nJ7uB8elhEKT2KmnEW_MVw" CvTextArea="792, 439, 172, 21" CvTextArgument="Pick an account" CvType="Text" DesignTimeRectangle="792, 468, 352, 28" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aria-role='heading' tag='DIV' type='' class='' aaname='Pick an account' check:innerText='Pick an account' /&gt;" Guid="00a889ef-8fe1-41ca-ac4d-3693dfe5b142" InformativeScreenshot="141d65b6dfae7bdcc0690ca33487321e.png" Reference="sobT6TSR0U6vO4EQCkoJVA/vJwJ_TheNECKCngksm1KIg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Sign in to your account' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="5c4ed211-e410-4c35-982b-c50ed5dbe004" CvTextArea="849, 538, 170, 14" CvTextArgument="valentafranchisebot@valenta.io" CvType="Text" DesignTimeRectangle="852, 538, 166, 15" FuzzySelectorArgument="&lt;webctrl tag='SMALL' type='' class='' aaname='valentafranchisebot@valenta.io' check:innerText='valentafranchisebot@valenta.io' /&gt;" Guid="5cfa345b-7b7c-425e-8b0b-fbe48b26c600" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
                 </uix:NCheckState.Target>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NCheckState>
-              <uix:NCheckState DisplayName="Check App State Open Your Authenticator App" sap:VirtualizedContainerService.HintSize="954,925" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="7a784198-12d0-401e-b328-8238cad8eb4e" Version="V4">
+              <uix:NCheckState DisplayName="Check App State Open Your Authenticator App" sap:VirtualizedContainerService.HintSize="972,925" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="7a784198-12d0-401e-b328-8238cad8eb4e" Version="V4">
                 <uix:NCheckState.IfExists>
                   <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,683" sap2010:WorkflowViewState.IdRef="Sequence_23">
                     <sap:WorkflowViewStateService.ViewState>
