@@ -96,7 +96,7 @@
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="HubSpot_Connection_TestCase" sap:VirtualizedContainerService.HintSize="1282,1254" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="HubSpot_Connection_TestCase" sap:VirtualizedContainerService.HintSize="1539,1254" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="HubSpotURL" />
       <Variable x:TypeArguments="ss:SecureString" Name="HubSpotPassword" />
@@ -143,6 +143,7 @@
               <InArgument x:TypeArguments="ss:SecureString" x:Key="in_HubSpotPassword" />
               <InArgument x:TypeArguments="x:String" x:Key="in_HubSpotURL">[HubSpotURL]</InArgument>
               <OutArgument x:TypeArguments="x:Boolean" x:Key="out_IsLoggedIn" />
+              <InArgument x:TypeArguments="x:String" x:Key="in_HubSpotAuthCode" />
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
         </TryCatch.Try>

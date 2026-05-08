@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="osghYS1M7Umh7eC0jm06Zw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="app-eu1.hubspot.com/tasks/146214366/view/all/task/485577799894" CVScreenId="a707ad8b-d928-4707-8edb-f99fd5af2af8" CvElementArea="1463, 363, 406, 42" CvType="InputBox" DesignTimeRectangle="1481, 375, 182, 20" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl parentid='abstractdropdown-button-content*' tag='I18N-STRING' type='' class='' /&gt;" Guid="17a811a8-d8b1-40df-afc3-b8a94b808eb3" ImageBase64="" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Tasks*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a707ad8b-d928-4707-8edb-f99fd5af2af8" CvTextArea="1462, 341, 160, 14" CvTextArgument="Associate with records" CvType="Text" DesignTimeRectangle="1464, 340, 157, 18" FuzzySelectorArgument="&lt;webctrl parentid='FormControl-label*' tag='I18N-STRING' type='' class='' aaname='Associate with records' check:innerText='Associate with records' /&gt;" Guid="799b3569-e299-4e6d-afaf-ea08a6fd9223" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="bec6f0bc1192be93e11f05b8bb8949d1.png" xmlns="">0Qe1vi9jh8USaIugOaXhpwQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
